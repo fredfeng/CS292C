@@ -5,7 +5,7 @@ This course is a comprehensive introduction to solvere-aided reasoning for softw
 
 | Date  | Topic                                         | Slides | Read | Out | Due |
 |-------|-----------------------------------------------|--------|------|-----|-----|
-| 9/30  | Introduction                                  |        |      |     |     |
+| 9/30  | Introduction                                  |  [lec1](lectures/lecture1.key)      |      |     |     |
 | 10/2  | Solver-Aided Programming I (Rosette)          |        |      |     |     |
 | 10/7  | Solver-Aided Programming II (Neo)             |        |      |     |     |
 | 10/9  | SAT Solving Basics                            |        |      |     |     |
