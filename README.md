@@ -25,3 +25,12 @@ This course is a comprehensive introduction to solvere-aided reasoning for softw
 | 11/27 | Thanksgiving break                            |        |      |     |     |
 | 12/2  | Program Synthesis using deep learning         |        |      |     |     |
 | 12/4  | Project Demos                                 |        |      |     |     |
+
+
+# Reading list
+1. A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages. Emina Torlak and Rastislav Bodik. PLDI'14.
+2. Program synthesis using conflict-driven learning. Yu Feng, Ruben Martins, Osbert Bastani, and Isil Dillig.  PLDI'18. 
+3. Stochastic superoptimization. 	Eric Schkufza, Rahul Sharma, and Alex Aiken. ASPLOS'13
+4. Deepcoder: Learning to write programs. Matej, et al. ICLR'16.
+5. Combinatorial sketching for finite programs. 	Armando Solar-Lezama, Liviu Tancau, Rastislav Bodik, Sanjit Seshia, Vijay Saraswat. ASPLOS'06.
+6. KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs. Cristian Cadar, Daniel Dunbar, Dawson Engler. OSDI'08
