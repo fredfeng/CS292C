@@ -5,23 +5,35 @@ This course is a comprehensive introduction to solvere-aided reasoning for softw
 
 | Date  | Topic                                         | Slides | Read | Out | Due |
 |-------|-----------------------------------------------|--------|------|-----|-----|
-| 9/30  | Introduction                                  |        |      |     |     |
-| 10/2  | Solver-Aided Programming I (Rosette)          |        |      |     |     |
-| 10/7  | Solver-Aided Programming II (Neo)             |        |      |     |     |
+| 9/30  | Introduction                                  |  [lec1](lectures/lecture1.key)      |      |     |     |
+| 10/2  | Solver-Aided Programming I (Rosette)          |        |  R1    |     |     |
+| 10/7  | Solver-Aided Programming II (Neo)             |        |  R2    |     |     |
 | 10/9  | SAT Solving Basics                            |        |      |     |     |
 | 10/14 | A Modern SAT Solver                           |        |      |     |     |
 | 10/16 | Applications of SAT                           |        |      |     |     |
 | 10/21 | SAT Modulo Theories                           |        |      |     |     |
-| 10/23 | An Overview of Program Synthesis              |        |      |     |     |
+| 10/23 | An Overview of Program Synthesis              |        |   R5   |     |     |
 | 10/28 | Combining Theories                            |        |      |     |     |
 | 10/30 | The DPLL(T) Framework                         |        |      |     |     |
 | 11/4  | Reasoning about Programs using Hoare logic I  |        |      |     |     |
 | 11/6  | Reasoning about Programs using Hoare logic II |        |      |     |     |
-| 11/11 | Symbolic Execution I                          |        |      |     |     |
+| 11/11 | Symbolic Execution I                          |        |   R6   |     |     |
 | 11/13 | Symbolic Execution II                         |        |      |     |     |
 | 11/18 | Program synthesis by Examples                 |        |      |     |     |
-| 11/20 | Type-directed Program Synthesis               |        |      |     |     |
+| 11/20 | Type-directed Program Synthesis               |        |   R3   |     |     |
 | 11/25 | Program synthesis by natural language         |        |      |     |     |
 | 11/27 | Thanksgiving break                            |        |      |     |     |
-| 12/2  | Program Synthesis using deep learning         |        |      |     |     |
+| 12/2  | Program Synthesis using deep learning         |        |  R4    |     |     |
 | 12/4  | Project Demos                                 |        |      |     |     |
+
+
+# Reading list
+1. A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages. Emina Torlak and Rastislav Bodik. PLDI'14.
+2. Program synthesis using conflict-driven learning. Yu Feng, Ruben Martins, Osbert Bastani, and Isil Dillig.  PLDI'18. 
+3. Stochastic superoptimization. 	Eric Schkufza, Rahul Sharma, and Alex Aiken. ASPLOS'13
+4. Deepcoder: Learning to write programs. Matej, et al. ICLR'16.
+5. Combinatorial sketching for finite programs. 	Armando Solar-Lezama, Liviu Tancau, Rastislav Bodik, Sanjit Seshia, Vijay Saraswat. ASPLOS'06.
+6. KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs. Cristian Cadar, Daniel Dunbar, Dawson Engler. OSDI'08
+
+# Other references
+Coming soon
