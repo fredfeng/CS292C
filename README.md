@@ -2,6 +2,8 @@
 
 This course is a comprehensive introduction to solvere-aided reasoning for software with a special focus on program synthesis: an emerging area that sits at the intersection of systems, programming languages, HCI, and artificial intelligence. The goal of program synthesis is to generate programs automatically from high-level, potentially informal and incomplete descriptions. The course covers recent advances in synthesis techniques that differ in the kind of specifications (from input-output examples to formal correctness specifications), search strategies (enumerative, stochastic, or symbolic search), and information to guide the search (counter-example guided synthesis, type-driven synthesis, synthesis with machine learning). The course involves a project, 3 programming assignments, and reviewing research papers.
 
+# Office hour
+Friday, 11am, HFH-2157
 
 | Date  | Topic                                         | Slides | Read | Out | Due |
 |-------|-----------------------------------------------|--------|------|-----|-----|
@@ -37,3 +39,5 @@ This course is a comprehensive introduction to solvere-aided reasoning for softw
 
 # Other references
 Coming soon
+
+
