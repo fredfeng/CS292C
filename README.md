@@ -14,8 +14,8 @@ Friday, 11am, HFH-2157
 | 10/14 | A Modern SAT Solver                           |        |      |     |     |
 | 10/16 | Applications of SAT                           |        |      |     |     |
 | 10/21 | SAT Modulo Theories                           |        |      |     |     |
-| 10/23 | An Overview of Program Synthesis              |        |   R5   |     |     |
-| 10/28 | Combining Theories                            |        |      |     |     |
+| 10/23 | TBD              |        |   R5   |     |     |
+| 10/28 | Combining Theories                            |        |      |     | Proposal    |
 | 10/30 | The DPLL(T) Framework                         |        |      |     |     |
 | 11/4  | Reasoning about Programs using Hoare logic I  |        |      |     |     |
 | 11/6  | Reasoning about Programs using Hoare logic II |        |      |     |     |
