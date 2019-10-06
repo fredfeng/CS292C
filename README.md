@@ -26,7 +26,7 @@ Friday, 11am, HFH-2157
 | 11/25 | Program synthesis by natural language         |        |      |     |     |
 | 11/27 | Thanksgiving break                            |        |      |     |     |
 | 12/2  | Program Synthesis using deep learning         |        |  R4    |     |     |
-| 12/4  | Project Demos                                 |        |      |     |     |
+| 12/4  | Project Demos                                 |        |      |     |  Final Report  |
 
 
 # Reading list
