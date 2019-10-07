@@ -31,13 +31,56 @@ Friday, 11am, HFH-2157
 
 # Reading list
 1. A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages. Emina Torlak and Rastislav Bodik. PLDI'14.
-2. Program synthesis using conflict-driven learning. Yu Feng, Ruben Martins, Osbert Bastani, and Isil Dillig.  PLDI'18. 
+2. Program synthesis using conflict-driven learning. Yu Feng, Ruben Martins, Osbert Bastani, and Isil Dillig.  PLDI'18. **Distinguished Paper Award** 
 3. Stochastic superoptimization. 	Eric Schkufza, Rahul Sharma, and Alex Aiken. ASPLOS'13
 4. Deepcoder: Learning to write programs. Matej, et al. ICLR'16.
 5. Combinatorial sketching for finite programs. 	Armando Solar-Lezama, Liviu Tancau, Rastislav Bodik, Sanjit Seshia, Vijay Saraswat. ASPLOS'06.
 6. KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs. Cristian Cadar, Daniel Dunbar, Dawson Engler. OSDI'08
 
+Tips for writing paper [reviews](REVIEW.md).
+
 # Other references
-Coming soon
+
+[1] Aaron Bradley and Zohar Manna. The Calculus of Computation. 2010. 
+
+[2] Joao Marques-Silva, Ines Lynce, and Sharad Malik. Chapter 4: Conflict-Driven Clause Learning SAT Solvers. Handbook of Satisfiability. 2008. 
+
+[3] Edmund Clarke, Daniel Kroening, and Flavio Lerda. A Tool for Checking ANSI-C Programs. Tools and Algorithms for the Construction and Analysis of Systems (TACAS). 2004. Springer
+
+[4] Leonardo de Moura and Nikolaj Bjorner. Satisfiability Modulo Theories: Introduction and Applications. Communications of the ACM, vol. 54, no. 9. 2011. 
+
+[5] Clark Barrett, Roberto Sebastiani, Sanjit A. Seshia, and Cesare Tinelli. Chapter 12: Satisfiability Modulo Theories. Handbook of Satisfiability. 2008. 
+
+[6] C. A. R. Hoare. An axiomatic basis for computer programming. Communications of the ACM, vol. 12, no. 10. 1969. ACM DL. **Turing Award**
+
+[7] Roberto Baldoni, Emilio Coppa, Daniele Cono D’elia, Camil Demetrescu, and Irene Finocchi. A Survey of Symbolic Execution Techniques. ACM Computing Surveys (CSUR). 2018. ACM DL
+
+[8] Ali Sinan Köksal, Yewen Pu, Saurabh Srivastava, Rastislav Bodík, Jasmin Fisher, Nir Piterman. Synthesis of biological models from mutation experiments. Principles of Programming Languages (POPL). 2013. ACM DL
+
+[9] Sumit Gulwani, Oleksandr Polozov, and Rishabh Singh. Program Synthesis. Foundations and Trends in Programming Languages. 2017. 
+
+[10] Srivastava, Saurabh, Sumit Gulwani, and Jeffrey S. Foster. From program verification to program synthesis. POPL 2010.
+
+[11] Jha, Susmit, et al. Oracle-guided component-based program synthesis. ICSE 2010.
+
+[12] Gulwani, Sumit. Automating string processing in spreadsheets using input-output examples. POPL 2011.
+
+[13] Feng, Yu, et al. Component-based synthesis for complex APIs. POPL 2017.
+
+[14] Phothilimthana, Phitchaya Mangpo, et al. "Scaling up superoptimization." ASPLOS 2016.
+
+[15] Chandra, Kartik, and Rastislav Bodik. Bonsai: synthesis-based reasoning for type systems. POPL 2017.
+
+[16] Bornholt, James, et al. Optimizing synthesis with metasketches. POPL 2016.
+
+[17] Bielik, Pavol, Veselin Raychev, and Martin Vechev. Programming with big code: Lessons, techniques and applications. 1st Summit on Advances in Programming Languages (SNAPL 2015). Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik, 2015.
+
+[18] Yaghmazadeh, Navid, et al. SQLizer: query synthesis from natural language. OOPSLA 2017. **Distinguished Paper Award**
+
+[19] Helgi Sigurbjarnarson, James Bornholt, Emina Torlak, and Xi Wang. Push-Button Verification of File Systems via Crash Refinement. OSDI 2016. **Best Paper Award**
+
+[20] Shaon Barman, Sarah E. Chasins, Rastislav Bodik, Sumit Gulwani. Ringer: web automation by demonstration. OOPSLA 2016.
+
+
 
 
