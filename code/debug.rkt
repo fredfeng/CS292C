@@ -13,4 +13,4 @@
 
 (define ucore (debug [integer?] (same poly factored -6)))
 
-(pretty-display ucore)
+(render ucore)
