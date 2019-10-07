@@ -37,6 +37,8 @@ Friday, 11am, HFH-2157
 5. Combinatorial sketching for finite programs. 	Armando Solar-Lezama, Liviu Tancau, Rastislav Bodik, Sanjit Seshia, Vijay Saraswat. ASPLOS'06.
 6. KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs. Cristian Cadar, Daniel Dunbar, Dawson Engler. OSDI'08
 
+Tips for writing paper [reviews](REVIEW.md).
+
 # Other references
 Coming soon
 
