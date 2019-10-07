@@ -29,6 +29,28 @@ Friday, 11am, HFH-2157
 | 12/4  | Project Demos                                 |        |      |     |  Final Report  |
 
 
+# Grading
+
+1. Programming assignments: 15%
+    1. 3 programming assignments, 5% each
+
+2. Paper reviews: 30%
+    1. 6 papers, 5% each
+    
+3. Final project: 50%
+    1. Team formed by deadline: 5%
+    2. 1-page project proposal: 15%
+    3. Project presentation: 15%
+    4. Final report: 15%
+  
+4. Class Participation: 5%
+
+# Homework
+
+1. [Homework1](hw1/HW1.md)
+2. Homework2
+3. Homework3
+
 # Reading list
 1. A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages. Emina Torlak and Rastislav Bodik. PLDI'14.
 2. Program synthesis using conflict-driven learning. Yu Feng, Ruben Martins, Osbert Bastani, and Isil Dillig.  PLDI'18. **Distinguished Paper Award** 
