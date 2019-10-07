@@ -19,7 +19,10 @@ We first provide a pre-defined **bvmax** function:
     (define (bvmax x y)
         (if (equal? (bvsge x y) (int32 1)) x y))
         
-                
+
+The above implementation is straightforward but not efficient. We'd like to implement an equivalent version 
+without using **if-else** statement.
+
 Task 1: Verifying the equivalence between **bvmax** and **bvmax0**. In particular, 
 complete the **ver** function in [hw1.rkt](hw1.rkt) using the **verify** API in Rosette. 
 If they are not equivalent, please print a counter-example.
