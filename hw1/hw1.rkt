@@ -1,5 +1,7 @@
 #lang rosette
 
+; ----- Modified based on Emina's version. -----;
+
 (require 
  rosette/query/debug 
  rosette/lib/render 
@@ -94,14 +96,14 @@
 ; FIXME: The BV verifier.
 (define (ver impl spec)
   (define-symbolic* in int32? [(procedure-arity spec)])
-  ; please write your code 
+  ; please write your code here.
 
 )
 
 ; FIXME: The BV synthesizer.
 (define (syn impl spec)
   (define-symbolic* in int32? [(procedure-arity spec)])
-  ; please write your code 
+  ; please write your code here.
 
 )
 
@@ -125,8 +127,5 @@
   (5 bvand 3 4)
   (6 bvxor (??) 5))
 
-; Interaction script
-(ver bvmax0 bvmax)
-(syn bvmax1 bvmax)
 
 
