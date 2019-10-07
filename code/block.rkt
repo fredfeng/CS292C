@@ -1,6 +1,6 @@
 #lang rosette
 
-
+;; Another efficient way: https://github.com/emina/rosette/issues/89
 ;; n is the number of examples you need
 (define (print-examples n)
   (define-symbolic x integer?)
