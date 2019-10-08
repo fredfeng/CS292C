@@ -15,3 +15,6 @@
           (assert (not (= x x-value)))
           (cons x-value examples))
         examples)))
+
+
+(print-examples 4)
