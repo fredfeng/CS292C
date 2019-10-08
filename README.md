@@ -51,7 +51,7 @@ Friday, 11am, HFH-2157
 1. Please submit your homework to: cs292cfall19@gmail.com
 2. All paper reviews should be in PDF.
 3. The subject of your email should be: cs292c-fall19-reading1|hw2|proposal-{firstname}-{lastname}.
-For instance, cs292c-reading2-yu-feng
+For instance, cs292c-fall19-reading2-yu-feng
 
 
 # Homework
