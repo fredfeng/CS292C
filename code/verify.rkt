@@ -3,6 +3,9 @@
 
 (define (poly x)
  (+ (* x x x x) (* 6 x x x) (* 11 x x) (* 6 x)))
+
+;; z3 -smt2 xxx.smt2
+(output-smt #t)
  
 (define (factored x)
  (* x (+ x 1) (+ x 2) (+ x 2)))
