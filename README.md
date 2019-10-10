@@ -16,8 +16,8 @@ Friday, 11am, HFH-2157
 | 10/14 | A Modern SAT Solver                           |        |      |     |     |
 | 10/16 | Applications of SAT                           |        |      |     |  HW1,R2   |
 | 10/21 | SAT Modulo Theories                           |        |      |     |     |
-| 10/23 | TBD              |        |   R5   |     |     |
-| 10/28 | Combining Theories                            |        |      |     | Proposal    |
+| 10/23 | Combining Theories              |        |   R5   |     |     |
+| 10/28 | String solver (Tevfik Bultan)                            |        |      |     | Proposal    |
 | 10/30 | The DPLL(T) Framework                         |        |      |     |     |
 | 11/4  | Reasoning about Programs using Hoare logic I  |        |      |     |     |
 | 11/6  | Reasoning about Programs using Hoare logic II |        |      |     |     |
