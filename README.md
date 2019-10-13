@@ -14,7 +14,7 @@ Friday, 11am, HFH-2157
 | 10/7  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    | HW1    |     |
 | 10/9  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)      |      |     | R1    |
 | 10/14 | A Modern SAT Solver                           |        |      |     |     |
-| 10/16 | Applications of SAT                           |        |      |     |  HW1,R2   |
+| 10/16 | Applications of SAT                           |        |   R3   |     |  HW1,R2   |
 | 10/21 | SAT Modulo Theories                           |        |      |     |     |
 | 10/23 | Combining Theories              |        |   R5   |     |     |
 | 10/28 | String solver (Tevfik Bultan)                            |        |      |     | Proposal    |
@@ -24,7 +24,7 @@ Friday, 11am, HFH-2157
 | 11/11 | Symbolic Execution I                          |        |   R6   |     |     |
 | 11/13 | Symbolic Execution II                         |        |      |     |     |
 | 11/18 | Program synthesis by Examples                 |        |      |     |     |
-| 11/20 | Type-directed Program Synthesis               |        |   R3   |     |     |
+| 11/20 | Type-directed Program Synthesis               |        |      |     |     |
 | 11/25 | Program synthesis by natural language         |        |      |     |     |
 | 11/27 | Thanksgiving break                            |        |      |     |     |
 | 12/2  | Program Synthesis using deep learning         |        |  R4    |     |     |
