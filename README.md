@@ -13,7 +13,7 @@ Friday, 11am, HFH-2157
 | 10/2  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |     |     |
 | 10/7  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    | HW1    |     |
 | 10/9  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)      |      |     | R1    |
-| 10/14 | A Modern SAT Solver                           |        |      |     |     |
+| 10/14 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |     |
 | 10/16 | Applications of SAT                           |        |   R3   |     |  HW1,R2   |
 | 10/21 | SAT Modulo Theories                           |        |      |     |     |
 | 10/23 | Combining Theories              |        |   R5   |     |     |
