@@ -23,9 +23,9 @@ Friday, 11am, HFH-2157
 | 11/6  | Reasoning about Programs using Hoare logic II |        |      |     |     |
 | 11/11 | Symbolic Execution I                          |        |   R6   |     |     |
 | 11/13 | Symbolic Execution II                         |        |      |     |     |
-| 11/18 | Program synthesis by Examples                 |        |      |     |     |
-| 11/20 | Type-directed Program Synthesis               |        |      |     |     |
-| 11/25 | Program synthesis by natural language         |        |      |     |     |
+| 11/18 | Symbolic Profiling                 |        |      |     |     |
+| 11/20 | Abstract Interpretation               |        |      |     |     |
+| 11/25 | Type-directed Program Synthesis         |        |      |     |     |
 | 11/27 | Thanksgiving break                            |        |      |     |     |
 | 12/2  | Program Synthesis using deep learning         |        |  R4    |     |     |
 | 12/4  | Project Demos                                 |        |      |     |  Final Report  |
