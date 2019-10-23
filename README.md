@@ -16,11 +16,11 @@ Friday, 11am, HFH-2157
 | 10/14 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |     |
 | 10/16 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |   R3   |     |  HW1,R2   |
 | 10/21 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
-| 10/23 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |   R5   |     |  R3   |
+| 10/23 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |   R5   |  [HW2](hw2/HW2.md)   |  R3   |
 | 10/28 | String solver (Tevfik Bultan)                            |        |      |     | Proposal    |
 | 10/30 | The DPLL(T) Framework                         |        |      |     |     |
 | 11/4  | Reasoning about Programs using Hoare logic I  |        |      |     |     |
-| 11/6  | Reasoning about Programs using Hoare logic II |        |      |     |     |
+| 11/6  | Reasoning about Programs using Hoare logic II |        |      |     |  HW2   |
 | 11/11 | Symbolic Execution I                          |        |   R6   |     |     |
 | 11/13 | Symbolic Execution II                         |        |      |     |     |
 | 11/18 | Symbolic Profiling                 |        |      |     |     |
