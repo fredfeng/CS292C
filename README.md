@@ -13,19 +13,19 @@ Friday, 11am, HFH-2157
 | 10/2  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |     |     |
 | 10/7  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    | HW1    |     |
 | 10/9  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)      |      |     | R1    |
-| 10/14 | A Modern SAT Solver                           |        |      |     |     |
-| 10/16 | Applications of SAT                           |        |      |     |  HW1,R2   |
-| 10/21 | SAT Modulo Theories                           |        |      |     |     |
-| 10/23 | Combining Theories              |        |   R5   |     |     |
+| 10/14 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |     |
+| 10/16 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |   R3   |     |  HW1,R2   |
+| 10/21 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
+| 10/23 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |   R5   |     |  R3   |
 | 10/28 | String solver (Tevfik Bultan)                            |        |      |     | Proposal    |
 | 10/30 | The DPLL(T) Framework                         |        |      |     |     |
 | 11/4  | Reasoning about Programs using Hoare logic I  |        |      |     |     |
 | 11/6  | Reasoning about Programs using Hoare logic II |        |      |     |     |
 | 11/11 | Symbolic Execution I                          |        |   R6   |     |     |
 | 11/13 | Symbolic Execution II                         |        |      |     |     |
-| 11/18 | Program synthesis by Examples                 |        |      |     |     |
-| 11/20 | Type-directed Program Synthesis               |        |   R3   |     |     |
-| 11/25 | Program synthesis by natural language         |        |      |     |     |
+| 11/18 | Symbolic Profiling                 |        |      |     |     |
+| 11/20 | Abstract Interpretation               |        |      |     |     |
+| 11/25 | Type-directed Program Synthesis         |        |      |     |     |
 | 11/27 | Thanksgiving break                            |        |      |     |     |
 | 12/2  | Program Synthesis using deep learning         |        |  R4    |     |     |
 | 12/4  | Project Demos                                 |        |      |     |  Final Report  |
@@ -70,6 +70,8 @@ For instance, cs292c-fall19-reading2-yu-feng
 6. KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs. Cristian Cadar, Daniel Dunbar, Dawson Engler. OSDI'08
 
 Tips for writing paper [reviews](REVIEW.md).
+
+Tips for writing a project [proposal](PROPOSAL.md).
 
 # Other references
 
