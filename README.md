@@ -71,6 +71,8 @@ For instance, cs292c-fall19-reading2-yu-feng
 
 Tips for writing paper [reviews](REVIEW.md).
 
+Tips for writing a project [proposal](PROPOSAL.md).
+
 # Other references
 
 [1] Aaron Bradley and Zohar Manna. The Calculus of Computation. 2010. 
