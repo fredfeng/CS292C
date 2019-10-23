@@ -1,49 +1,36 @@
-The following is the grammar for the **BV** language:
+In this assignment, you need to complete the missing pieces in the DPLL algorithm for solving boolean formulars:
+```
+(define (dpll f)
+  (define g (??? f))
+  (match g
+    [`((,lit) ...) lit]                         ; model
+    [`(,_ ... () ,_ ...) #f]                    ; unsat
+    [`((,assigned) ... (,lit ,_ ,_ ...) ,_ ...) ; search
+     (let* ([undecided (drop g (length assigned))]
+            [result    (??? (??? `((,lit) ,@undecided))
+                           (??? `((,(- lit)) ,@undecided)))])
+       (??? result `(,@assigned ,@result)))]))
+       
+       
+; Applies BCP to f.
+(define (bcp f)
+  (match f
+    [`(,ci ... (,lit) ,cj ...)
+     `((,lit) ,@(??? (unit-rule lit `(,@ci ,@cj))))]
+    [_ f]))
+```                
+Before you start this homework, you should understand the DIMACS format that is a standard interface to SAT solvers.      
+The basic input format is as follows. At the top you can have comment lines that start with a c, like this:
 
-    Prog := Stmt* 
-    Stmt := (define id Expr) | (store id Expr) (load id)
-    Expr := id | const | (unary-op Expr) |
-             (binary-op Expr Expr) | (nary-op Expr+)
-    unary-op := bvneg | bvnot
-    binary-op := = | bvule | bvult | bvuge | bvugt | bvsle | bvslt | bvsge | bvsgt |
-                    bvsdiv | bvsrem | bvshl | bvlshr | bvashr | bvsub
-    nary-op := bvor | bvand | bvxor | bvadd | bvmul
-    id := identifier
-    const := 32-bit integer | true | false
-                
-      
-      
-      
-We first provide a pre-defined **bvmax** function:
-                          
-    (define (bvmax x y)
-        (if (equal? (bvsge x y) (int32 1)) x y))
-        
+>>c This line is a comment.
 
-The above implementation is straightforward but not efficient. We'd like to implement an equivalent version 
-without using **if-else** statement.
+Then comes the problem line, which starts with a p and then says how many variables and clauses there are. For instance, here is a problem line that says this is a CNF problem with 3 variables and 4 clauses:
 
-Task 1: Verifying the equivalence between **bvmax** and **bvmax0**. In particular, 
-complete the **ver** function in [hw1.rkt](hw1.rkt) using the **verify** API in Rosette. 
-If they are not equivalent, please print a counter-example.
-    
-    (def/dbg bvmax0 
-      ([0 r0] [1 r1]) 
-      (2 bvsge 0 1)
-      (3 bvneg 2)
-      (4 bvxor 0 2)
-      (5 bvand 3 4)
-      (6 bvxor 1 5))
+>>p cnf 3 4
 
-Task 2: Synthesizing the **bvmax1** function such that **bvmax1** and **bvmax** are equivalent.
-In particular, complete the **syn** function in [hw1.rkt](hw1.rkt) using the **synthesize** API in Rosette.
+Finally the clauses are listed. Each clause is represented as a list of numbers like 3 and -2. A positive number like 3 represents a positive occurrence of variable 3. A negative number like -2 represents a negated occurrence of variable 2.
+The number 0 is treated in a special way: it is not a variable, but instead marks the end of each clause. This allows a single clause to be split up over multiple lines. For instance, the clause **¬x1 ∨ x3** is represented as:
+>> -1 3 0
 
-    (def bvmax1
-      ([0 r0] [1 r1]) 
-      (2 bvsge 0 1)
-      (3 bvneg (??))
-      (4 bvxor 0 (??))
-      (5 bvand 3 4)
-      (6 bvxor (??) 5))
-      
-      
+Happy hacking.
+
