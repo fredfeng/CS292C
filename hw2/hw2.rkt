@@ -36,7 +36,7 @@
 (define (bcp f)
   (match f
     [`(,ci ... (,lit) ,cj ...)
-     `((,lit) ,@(bcp (unit-rule lit `(,@ci ,@cj))))]
+     `((,lit) ,@(??? (unit-rule lit `(,@ci ,@cj))))]
     [_ f]))
 
 ; Applies the unit rule to f with respect to the given literal.
