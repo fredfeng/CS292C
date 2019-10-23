@@ -29,8 +29,8 @@ Then comes the problem line, which starts with a p and then says how many variab
 >>p cnf 3 4
 
 Finally the clauses are listed. Each clause is represented as a list of numbers like 3 and -2. A positive number like 3 represents a positive occurrence of variable 3. A negative number like -2 represents a negated occurrence of variable 2.
-The number 0 is treated in a special way: it is not a variable, but instead marks the end of each clause. This allows a single clause to be split up over multiple lines. For instance, the clause **¬x1 ∨ x3** is represented as:
->> -1 3 0
+The number 0 is treated in a special way: it is not a variable, but instead marks the end of each clause. This allows a single clause to be split up over multiple lines. For instance, the clause **¬x2 ∨ x3** is represented as:
+>> -2 3 0
 
 Happy hacking.
 
