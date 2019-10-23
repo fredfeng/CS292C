@@ -1,4 +1,4 @@
-In this assignment, you need to complete the missing pieces in the DPLL algorithm for solving boolean formulars:
+In this assignment, you need to complete the missing pieces in the DPLL algorithm for solving CNF formulars:
 ```
 (define (dpll f)
   (define g (??? f))
