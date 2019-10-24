@@ -73,7 +73,7 @@
 
 (define f1 (read-cnf "test1.cnf"))
 (define f2 (read-cnf "test2.cnf"))
-;; This line should print the model: '(16 -17 -21 -28 -13 18 -31 -38 44 -8 -12 -27 40 23 -4 -3 -49 -34 -26 19 36 24 43 42 -5 20 -7 10 -41 46 -33 -37 32 6 25 -48 -9 2 35 22 50 -29 -1 11 -45 39 15 14 47 -30)
+;; This line should print a satisfiable model similar (the model can be different under different OS) to this: '(16 -17 -21 -28 -13 18 -31 -38 44 -8 -12 -27 40 23 -4 -3 -49 -34 -26 19 36 24 43 42 -5 20 -7 10 -41 46 -33 -37 32 6 25 -48 -9 2 35 22 50 -29 -1 11 -45 39 15 14 47 -30)
 (time (dpll f1))
 ;; This following line should print: #f
 (time (dpll f2))
