@@ -58,7 +58,7 @@ For instance, cs292c-fall19-reading2-yu-feng
 # Homework
 
 1. [Homework1](hw1/HW1.md)
-2. Homework2
+2. [Homework2](hw2/HW2.md)
 3. Homework3
 
 # Reading list
