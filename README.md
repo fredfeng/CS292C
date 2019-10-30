@@ -18,10 +18,10 @@ Friday, 11am, HFH-2157
 | 10/21 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
 | 10/23 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |   R5   |  [HW2](hw2/HW2.md)   |  R3   |
 | 10/28 | String solver (Tevfik Bultan)                            |        |      |     | Proposal    |
-| 10/30 | The DPLL(T) Framework                         |        |      |     |     |
-| 11/4  | Reasoning about Programs using Hoare logic I  |        |      |     |     |
+| 10/30 | The DPLL(T) Framework                         | [lec10](lectures/lecture10.pdf)       |   R6   |     |     |
+| 11/4  | Reasoning about Programs using Hoare logic I  |        |      |     |   R5  |
 | 11/6  | Reasoning about Programs using Hoare logic II |        |      |     |  HW2   |
-| 11/11 | Symbolic Execution I                          |        |   R6   |     |     |
+| 11/11 | Symbolic Execution I                          |        |      |     |     |
 | 11/13 | Symbolic Execution II                         |        |      |     |     |
 | 11/18 | Symbolic Profiling                 |        |      |     |     |
 | 11/20 | Abstract Interpretation               |        |      |     |     |
@@ -64,7 +64,7 @@ For instance, cs292c-fall19-reading2-yu-feng
 # Reading list
 1. A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages. Emina Torlak and Rastislav Bodik. PLDI'14.
 2. Program synthesis using conflict-driven learning. Yu Feng, Ruben Martins, Osbert Bastani, and Isil Dillig.  PLDI'18. **Distinguished Paper Award** 
-3. Scaling symbolic evaluation for automated verification of systems code with Serval. Luke Nelson, James Bornholt, Ronghui Gu, Andrew Baumann, Emina Torlak, and Xi Wang. SOSP'2019.
+3. Scaling symbolic evaluation for automated verification of systems code with Serval. Luke Nelson, James Bornholt, Ronghui Gu, Andrew Baumann, Emina Torlak, and Xi Wang. SOSP'2019. **Best Paper Award**
 4. Stochastic superoptimization. 	Eric Schkufza, Rahul Sharma, and Alex Aiken. ASPLOS'13
 5. Combinatorial sketching for finite programs. 	Armando Solar-Lezama, Liviu Tancau, Rastislav Bodik, Sanjit Seshia, Vijay Saraswat. ASPLOS'06.
 6. KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs. Cristian Cadar, Daniel Dunbar, Dawson Engler. OSDI'08
