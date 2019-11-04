@@ -19,7 +19,7 @@ Friday, 11am, HFH-2157
 | 10/23 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |   R5   |  [HW2](hw2/HW2.md)   |  R3   |
 | 10/28 | String solver (Tevfik Bultan)                            |        |      |     | Proposal    |
 | 10/30 | The DPLL(T) Framework                         | [lec10](lectures/lecture10.pdf)       |   R6   |     |     |
-| 11/4  | Reasoning about Programs using Hoare logic I  |        |      |     |   R5  |
+| 11/4  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture11.pdf)        |      |     |   R5  |
 | 11/6  | Reasoning about Programs using Hoare logic II |        |      |     |  HW2   |
 | 11/11 | Symbolic Execution I                          |        |      |     |     |
 | 11/13 | Symbolic Execution II                         |        |      |     |     |
