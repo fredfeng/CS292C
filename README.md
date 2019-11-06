@@ -20,14 +20,14 @@ Friday, 11am, HFH-2157
 | 10/28 | String solver (Tevfik Bultan)                            |        |      |     | Proposal    |
 | 10/30 | The DPLL(T) Framework                         | [lec10](lectures/lecture10.pdf)       |   R6   |     |     |
 | 11/4  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture11.pdf)        |      |     |   R5  |
-| 11/6  | Reasoning about Programs using Hoare logic II |        |      |     |  HW2   |
-| 11/11 | Symbolic Execution I                          |        |      |     |     |
-| 11/13 | Symbolic Execution II                         |        |      |     |     |
+| 11/6  | Reasoning about Programs using Hoare logic II | [lec12](lectures/lecture12.pdf)       |      |     |  HW2   |
+| 11/11 | No class                          |        |      |     |     |
+| 11/13 | Symbolic Execution I                         |        |  R4, HW3    |     |  R6   |
 | 11/18 | Symbolic Profiling                 |        |      |     |     |
 | 11/20 | Abstract Interpretation               |        |      |     |     |
 | 11/25 | Type-directed Program Synthesis         |        |      |     |     |
 | 11/27 | Thanksgiving break                            |        |      |     |     |
-| 12/2  | Program Synthesis using deep learning         |        |  R4    |     |     |
+| 12/2  | Program Synthesis using deep learning         |        |      |     |     |
 | 12/4  | Project Demos                                 |        |      |     |  Final Report  |
 
 
