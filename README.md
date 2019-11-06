@@ -22,7 +22,7 @@ Friday, 11am, HFH-2157
 | 11/4  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture11.pdf)        |      |     |   R5  |
 | 11/6  | Reasoning about Programs using Hoare logic II | [lec12](lectures/lecture12.pdf)       |      |     |  HW2   |
 | 11/11 | No class                          |        |      |     |     |
-| 11/13 | Symbolic Execution I                         |        |  R4, HW3    |     |  R6   |
+| 11/13 | Symbolic Execution I                         |        |  R4     | HW3    |  R6   |
 | 11/18 | Symbolic Profiling                 |        |      |     |     |
 | 11/20 | Abstract Interpretation               |        |      |     |     |
 | 11/25 | Type-directed Program Synthesis         |        |      |     |     |
