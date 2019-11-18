@@ -24,10 +24,10 @@ Friday, 11am, HFH-2157
 | 11/11 | No class                          |        |      |     |     |
 | 11/13 | Symbolic Execution I                         | [lec13](lectures/lecture13.pdf)        |  R4     | [HW3](hw3/HW3.md)    |  R6   |
 | 11/18 | Symbolic Profiling                 |        |      |     |     |
-| 11/20 | Abstract Interpretation               |        |      |     |     |
-| 11/25 | Type-directed Program Synthesis         |        |      |     |     |
-| 11/27 | Thanksgiving break                            |        |      |     |     |
-| 12/2  | Program Synthesis using deep learning         |        |      |     |     |
+| 11/20 | No class               |        |      |     |     |
+| 11/25 | Abstract Interpretation I        |        |      |     | R4   |
+| 11/27 | Abstract Interpretation II                           |        |      |     |  HW3   |
+| 12/2  | Type-directed Program Synthesis         |        |      |     |     |
 | 12/4  | Project Demos                                 |        |      |     |  Final Report  |
 
 
