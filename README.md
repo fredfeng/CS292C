@@ -26,7 +26,7 @@ Friday, 11am, HFH-2157
 | 11/18 | Symbolic Profiling                 |        |      |     |     |
 | 11/20 | No class               |        |      |     |     |
 | 11/25 | Abstract Interpretation I        |        |      |     | R4   |
-| 11/27 | Abstract Interpretation II                           |        |      |     |  HW3   |
+| 11/27 | No class due to the Cave Fire                           |        |      |     |  HW3   |
 | 12/2  | Type-directed Program Synthesis         |        |      |     |     |
 | 12/4  | Project Demos                                 |        |      |     |  Final Report  |
 
