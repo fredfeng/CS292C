@@ -25,9 +25,9 @@ Friday, 11am, HFH-2157
 | 11/13 | Symbolic Execution I                         | [lec13](lectures/lecture13.pdf)        |  R4     | [HW3](hw3/HW3.md)    |  R6   |
 | 11/18 | Symbolic Profiling                 |        |      |     |     |
 | 11/20 | No class               |        |      |     |     |
-| 11/25 | Abstract Interpretation I        |        |      |     | R4   |
+| 11/25 | Abstract Interpretation I        |    [lec14](lectures/lecture14.pdf)     |      |     | R4   |
 | 11/27 | No class due to the Cave Fire                           |        |      |     |  HW3   |
-| 12/2  | Type-directed Program Synthesis         |        |      |     |     |
+| 12/2  | Abstract Interpretation II         |   [lec14](lectures/lecture14.pdf)      |      |     |     |
 | 12/4  | Project Demos                                 |        |      |     |  Final Report  |
 
 
