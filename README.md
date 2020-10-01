@@ -3,32 +3,31 @@
 This course is a comprehensive introduction to solver-aided reasoning for software with a bit focus on program synthesis: an emerging area that sits at the intersection of systems, programming languages, HCI, and artificial intelligence. The goal of program synthesis is to generate programs automatically from high-level, potentially informal and incomplete descriptions. The course covers recent advances in synthesis techniques that differ in the kind of specifications (from input-output examples to formal correctness specifications), search strategies (enumerative, stochastic, or symbolic search), and information to guide the search (counter-example guided synthesis, type-driven synthesis, synthesis with machine learning). The course involves a project, 3 programming assignments, and reviewing research papers.
 
 # Office hour
-Instructor & TA: Yu Feng
+Instructor : Yu Feng
 
 Friday, 11am, HFH-2157
 
 | Date  | Topic                                         | Slides | Read | Out | Due |
 |-------|-----------------------------------------------|--------|------|-----|-----|
-| 9/30  | Introduction                                  |  [lec1](lectures/lecture1.pdf)      |      |     |     |
-| 10/2  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |     |     |
-| 10/7  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    | HW1    |     |
-| 10/9  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)      |      |     | R1    |
-| 10/14 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |     |
-| 10/16 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |   R3   |     |  HW1,R2   |
-| 10/21 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
-| 10/23 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |   R5   |  [HW2](hw2/HW2.md)   |  R3   |
-| 10/28 | String solver (Tevfik Bultan)                            |        |      |     | Proposal    |
-| 10/30 | The DPLL(T) Framework                         | [lec10](lectures/lecture10.pdf)       |   R6   |     |     |
-| 11/4  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture11.pdf)        |      |     |   R5  |
-| 11/6  | Reasoning about Programs using Hoare logic II | [lec12](lectures/lecture12.pdf)       |      |     |  HW2   |
-| 11/11 | No class                          |        |      |     |     |
-| 11/13 | Symbolic Execution I                         | [lec13](lectures/lecture13.pdf)        |  R4     | [HW3](hw3/HW3.md)    |  R6   |
-| 11/18 | Symbolic Profiling                 |        |      |     |     |
-| 11/20 | No class               |        |      |     |     |
+| 10/5  | Introduction                                  |  [lec1](lectures/lecture1.pdf)      |      |     |     |
+| 10/7  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |     |     |
+| 10/12  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    | HW1    |     |
+| 10/14  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)      |      |     | R1    |
+| 10/19 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |     |
+| 10/21 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |   R3   |     |  HW1,R2   |
+| 10/26 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
+| 10/28 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |   R5   |  [HW2](hw2/HW2.md)   |  R3   |
+| 11/2 | String solver (Tevfik Bultan)                            |        |      |     | Proposal    |
+| 11/4 | The DPLL(T) Framework                         | [lec10](lectures/lecture10.pdf)       |   R6   |     |     |
+| 11/9  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture11.pdf)        |      |     |   R5  |
+| 11/11  | Reasoning about Programs using Hoare logic II | [lec12](lectures/lecture12.pdf)       |      |     |  HW2   |
+| 11/16 | No class                          |        |      |     |     |
+| 11/18 | Symbolic Execution I                         | [lec13](lectures/lecture13.pdf)        |  R4     | [HW3](hw3/HW3.md)    |  R6   |
+| 11/23 | Symbolic Profiling                 |        |      |     |     |
 | 11/25 | Abstract Interpretation I        |    [lec14](lectures/lecture14.pdf)     |      |     | R4   |
-| 11/27 | No class due to the Cave Fire                           |        |      |     |  HW3   |
-| 12/2  | Abstract Interpretation II         |   [lec14](lectures/lecture14.pdf)      |      |     |     |
-| 12/4  | Project Demos                                 |        |      |     |  Final Report  |
+| 11/30  | Abstract Interpretation II         |   [lec14](lectures/lecture14.pdf)      |      |     |     |
+| 12/2  | Project Demos                                 |        |      |     |  Final Report  |
+| 12/7  | Project Demos                                 |        |      |     |  Final Report  |
 
 
 # Grading
