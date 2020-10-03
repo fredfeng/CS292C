@@ -10,23 +10,23 @@ Friday, 9am, https://ucsb.zoom.us/my/yufeng
 | Date  | Topic                                         | Slides | Read | Out | Due |
 |-------|-----------------------------------------------|--------|------|-----|-----|
 | 10/5  | Introduction                                  |  [lec1]      |      |     |     |
-| 10/7  | Solver-Aided Programming I (Rosette)          |  [lec2]      |  R1    |     |     |
-| 10/12  | Solver-Aided Programming II (Neo)             |  [lec3]      |  R2    | HW1    |     |
+| 10/7  | Solver-Aided Programming I (Rosette)          |  [lec2]      |  R1    |  HW1   |     |
+| 10/12  | Solver-Aided Programming II (Neo)             |  [lec3]      |  R2    |     |     |
 | 10/14  | SAT Solving Basics                            |  [lec4]     |      |     | R1    |
 | 10/19 | A Modern SAT Solver                           |  [lec5]      |      |     |     |
-| 10/21 | Applications of SAT                           |  [lec6]      |   R3   |     |  HW1,R2   |
+| 10/21 | Applications of SAT                           |  [lec6]      |  R3    |     |  HW1,R2   |
 | 10/26 | SAT Modulo Theories                           |  [lec7]      |      |     |     |
 | 10/28 | Combining Theories              | [lec8]        |      |  [HW2]  |  R3   |
-| 11/2 | The DPLL(T) Framework                             |        |      |     | Proposal    |
-| 11/4 | Reasoning about Programs using Hoare logic I                        |        |      |     |     |
+| 11/2 | The DPLL(T) Framework                             |  [lec9]       |      |     | Proposal    |
+| 11/4 | Reasoning about Programs using Hoare logic I                        |  [lec10]       |  R4    |     |     |
 | 11/9  | Reasoning about Programs using Hoare logic II  | [lec11]        |      |     |     |
 | 11/11  | No class |        |      |     |     |
 | 11/16  | Presentation |        |      |     |  HW2   |
-| 11/18 | Presentation                         |         |       | [HW3]    |     |
+| 11/18 | Presentation                         |         |       | [HW3]    |   R4  |
 | 11/23 | Presentation                 |        |      |     |     |
 | 11/25 | Presentation        |         |      |     |    |
 | 11/30 | Presentation         |         |      |     |     |
-| 12/2  | Presentation                                 |        |      |     |    |
+| 12/2  | Presentation                                 |        |      |     |  HW3  |
 | 12/7  | Virtual Poster Session                                 |        |      |     |  Final Report  |
 
 
