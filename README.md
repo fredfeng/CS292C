@@ -17,17 +17,17 @@ Friday, 11am, HFH-2157
 | 10/21 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |   R3   |     |  HW1,R2   |
 | 10/26 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
 | 10/28 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |   R5   |  [HW2](hw2/HW2.md)   |  R3   |
-| 11/2 | String solver (Tevfik Bultan)                            |        |      |     | Proposal    |
-| 11/4 | The DPLL(T) Framework                         | [lec10](lectures/lecture10.pdf)       |   R6   |     |     |
-| 11/9  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture11.pdf)        |      |     |   R5  |
+| 11/2 | The DPLL(T) Framework                             |        |      |     | Proposal    |
+| 11/4 | Reasoning about Programs using Hoare logic I                        | [lec11](lectures/lecture10.pdf)       |   R6   |     |     |
+| 11/9  | Reasoning about Programs using Hoare logic II  | [lec11](lectures/lecture12.pdf)        |      |     |   R5  |
 | 11/11  | No class |        |      |     |     |
-| 11/16  | Reasoning about Programs using Hoare logic II | [lec12](lectures/lecture12.pdf)       |      |     |  HW2   |
-| 11/18 | Presentation                         | [lec13](lectures/lecture13.pdf)        |  R4     | [HW3](hw3/HW3.md)    |  R6   |
+| 11/16  | Presentation |        |      |     |  HW2   |
+| 11/18 | Presentation                         |         |  R4     | [HW3](hw3/HW3.md)    |  R6   |
 | 11/23 | Presentation                 |        |      |     |     |
-| 11/25 | Presentation        |    [lec14](lectures/lecture14.pdf)     |      |     | R4   |
-| 11/30 | Presentation         |   [lec14](lectures/lecture14.pdf)      |      |     |     |
-| 12/2  | Project Demos                                 |        |      |     |  Final Report  |
-| 12/7  | Project Demos                                 |        |      |     |  Final Report  |
+| 11/25 | Presentation        |         |      |     | R4   |
+| 11/30 | Presentation         |         |      |     |     |
+| 12/2  | Presentation                                 |        |      |     |    |
+| 12/7  | Virtual Poster Session                                 |        |      |     |  Final Report  |
 
 
 # Grading
