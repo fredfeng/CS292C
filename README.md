@@ -9,20 +9,20 @@ Friday, 9am, https://ucsb.zoom.us/my/yufeng
 
 | Date  | Topic                                         | Slides | Read | Out | Due |
 |-------|-----------------------------------------------|--------|------|-----|-----|
-| 10/5  | Introduction                                  |  [lec1](lectures/lecture1.pdf)      |      |     |     |
-| 10/7  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |     |     |
-| 10/12  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    | HW1    |     |
-| 10/14  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)      |      |     | R1    |
-| 10/19 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |     |
-| 10/21 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |   R3   |     |  HW1,R2   |
-| 10/26 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
-| 10/28 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |      |  [HW2](hw2/HW2.md)   |  R3   |
+| 10/5  | Introduction                                  |  [lec1]      |      |     |     |
+| 10/7  | Solver-Aided Programming I (Rosette)          |  [lec2]      |  R1    |     |     |
+| 10/12  | Solver-Aided Programming II (Neo)             |  [lec3]      |  R2    | HW1    |     |
+| 10/14  | SAT Solving Basics                            |  [lec4]     |      |     | R1    |
+| 10/19 | A Modern SAT Solver                           |  [lec5]      |      |     |     |
+| 10/21 | Applications of SAT                           |  [lec6]      |   R3   |     |  HW1,R2   |
+| 10/26 | SAT Modulo Theories                           |  [lec7]      |      |     |     |
+| 10/28 | Combining Theories              | [lec8]        |      |  [HW2]  |  R3   |
 | 11/2 | The DPLL(T) Framework                             |        |      |     | Proposal    |
-| 11/4 | Reasoning about Programs using Hoare logic I                        | [lec11](lectures/lecture10.pdf)       |      |     |     |
-| 11/9  | Reasoning about Programs using Hoare logic II  | [lec11](lectures/lecture12.pdf)        |      |     |     |
+| 11/4 | Reasoning about Programs using Hoare logic I                        |        |      |     |     |
+| 11/9  | Reasoning about Programs using Hoare logic II  | [lec11]        |      |     |     |
 | 11/11  | No class |        |      |     |     |
 | 11/16  | Presentation |        |      |     |  HW2   |
-| 11/18 | Presentation                         |         |       | [HW3](hw3/HW3.md)    |     |
+| 11/18 | Presentation                         |         |       | [HW3]    |     |
 | 11/23 | Presentation                 |        |      |     |     |
 | 11/25 | Presentation        |         |      |     |    |
 | 11/30 | Presentation         |         |      |     |     |
@@ -38,7 +38,7 @@ Friday, 9am, https://ucsb.zoom.us/my/yufeng
 2. Paper reviews: 20%
     1. 4 papers, 5% each
     
-3. Paper presentation (20 mins): 10%
+3. Paper presentation (30 mins): 10%
     
 4. Final project: 50%
     1. Team formed by deadline: 5%
@@ -101,8 +101,13 @@ Tips for writing a project [proposal](PROPOSAL.md).
 
 - Chenming Wu, Haisen Zhao, Chandrakana Nandi, Jeff Lipton, Zachary Tatlock, Adriana Schulz. Carpentry Compiler. SIGGRAPH ASIA 2019.
 
-- Permenev, Anton, et al. "Verx: Safety verification of smart contracts." 2020 IEEE Symposium on Security and Privacy 2020.
+- Permenev, Anton, et al. Verx: Safety verification of smart contracts. 2020 IEEE Symposium on Security and Privacy 2020.
 
+- Chenglong Wang, Yu Feng, Ras Bodik, Alvin Cheung, Isil Dillig. Visualization by Example. POPL'2020.
+
+- Beckett, Ryan, et al. Network configuration synthesis with abstract topologies. PLDI'2017.
+
+- Dai, Wang-Zhou, et al. Bridging machine learning and logical reasoning by abductive learning. NIPS'2019.
 
 
 
