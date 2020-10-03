@@ -5,7 +5,7 @@ This course is a comprehensive introduction to solver-aided reasoning for softwa
 # Office hour
 Instructor : Yu Feng
 
-Friday, 9am, https://ucsb.zoom.us/my/yufeng
+Friday, 9-10 am, https://ucsb.zoom.us/my/yufeng
 
 | Date  | Topic                                         | Slides | Read | Out | Due |
 |-------|-----------------------------------------------|--------|------|-----|-----|
