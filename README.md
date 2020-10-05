@@ -5,11 +5,13 @@ This course is a comprehensive introduction to solver-aided reasoning for softwa
 # Office hour
 Instructor : Yu Feng
 
+Gitter: https://gitter.im/CS292C/community
+
 Friday, 9-10 am, https://ucsb.zoom.us/my/yufeng
 
 | Date  | Topic                                         | Slides | Read | Out | Due |
 |-------|-----------------------------------------------|--------|------|-----|-----|
-| 10/5  | Introduction                                  |  [lec1]      |      |     |     |
+| 10/5  | Introduction                                  |  [lec1](lectures/lecture1.pdf)      |      |     |     |
 | 10/7  | Solver-Aided Programming I (Rosette)          |  [lec2]      |  R1    |  HW1   |     |
 | 10/12  | Solver-Aided Programming II (Neo)             |  [lec3]      |  R2    |     |     |
 | 10/14  | SAT Solving Basics                            |  [lec4]     |      |     | R1    |
