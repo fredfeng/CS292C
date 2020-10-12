@@ -13,8 +13,8 @@ Friday, 9-10 am, https://ucsb.zoom.us/my/yufeng
 |-------|-----------------------------------------------|--------|------|-----|-----|
 | 10/5  | Introduction                                  |  [lec1](lectures/lecture1.pdf)      |      |     |     |
 | 10/7  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |  HW1   |     |
-| 10/12  | Solver-Aided Programming II (Neo)             |  [lec3]      |  R2    |     |     |
-| 10/14  | SAT Solving Basics                            |  [lec4]     |      |     | R1    |
+| 10/12  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    |     |     |
+| 10/14  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)     |      |     | R1    |
 | 10/19 | A Modern SAT Solver                           |  [lec5]      |      |     |     |
 | 10/21 | Applications of SAT                           |  [lec6]      |  R3    |     |  HW1,R2   |
 | 10/26 | SAT Modulo Theories                           |  [lec7]      |      |     |     |
