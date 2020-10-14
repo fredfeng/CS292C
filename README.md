@@ -28,7 +28,7 @@ Friday, 9-10 am, https://ucsb.zoom.us/my/yufeng
 | 11/23 | Presentation                 |        |      |     |     |
 | 11/25 | Presentation        |         |      |     |    |
 | 11/30 | Presentation         |         |      |     |     |
-| 12/2  | Presentation                                 |        |      |     |  HW3  |
+| 12/2  | Autotuning for ML compiler optimizations. Mangpo Phothilimthana (Google Brain)                                 |        |      |     |  HW3  |
 | 12/7  | Virtual Poster Session                                 |        |      |     |  Final Report  |
 
 
