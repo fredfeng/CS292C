@@ -7,7 +7,6 @@ Instructor : Yu Feng
 
 Gitter: https://gitter.im/CS292C/community
 
-Friday, 9-10 am, https://ucsb.zoom.us/my/yufeng
 
 | Date  | Topic                                         | Slides | Read | Out | Due |
 |-------|-----------------------------------------------|--------|------|-----|-----|
