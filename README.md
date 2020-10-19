@@ -26,7 +26,7 @@ Gitter: https://gitter.im/CS292C/community
 | 11/18 | Presentation                         |         |       | [HW3]    |   R4  |
 | 11/23 | Presentation                 |        |      |     |     |
 | 11/25 | Presentation        |         |      |     |    |
-| 11/30 | Presentation         |         |      |     |     |
+| 11/30 | Exploiting Android framework vulnerabilies. Sebastian and Alec (Google Security) |         |      |     |     |
 | 12/2  | Autotuning for ML compiler optimizations. Mangpo Phothilimthana (Google Brain)                                 |        |      |     |  HW3  |
 | 12/7  | Virtual Poster Session                                 |        |      |     |  Final Report  |
 
