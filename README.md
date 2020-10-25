@@ -14,9 +14,9 @@ Gitter: https://gitter.im/CS292C/community
 | 10/7  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |  HW1   |     |
 | 10/12  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    |     |     |
 | 10/14  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)     |      |     | R1    |
-| 10/19 | A Modern SAT Solver                           |  [lec5]      |      |     |     |
-| 10/21 | Applications of SAT                           |  [lec6]      |  R3    |     |  HW1,R2   |
-| 10/26 | SAT Modulo Theories                           |  [lec7]      |      |     |     |
+| 10/19 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |     |
+| 10/21 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |  R3    |     |  HW1,R2   |
+| 10/26 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
 | 10/28 | Combining Theories              | [lec8]        |      |  [HW2]  |  R3   |
 | 11/2 | The DPLL(T) Framework                             |  [lec9]       |      |     | Proposal    |
 | 11/4 | Reasoning about Programs using Hoare logic I                        |  [lec10]       |  R4    |     |     |
