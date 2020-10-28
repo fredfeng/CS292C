@@ -18,8 +18,8 @@ Gitter: https://gitter.im/CS292C/community
 | 10/21 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |  R3    |     |  HW1,R2   |
 | 10/26 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
 | 10/28 | Combining Theories              | [lec8]        |      |  [HW2]  |  R3   |
-| 11/2 | The DPLL(T) Framework                             |  [lec9]       |      |     | Proposal (2 pages)    |
-| 11/4 | Reasoning about Programs using Hoare logic I                        |  [lec10]       |  R4    |     |     |
+| 11/2 | The DPLL(T) Framework                             |  [lec9]       |      |     |     |
+| 11/4 | Reasoning about Programs using Hoare logic I                        |  [lec10]       |  R4    |     |  Proposal (2 pages)   |
 | 11/9  | Reasoning about Programs using Hoare logic II  | [lec11]        |      |     |     |
 | 11/11  | No class |        |      |     |     |
 | 11/16  | Reasoning about Programs using Hoare logic II |        |      |     |  HW2   |
