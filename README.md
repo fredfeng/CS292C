@@ -18,17 +18,17 @@ Gitter: https://gitter.im/CS292C/community
 | 10/21 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |  R3    |     |  HW1,R2   |
 | 10/26 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
 | 10/28 | Combining Theories              | [lec8]        |      |  [HW2]  |  R3   |
-| 11/2 | The DPLL(T) Framework                             |  [lec9]       |      |     | Proposal    |
+| 11/2 | The DPLL(T) Framework                             |  [lec9]       |      |     | Proposal (2 pages)    |
 | 11/4 | Reasoning about Programs using Hoare logic I                        |  [lec10]       |  R4    |     |     |
 | 11/9  | Reasoning about Programs using Hoare logic II  | [lec11]        |      |     |     |
 | 11/11  | No class |        |      |     |     |
 | 11/16  | Reasoning about Programs using Hoare logic II |        |      |     |  HW2   |
-| 11/18 | Presentation: Group1                         |         |       | [HW3]    |   R4  |
+| 11/18 | Presentation: Group1 (20 mins including Q&A)                        |         |       | [HW3]    |   R4  |
 | 11/23 | Presentation: Group2                 |        |      |     |     |
 | 11/25 | Presentation: Group3        |         |      |     |    |
 | 11/30 | Exploiting Android framework vulnerabilies. Sebastian and Alec (Google Security) |         |      |     |     |
 | 12/2  | Autotuning for ML compiler optimizations. Mangpo Phothilimthana (Google Brain)                                 |        |      |     |  HW3  |
-| 12/7  | Virtual Poster Session                                 |        |      |     |  Final Report  |
+| 12/7  | Virtual Poster Session                                 |        |      |     |  Final Report (8 pages)  |
 
 
 # Grading
