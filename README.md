@@ -22,10 +22,10 @@ Gitter: https://gitter.im/CS292C/community
 | 11/4 | Reasoning about Programs using Hoare logic I                        |  [lec10]       |  R4    |     |     |
 | 11/9  | Reasoning about Programs using Hoare logic II  | [lec11]        |      |     |     |
 | 11/11  | No class |        |      |     |     |
-| 11/16  | Presentation |        |      |     |  HW2   |
-| 11/18 | Presentation                         |         |       | [HW3]    |   R4  |
-| 11/23 | Presentation                 |        |      |     |     |
-| 11/25 | Presentation        |         |      |     |    |
+| 11/16  | Reasoning about Programs using Hoare logic II |        |      |     |  HW2   |
+| 11/18 | Presentation: Group1                         |         |       | [HW3]    |   R4  |
+| 11/23 | Presentation: Group2                 |        |      |     |     |
+| 11/25 | Presentation: Group3        |         |      |     |    |
 | 11/30 | Exploiting Android framework vulnerabilies. Sebastian and Alec (Google Security) |         |      |     |     |
 | 12/2  | Autotuning for ML compiler optimizations. Mangpo Phothilimthana (Google Brain)                                 |        |      |     |  HW3  |
 | 12/7  | Virtual Poster Session                                 |        |      |     |  Final Report  |
@@ -60,6 +60,26 @@ Gitter: https://gitter.im/CS292C/community
 1. [Homework1](hw1/HW1.md)
 2. [Homework2](hw2/HW2.md)
 3. [Homework3](hw3/HW3.md)
+
+# Presentation groups
+
+### Group1 (11/18)
+1. Yuke Wang, Chaofan Shou. Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks, CAV17
+2. Roman Aguilera. Deepcoder: Learning to write programs. ICLR'16
+3. Robert McLaughlin. Verx: Safety verification of smart contracts. S&P 2020
+4. Scott Chow. Ringer: web automation by demonstration. OOPSLA 2016
+
+### Group2 (11/23)
+1. Ryan Schroeder. Liquid Type. PLDI'08
+2. Mara Downing. Specification and verification in the field: Applying formal methods to BPF just-in-time compilers in the Linux kernel. OSDI 2020
+3. Alon Albalak. Bridging machine learning and logical reasoning by abductive learning. NIPS'2019
+4. Rohan Bhatia. Network configuration synthesis with abstract topologies. PLDI'2017
+
+### Group3 (11/25)
+1. Lijuan Cheng. Visualization by Example. POPL'2020
+2. Peter Boyland. Automating string processing in spreadsheets using input-output examples. POPL 2011
+3. Ashley Bruce, David Weinflash. Synthesis of biological models from mutation experiments. POPL 2013
+4. Aarti Jivrajani. SQLizer: query synthesis from natural language. OOPSLA 2017
 
 # Reading assignments
 1. A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages. Emina Torlak and Rastislav Bodik. PLDI'14.
