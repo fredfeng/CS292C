@@ -1,6 +1,6 @@
 # CS292C Computer-Aided Reasoning for Software
 
-This course is a comprehensive introduction to solver-aided reasoning for software with a bit focus on program synthesis: an emerging area that sits at the intersection of systems, programming languages, HCI, and artificial intelligence. The goal of program synthesis is to generate programs automatically from high-level, potentially informal and incomplete descriptions. The course covers recent advances in synthesis techniques that differ in the kind of specifications (from input-output examples to formal correctness specifications), search strategies (enumerative, stochastic, or symbolic search), and information to guide the search (counter-example guided synthesis, type-driven synthesis, synthesis with machine learning). The course involves a project, 3 programming assignments, and reviewing research papers.
+This course is a graduate level introduction to automated reasoning techniques and their application in tools for the design, analysis, and construction of software. In the first half of the course, we will survey the logical foundations and algorithms behind SAT solvers and SMT solvers. In the second half of the course, we will apply these techniques to automatic bug finding, program verification, and program synthesis. As a student in this course, you will learn how solvers work, and how to use them to build cool programming tools!
 
 # Office hour
 Instructor : Yu Feng
