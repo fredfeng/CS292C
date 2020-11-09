@@ -20,7 +20,7 @@ Gitter: https://gitter.im/CS292C/community
 | 10/28 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |      |  [HW2]  |  R3   |
 | 11/2 | The DPLL(T) Framework                             |  [lec9](lectures/lecture9.pdf)       |      |     |     |
 | 11/4 | The DPLL(T) Framework II                       |  [lec10]       |  R4    |     |  Proposal (2 pages)   |
-| 11/9  | Reasoning about Programs using Hoare logic I  | [lec11]        |      |     |     |
+| 11/9  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture10.pdf)        |      |     |     |
 | 11/11  | No class |        |      |     |     |
 | 11/16  | Reasoning about Programs using Hoare logic II |        |      |     |  HW2   |
 | 11/18 | Presentation: Group1 (20 mins including Q&A)                        |         |       | [HW3]    |   R4  |
