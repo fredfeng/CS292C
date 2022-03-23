@@ -24,11 +24,11 @@ Gitter: https://gitter.im/CS292C/community
 | 4/27 | The DPLL(T) Framework II                       |  [lec10]       |  R4    |     |  Proposal (2 pages)   |
 | 5/2  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture10.pdf)        |      |     |     |
 | 5/4  | Reasoning about Programs using Hoare logic II|        |      |     |     |
-| 5/9  | Zero-knowledge Proofs  |        |      |     |  HW2   |
-| 5/11 | Formal Verification for Zero-knowledge Proofs                       |         |       | [HW3]    |   R4  |
-| 5/16 | Attack Synthesis for Blockchain Security                 |        |      |     |     |
-| 5/18 | Invairant Generation        |         |      |     |    |
-| 5/23 | TBD |         |      |     |     |
+| 5/9  | Zero-knowledge Proofs in a nutshell (Brian) |        |      |     |  HW2   |
+| 5/11 | Formal Verification for Zero-knowledge Proofs using Ecne (Franklyn)                     |         |       | [HW3]    |   R4  |
+| 5/16 | Formal Verification for Zero-knowledge Proofs using Rosette (Yanju)                |        |      |     |     |
+| 5/18 | Attack Synthesis for Blockchain Security        |         |      |     |    |
+| 5/23 | Invairant Generation  |         |      |     |     |
 | 5/25  | TBD                                 |        |      |     |  HW3  |
 | 6/1  | Virtual Poster Session                                 |        |      |     |  Final Report (8 pages)  |
 
