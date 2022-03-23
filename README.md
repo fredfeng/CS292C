@@ -5,6 +5,8 @@ This course is a graduate level introduction to automated reasoning techniques a
 # Office hour
 Instructor : Yu Feng
 
+Time: 1pm-2:30pm, M/W
+
 Gitter: https://gitter.im/CS292C/community
 
 
@@ -60,26 +62,6 @@ Gitter: https://gitter.im/CS292C/community
 1. [Homework1](hw1/HW1.md)
 2. [Homework2](hw2/HW2.md)
 3. [Homework3](hw3/HW3.md)
-
-# Presentation groups
-
-### Group1 (11/18)
-1. Yuke Wang, Chaofan Shou. Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks, CAV17
-2. Roman Aguilera. Deepcoder: Learning to write programs. ICLR'16
-3. Robert McLaughlin. Verx: Safety verification of smart contracts. S&P 2020
-4. Scott Chow. Ringer: web automation by demonstration. OOPSLA 2016
-
-### Group2 (11/23)
-1. Ryan Schroeder. Liquid Type. PLDI'08
-2. Mara Downing. Specification and verification in the field: Applying formal methods to BPF just-in-time compilers in the Linux kernel. OSDI 2020
-3. Alon Albalak. Bridging machine learning and logical reasoning by abductive learning. NIPS'2019
-4. Rohan Bhatia. Network configuration synthesis with abstract topologies. PLDI'2017
-
-### Group3 (11/25)
-1. Lijuan Cheng. Visualization by Example. POPL'2020
-2. Peter Boyland. Automating string processing in spreadsheets using input-output examples. POPL 2011
-3. Ashley Bruce, David Weinflash. Synthesis of biological models from mutation experiments. POPL 2013
-4. Aarti Jivrajani. SQLizer: query synthesis from natural language. OOPSLA 2017
 
 # Reading assignments
 1. A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages. Emina Torlak and Rastislav Bodik. PLDI'14.
