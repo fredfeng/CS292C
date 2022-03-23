@@ -28,8 +28,8 @@ Gitter: https://gitter.im/CS292C/community
 | 5/11 | Formal Verification for Zero-knowledge Proofs                       |         |       | [HW3]    |   R4  |
 | 5/16 | Attack Synthesis for Blockchain Security                 |        |      |     |     |
 | 5/18 | Invairant Generation        |         |      |     |    |
-| 5/23 | Exploiting Android framework vulnerabilies. Sebastian and Alec (Google Security) |         |      |     |     |
-| 5/25  | Autotuning for ML compiler optimizations. Mangpo Phothilimthana (Google Brain)                                 |        |      |     |  HW3  |
+| 5/23 | TBD |         |      |     |     |
+| 5/25  | TBD                                 |        |      |     |  HW3  |
 | 6/1  | Virtual Poster Session                                 |        |      |     |  Final Report (8 pages)  |
 
 
