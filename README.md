@@ -10,25 +10,25 @@ Gitter: https://gitter.im/CS292C/community
 
 | Date  | Topic                                         | Slides | Read | Out | Due |
 |-------|-----------------------------------------------|--------|------|-----|-----|
-| 10/5  | Introduction                                  |  [lec1](lectures/lecture1.pdf)      |      |     |     |
-| 10/7  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |  HW1   |     |
-| 10/12  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    |     |     |
-| 10/14  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)     |      |     | R1    |
-| 10/19 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |     |
-| 10/21 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |  R3    |     |  HW1,R2   |
-| 10/26 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
-| 10/28 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |      |  [HW2]  |  R3   |
-| 11/2 | The DPLL(T) Framework                             |  [lec9](lectures/lecture9.pdf)       |      |     |     |
-| 11/4 | The DPLL(T) Framework II                       |  [lec10]       |  R4    |     |  Proposal (2 pages)   |
-| 11/9  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture10.pdf)        |      |     |     |
-| 11/11  | No class |        |      |     |     |
-| 11/16  | Reasoning about Programs using Hoare logic II |        |      |     |  HW2   |
-| 11/18 | Presentation: Group1 (20 mins including Q&A)                        |         |       | [HW3]    |   R4  |
-| 11/23 | Presentation: Group2                 |        |      |     |     |
-| 11/25 | Presentation: Group3        |         |      |     |    |
-| 11/30 | Exploiting Android framework vulnerabilies. Sebastian and Alec (Google Security) |         |      |     |     |
-| 12/2  | Autotuning for ML compiler optimizations. Mangpo Phothilimthana (Google Brain)                                 |        |      |     |  HW3  |
-| 12/7  | Virtual Poster Session                                 |        |      |     |  Final Report (8 pages)  |
+| 3/28  | Introduction                                  |  [lec1](lectures/lecture1.pdf)      |      |     |     |
+| 3/30  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |  HW1   |     |
+| 4/4  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    |     |     |
+| 4/6  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)     |      |     | R1    |
+| 4/11 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |     |
+| 4/13 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |  R3    |     |  HW1,R2   |
+| 4/18 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
+| 4/20 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |      |  [HW2]  |  R3   |
+| 4/25 | The DPLL(T) Framework                             |  [lec9](lectures/lecture9.pdf)       |      |     |     |
+| 4/27 | The DPLL(T) Framework II                       |  [lec10]       |  R4    |     |  Proposal (2 pages)   |
+| 5/2  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture10.pdf)        |      |     |     |
+| 5/4  | Reasoning about Programs using Hoare logic II|        |      |     |     |
+| 5/9  | Zero-knowledge Proofs  |        |      |     |  HW2   |
+| 5/11 | Formal Verification for Zero-knowledge Proofs                       |         |       | [HW3]    |   R4  |
+| 5/16 | Attack Synthesis for Blockchain Security                 |        |      |     |     |
+| 5/18 | Presentation: Group3        |         |      |     |    |
+| 5/23 | Exploiting Android framework vulnerabilies. Sebastian and Alec (Google Security) |         |      |     |     |
+| 5/25  | Autotuning for ML compiler optimizations. Mangpo Phothilimthana (Google Brain)                                 |        |      |     |  HW3  |
+| 6/1  | Virtual Poster Session                                 |        |      |     |  Final Report (8 pages)  |
 
 
 # Grading
