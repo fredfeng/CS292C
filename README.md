@@ -112,3 +112,16 @@ Tips for writing a project [proposal](PROPOSAL.md).
 
 
 
+# Academic Integrity
+- Cheating WILL be taken seriously. It is not fair toward honest students to take cheating lightly, nor is it fair to the cheater to let him/her go on thinking that cheating is a reasonable alternative in life.
+- The following is not considered cheating:
+   - discussing broad ideas about programming assignments in groups, without being at a computer (with code-writing and debugging done individually, later).
+- The following is considered cheating:
+   - discussing programming assignments with someone who has already completed the problem, or looking at their completed solution.
+   - looking at anyone else’s solution
+   - Previous versions of the class.
+   - leaving your code (for example in an online repository) visible to others, leading others to look at your solution.
+   - receiving, providing, or soliciting assistance from unauthorized sources during a test.
+- Programming assignments are not intended to be grade-makers, but to prepare you for the tests, which are the grade-makers. Cheating on the programming assignment is not only unethical, but shows a fundamental misunderstanding of the purpose of these assignments.
+- Penalties: First time: a zero for the assignment; Second time: an “F” in the course.
+
