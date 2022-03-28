@@ -7,7 +7,7 @@ Instructor : Yu Feng
 
 Lecture Time: 1pm-2:30pm, M/W, Phelps 2510
 
-Office hour: 2:30pm-3:30pm, Fri, PLSE Lab. Phelps 3523
+Office hour: 2:30pm-3:30pm, Wed, PLSE Lab. Phelps 3523
 
 Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfotbR6Hsv1yy~z7dqw
 
