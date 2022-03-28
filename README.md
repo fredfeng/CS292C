@@ -5,9 +5,9 @@ This course is a graduate level introduction to automated reasoning techniques a
 # Office hour
 Instructor : Yu Feng
 
-Time: 1pm-2:30pm, M/W
+Time: 1pm-2:30pm, M/W, Phelps 2510
 
-Gitter: https://gitter.im/CS292C/community
+Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfotbR6Hsv1yy~z7dqw
 
 
 | Date  | Topic                                         | Slides | Read | Out | Due |
@@ -74,7 +74,7 @@ Tips for writing paper [reviews](REVIEW.md).
 
 Tips for writing a project [proposal](PROPOSAL.md).
 
-# Presentation list
+# References
 
 - Rondon, Patrick M., Ming Kawaguci, and Ranjit Jhala. "Liquid types." PLDI'2008.
 
