@@ -5,7 +5,9 @@ This course is a graduate level introduction to automated reasoning techniques a
 # Office hour
 Instructor : Yu Feng
 
-Time: 1pm-2:30pm, M/W, Phelps 2510
+Lecture Time: 1pm-2:30pm, M/W, Phelps 2510
+
+Office hour: 2:30pm-3:30pm, Fri, PLSE Lab. Phelps 3523
 
 Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfotbR6Hsv1yy~z7dqw
 
@@ -35,33 +37,29 @@ Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfot
 
 # Grading
 
-1. Programming assignments: 15%
-    1. 3 programming assignments, 5% each
+1. Programming assignments: 40%
+    1. 4 programming assignments, 10% each
 
 2. Paper reviews: 20%
     1. 4 papers, 5% each
-    
-3. Paper presentation (30 mins): 10%
-    
-4. Final project: 50%
+        
+3. Final project: 40%
     1. Team formed by deadline: 5%
-    2. 1-page project proposal: 15%
-    3. Project presentation: 15%
-    4. Final report: 15%
-  
-5. Class Participation: 5%
+    2. 1-page project proposal: 10%
+    3. Project presentation (Poster): 10%
+    4. Executable code: 5%
+    5. Final report: 10%
 
 ### Submission
 1. Please submit your homework to gradescope: https://www.gradescope.com
 2. All paper reviews should be in PDF.
-3. Due at **9am** before the lecture starts.
-
 
 # Homework
 
 1. [Homework1](hw1/HW1.md)
 2. [Homework2](hw2/HW2.md)
 3. [Homework3](hw3/HW3.md)
+3. [Homework4](hw4/HW4.md)
 
 # Reading assignments
 1. A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages. Emina Torlak and Rastislav Bodik. PLDI'14.
