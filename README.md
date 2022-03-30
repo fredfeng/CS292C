@@ -35,7 +35,7 @@ Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfot
 | 6/1  | Virtual Poster Session                                 |        |      |     |  Final Report (8 pages)  |
 
 
-# Grading
+# Grading (No curving)
 
 1. Programming assignments: 40%
     1. 4 programming assignments, 10% each
@@ -49,6 +49,18 @@ Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfot
     3. Project presentation (Poster): 10%
     4. Executable code: 5%
     5. Final report: 10%
+
+| Letter | Percentage |
+|--------|------------|
+| A+     | 95–100%    |
+| A      | 90–94%     |
+| A-     | 85–89%     |
+| B+     | 80–84%     |
+| B      | 75–79%     |
+| B-     | 70–74%     |
+| C+     | 65–69%     |
+| C      | 60–64%     |
+| F      | <60%       |
 
 ### Submission
 1. Please submit your homework to gradescope: https://www.gradescope.com
