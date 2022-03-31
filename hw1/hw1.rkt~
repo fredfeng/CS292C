@@ -2,7 +2,9 @@
 
 ; ----- Modified based on Emina's version. -----;
 
-(require  
+(require 
+ rosette/query/debug 
+ rosette/lib/render 
  rosette/lib/synthax
  (prefix-in $ (only-in rosette bveq bvslt bvsgt bvsle bvsge bvult bvugt bvule bvuge))
  (only-in racket [eval racket/eval]))

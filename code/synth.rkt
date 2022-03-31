@@ -1,7 +1,9 @@
 #lang rosette
 
 (require rosette/lib/synthax)
- 
+
+(current-bitwidth 16)
+
 (define (poly x)
  (+ (* x x x x) (* 6 x x x) (* 11 x x) (* 6 x)))
  
