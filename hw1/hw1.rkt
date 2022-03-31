@@ -24,12 +24,6 @@
     [(_ in) (with-syntax ([iden (syntax/loc #'in identity)])
               (syntax/loc #'in (iden in)))]))
 
-; The def/debug macro is the same as def, except that it marks the
-; defined procedure as a candidate for debugging.
-(define-syntax-rule (def/dbg id ([idx r] ...) (out op in ...) ...)
-  (define/debug (id r ...)
-    (interpret `((out op ,(relax-reg in) ...) ...) `(,r ...))))
-
 ; ----- BV semantics -----;
 
 ; BV comparison operators return 1/0 instead of #t/#f.
@@ -93,14 +87,12 @@
 
 ; FIXME: The BV verifier.
 (define (ver impl spec)
-  (define-symbolic* in int32? [(procedure-arity spec)])
   ; please write your code here.
 
 )
 
 ; FIXME: The BV synthesizer.
 (define (syn impl spec)
-  (define-symbolic* in int32? [(procedure-arity spec)])
   ; please write your code here.
 
 )
@@ -109,7 +101,7 @@
 (define (bvmax x y)
   (if (equal? (bvsge x y) (int32 1)) x y))
 
-(def/dbg bvmax0 
+(def bvmax0 
   ([0 r0] [1 r1]) 
   (2 bvsge 0 1)
   (3 bvneg 2)
@@ -125,5 +117,10 @@
   (5 bvand 3 4)
   (6 bvxor (??) 5))
 
+; FIXME: Invoke your ver function to verify the equivalence between bvmax and bvmax0.
+; please write your code here.
 
+
+; FIXME: Invoke your BV synthesizer to complete bvmax1 function such that bvmax1 and bvmax are equivalent.
+; please write your code here.
 
