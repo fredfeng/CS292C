@@ -18,8 +18,8 @@ Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfot
 | 3/30  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |  HW1   |     |
 | 4/4  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    |     |     |
 | 4/6  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)     |      |     | R1    |
-| 4/11 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |     |
-| 4/13 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |  R3    |     |  HW1,R2   |
+| 4/11 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |   HW1  |
+| 4/13 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |  R3    |     |  R2   |
 | 4/18 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
 | 4/20 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |      |  [HW2]  |  R3   |
 | 4/25 | The DPLL(T) Framework                             |  [lec9](lectures/lecture9.pdf)       |      |     |     |
