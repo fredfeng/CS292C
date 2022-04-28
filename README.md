@@ -15,23 +15,23 @@ Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfot
 | Date  | Topic                                         | Slides | Read | Out | Due |
 |-------|-----------------------------------------------|--------|------|-----|-----|
 | 3/28  | Introduction                                  |  [lec1](lectures/lecture1.pdf)      |      |     |     |
-| 3/30  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |  HW1   |     |
+| 3/30  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |  [HW1](hw1/HW1.md)   |     |
 | 4/4  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    |     |     |
 | 4/6  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)     |      |     | R1    |
-| 4/11 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |     |   HW1  |
+| 4/11 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |   [HW2](hw2/HW2.md)  |   HW1  |
 | 4/13 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |  R3    |     |  R2   |
-| 4/18 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |     |
-| 4/20 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |      |  [HW2]  |  R3   |
+| 4/18 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      | HW3    |  HW2   |
+| 4/20 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |      |    |  R3   |
 | 4/25 | The DPLL(T) Framework                             |  [lec9](lectures/lecture9.pdf)       |      |     |     |
 | 4/27 | The DPLL(T) Framework II                       |  [lec10]       |  R4    |     |  Proposal (2 pages)   |
-| 5/2  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture10.pdf)        |      |     |     |
+| 5/2  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture10.pdf)        |      | HW4    |  HW3   |
 | 5/4  | Reasoning about Programs using Hoare logic II|        |      |     |     |
-| 5/9  | Zero-knowledge Proofs in a nutshell (Brian) |        |      |     |  HW2   |
-| 5/11 | Formal Verification for Zero-knowledge Proofs using Ecne (Franklyn)                     |         |       | [HW3]    |   R4  |
-| 5/16 | Formal Verification for Zero-knowledge Proofs using Rosette (Yanju)                |        |      |     |     |
+| 5/9  | Zero-knowledge Proofs in a nutshell (Brian) |        |      |     |     |
+| 5/11 | Formal Verification for Zero-knowledge Proofs using Ecne (Franklyn)                     |         |       |     |   R4 |
+| 5/16 | Formal Verification for Zero-knowledge Proofs using Rosette (Yanju)                |        |      |     |  HW4   |
 | 5/18 | Attack Synthesis for Blockchain Security        |         |      |     |    |
 | 5/23 | Invairant Generation  |         |      |     |     |
-| 5/25  | TBD                                 |        |      |     |  HW3  |
+| 5/25  | TBD                                 |        |      |     |    |
 | 6/1  | Virtual Poster Session                                 |        |      |     |  Final Report (8 pages)  |
 
 
