@@ -20,15 +20,15 @@ Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfot
 | 4/6  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)     |      |     | R1    |
 | 4/11 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |   [HW2](hw2/HW2.md)  |   HW1  |
 | 4/13 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |  R3    |     |  R2   |
-| 4/18 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      | HW3    |  HW2   |
+| 4/18 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |  HW2   |
 | 4/20 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |      |    |  R3   |
 | 4/25 | The DPLL(T) Framework                             |  [lec9](lectures/lecture9.pdf)       |      |     |     |
 | 4/27 | The DPLL(T) Framework II                       |  [lec10]       |  R4    |     |  Proposal (2 pages)   |
 | 5/2  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture10.pdf)        |      |     |     |
 | 5/4  | Reasoning about Programs using Hoare logic II|        |      |     |     |
-| 5/9  | Zero-knowledge Proofs in a nutshell (Brian) |        |      |     |     |
-| 5/11 | Formal Verification for Zero-knowledge Proofs using Ecne (Franklyn)                     |         |       |     |   R4 |
-| 5/16 | Formal Verification for Zero-knowledge Proofs using Rosette (Yanju)                |        |      |  HW3   |     |
+| 5/9  | Zero-knowledge Proofs in a nutshell (Brian) |   [lec](https://tinyurl.com/yu6v655m)     |      |     |     |
+| 5/11 | Formal Verification for Zero-knowledge Proofs using Ecne (Franklyn)                     |     [lec](https://tinyurl.com/yseccv6x)    |       |     |   R4 |
+| 5/16 | Formal Verification for Zero-knowledge Proofs using Rosette (Yanju)                |        |      |  [HW3](hw3/HW3.md)   |     |
 | 5/18 | Attack Synthesis for Blockchain Security        |         |      |     |    |
 | 5/23 | Invairant Generation  |         |      |     |     |
 | 5/25  | TBD                                 |        |      |     |    |
@@ -71,7 +71,6 @@ Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfot
 1. [Homework1](hw1/HW1.md)
 2. [Homework2](hw2/HW2.md)
 3. [Homework3](hw3/HW3.md)
-3. [Homework4](hw4/HW4.md)
 
 # Reading assignments
 1. A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages. Emina Torlak and Rastislav Bodik. PLDI'14.
