@@ -28,7 +28,7 @@ Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfot
 | 5/4  | Reasoning about Programs using Hoare logic II|    [lec12](lectures/lecture11.pdf)    |      |     |     |
 | 5/9  | Zero-knowledge Proofs in a nutshell (Brian) |   [lec](https://tinyurl.com/yu6v655m)     |      |     |     |
 | 5/11 | Formal Verification for Zero-knowledge Proofs using Ecne (Franklyn)                     |     [lec](https://tinyurl.com/yseccv6x)    |       |     |   R4 |
-| 5/16 | Symbolic Execution               |   [lec7](lectures/lecture13.pdf)      |      |  [HW3](hw3/HW3.md)   |     |
+| 5/16 | Symbolic Execution               |   [lec13](lectures/lecture13.pdf)      |      |  [HW3](hw3/HW3.md)   |     |
 | 5/18 | Attack Synthesis for Blockchain Security        |         |      |     |    |
 | 5/23 | Invairant Generation with RL  |         |      |     |     |
 | 5/25  | Course Summary                                 |        |      |     |    |
