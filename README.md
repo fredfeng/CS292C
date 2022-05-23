@@ -25,13 +25,13 @@ Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfot
 | 4/25 | The DPLL(T) Framework                             |  [lec9](lectures/lecture9.pdf)       |      |     |     |
 | 4/27 | The DPLL(T) Framework II                       |  [lec10]       |  R4    |     |  Proposal (2 pages)   |
 | 5/2  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture10.pdf)        |      |     |     |
-| 5/4  | Reasoning about Programs using Hoare logic II|        |      |     |     |
+| 5/4  | Reasoning about Programs using Hoare logic II|    [lec12](lectures/lecture11.pdf)    |      |     |     |
 | 5/9  | Zero-knowledge Proofs in a nutshell (Brian) |   [lec](https://tinyurl.com/yu6v655m)     |      |     |     |
 | 5/11 | Formal Verification for Zero-knowledge Proofs using Ecne (Franklyn)                     |     [lec](https://tinyurl.com/yseccv6x)    |       |     |   R4 |
-| 5/16 | Formal Verification for Zero-knowledge Proofs using Rosette (Yanju)                |        |      |  [HW3](hw3/HW3.md)   |     |
+| 5/16 | Symbolic Execution               |   [lec7](lectures/lecture13.pdf)      |      |  [HW3](hw3/HW3.md)   |     |
 | 5/18 | Attack Synthesis for Blockchain Security        |         |      |     |    |
-| 5/23 | Invairant Generation  |         |      |     |     |
-| 5/25  | TBD                                 |        |      |     |    |
+| 5/23 | Invairant Generation with RL  |         |      |     |     |
+| 5/25  | Course Summary                                 |        |      |     |    |
 | 6/1  | Virtual Poster Session                                 |        |      |     |  Final Report (8 pages), HW3  |
 
 
