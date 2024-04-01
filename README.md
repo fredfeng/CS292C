@@ -1,46 +1,45 @@
 # CS292C Computer-Aided Reasoning for Software
 
-This course is a graduate level introduction to automated reasoning techniques and their application in tools for the design, analysis, and construction of software. In the first half of the course, we will survey the logical foundations and algorithms behind SAT solvers and SMT solvers. In the second half of the course, we will apply these techniques to automatic bug finding, program verification, and program synthesis. As a student in this course, you will learn how solvers work, and how to use them to build cool programming tools!
+This course is a graduate level introduction to formal program verification techniques, and their application in tools for the design, analysis, and construction of software. In the first half of the course, we will survey the automated side of program verification -- introducing the logical foundations and algorithms behind SAT and SMT **solvers**. However, as we will see, the automated approach is inherently limited by the undecidability problem. Thus, in the second half of the course, we will turn to manual side, which aims to prove the correctness of programs with *manual proofs* machine-checked by an **interactive theorem prover**.
 
 # Office hour
 
 Instructor : Yu Feng
 
-Office hour: TBD
+- Office hour: TBD
 
 TA/Tutorial Instructor: Junrui Liu (junrui@ucsb.edu)
 
-Office hour: 2pm-3pm, Friday, Place TBD
+- Office hour: 2pm-3pm, Friday, Place TBD
 
 Lecture Time: 11am-12:50pm, M/W, Phelps 3526
-
 
 Slack: TBD
 
 
-| #   | Date      | Lecture                                               | Tutorial                  |
-| --- | --------- | ----------------------------------------------------- | ------------------------- |
-| 1   | 4/1/2024  | Overview                                              | Dafny                     |
-| 2   | 4/3/2024  | IMP: Syntax & Semantics                               | OCaml: Basics, Data Types |
-| 3   | 4/8/2024  | Hoare Logic 1                                         | OCaml: Recursive Types    |
-| 4   | 4/10/2024 | Hoare Logic 2                                         | OCaml: Refs, Modules      |
-| 5   | 4/15/2024 | Guarded Commands, VC Gen                              | Project 1 Walkthrough, z3 |
-| 6   | 4/17/2024 | SMT Solvers: Overview                                 |                           |
-| 7   | 4/22/2024 | SAT: Basics, DPLL                                     |                           |
-| 8   | 4/24/2024 | SAT: CDCL                                             |                           |
-| 9   | 4/29/2024 | SAT: Extensions & Applications; Theory of Bit-Vectors |                           |
-| 10  | 5/1/2024  | More Theories: Uninterpreted Functions, Arrays        |                           |
-| 11  | 5/6/2024  | More Theories: LIA, LRA                               |                           |
-| 12  | 5/8/2024  | Nelson-Oppen                                          |                           |
-| 13  | 5/13/2024 | DPLL(T)                                               |                           |
-| 14  | 5/15/2024 | (TBD)                                                 |                           |
-| 15  | 5/20/2024 |                                                       |                           |
-| 16  | 5/22/2024 | -                                                     | -                         |
-| 17  | 5/27/2024 | Symbolic Execution                                    |                           |
-| 18  | 5/29/2024 | Program Synthesis                                     |                           |
-| 19  | 6/3/2024  | Solver-Aided Programming                              |                           |
-| 20  | 6/5/2024  | (Research Topics)                                     | -                         |
-| -   | 6/14/2024 | (Quarter Ends)                                        |                           |
+| #   | Date | Lecture                                               | Tutorial                                          |
+| --- | ---- | ----------------------------------------------------- | ------------------------------------------------- |
+| 1   | 4/1  | [Overview](./lectures/lecture1.pdf)                   | Dafny ([demo.dfy](./tutorials/01-dafny/demo.dfy)) |
+| 2   | 4/3  | IMP: Syntax & Semantics                               | OCaml: Basics, Data Types                         |
+| 3   | 4/8  | Hoare Logic 1                                         | OCaml: Recursive Types                            |
+| 4   | 4/10 | Hoare Logic 2                                         | OCaml: Refs, Modules                              |
+| 5   | 4/15 | Guarded Commands, VC Gen                              | Project 1 Walkthrough, z3                         |
+| 6   | 4/17 | SMT Solvers: Overview                                 |                                                   |
+| 7   | 4/22 | SAT: Basics, DPLL                                     |                                                   |
+| 8   | 4/24 | SAT: CDCL                                             |                                                   |
+| 9   | 4/29 | SAT: Extensions & Applications; Theory of Bit-Vectors |                                                   |
+| 10  | 5/1  | More Theories: Uninterpreted Functions, Arrays        |                                                   |
+| 11  | 5/6  | More Theories: LIA, LRA                               |                                                   |
+| 12  | 5/8  | Nelson-Oppen                                          |                                                   |
+| 13  | 5/13 | DPLL(T)                                               |                                                   |
+| 14  | 5/15 | (TBD)                                                 |                                                   |
+| 15  | 5/20 |                                                       |                                                   |
+| 16  | 5/22 | -                                                     | -                                                 |
+| 17  | 5/27 | Symbolic Execution                                    |                                                   |
+| 18  | 5/29 | Program Synthesis                                     |                                                   |
+| 19  | 6/3  | Solver-Aided Programming                              |                                                   |
+| 20  | 6/5  | (Research Topics)                                     | -                                                 |
+| -   | 6/14 | (Quarter Ends)                                        |                                                   |
 
 
 # Grading (No curving)
@@ -57,19 +56,19 @@ Slack: TBD
 | C      | 60–64%     |
 | F      | <60%       |
 
-1. Weekly written assignments: 40%
+- Weekly written assignments: 40%
    - Self-graded on **effort** on a scale of 0-2, but will be checked by the TA:
      - 0: problem not attempted at all
      - 1: problem attempted, but not fully solved, and all work shown
      - 2: problem fully solved
-   - *A self-grade of 1 is enough to get full credit for the problem.*
+   - *A self-grade of 1 is enough to get full credit for a problem.*
 
-2. 3 programming projects: 60%
+- 3 programming projects: 60%
 
 
 
 # Late Policy
-You have a total of 10 late days to be used throughout the quarter. You can use them in any way you like, but once you run out, late assignments will not be accepted.
+You have a total of 10 late days to be used throughout the quarter. You can use them in any way you like.
 
 
 
