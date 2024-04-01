@@ -5,9 +5,11 @@ This course is a graduate level introduction to automated reasoning techniques a
 # Office hour
 
 Instructor : Yu Feng
+
 Office hour: TBD
 
 TA/Tutorial Instructor: Junrui Liu (junrui@ucsb.edu)
+
 Office hour: 2pm-3pm, Friday, Place TBD
 
 Lecture Time: 11am-12:50pm, M/W, Phelps 3526
@@ -58,9 +60,9 @@ Slack: TBD
 1. Weekly written assignments: 40%
    - Self-graded on **effort** on a scale of 0-2, but will be checked by the TA:
      - 0: problem not attempted at all
-     - 1: problem not attempted but not fully solved, and all work shown
+     - 1: problem attempted, but not fully solved, and all work shown
      - 2: problem fully solved
-   - A self-grade of 1 is enough to get full credit for the problem.
+   - *A self-grade of 1 is enough to get full credit for the problem.*
 
 2. 3 programming projects: 60%
 
