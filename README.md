@@ -3,55 +3,48 @@
 This course is a graduate level introduction to automated reasoning techniques and their application in tools for the design, analysis, and construction of software. In the first half of the course, we will survey the logical foundations and algorithms behind SAT solvers and SMT solvers. In the second half of the course, we will apply these techniques to automatic bug finding, program verification, and program synthesis. As a student in this course, you will learn how solvers work, and how to use them to build cool programming tools!
 
 # Office hour
+
 Instructor : Yu Feng
+Office hour: TBD
 
-Lecture Time: 1pm-2:30pm, M/W, Phelps 2510
+TA/Tutorial Instructor: Junrui Liu (junrui@ucsb.edu)
+Office hour: 2pm-3pm, Friday, Place TBD
 
-Office hour: 2:30pm-3:30pm, Wed, PLSE Lab. Phelps 3523
-
-Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfotbR6Hsv1yy~z7dqw
+Lecture Time: 11am-12:50pm, M/W, Phelps 3526
 
 
-| Date  | Topic                                         | Slides | Read | Out | Due |
-|-------|-----------------------------------------------|--------|------|-----|-----|
-| 3/28  | Introduction                                  |  [lec1](lectures/lecture1.pdf)      |      |     |     |
-| 3/30  | Solver-Aided Programming I (Rosette)          |  [lec2](lectures/lecture2.pdf)      |  R1    |  [HW1](hw1/HW1.md)   |     |
-| 4/4  | Solver-Aided Programming II (Neo)             |  [lec3](lectures/lecture3.pdf)      |  R2    |     |     |
-| 4/6  | SAT Solving Basics                            |  [lec4](lectures/lecture4.pdf)     |      |     | R1    |
-| 4/11 | A Modern SAT Solver                           |  [lec5](lectures/lecture5.pdf)      |      |   [HW2](hw2/HW2.md)  |   HW1  |
-| 4/13 | Applications of SAT                           |  [lec6](lectures/lecture6.pdf)      |  R3    |     |  R2   |
-| 4/18 | SAT Modulo Theories                           |  [lec7](lectures/lecture7.pdf)      |      |     |  HW2   |
-| 4/20 | Combining Theories              | [lec8](lectures/lecture8.pdf)        |      |    |  R3   |
-| 4/25 | The DPLL(T) Framework                             |  [lec9](lectures/lecture9.pdf)       |      |     |     |
-| 4/27 | The DPLL(T) Framework II                       |  [lec10]       |  R4    |     |  Proposal (2 pages)   |
-| 5/2  | Reasoning about Programs using Hoare logic I  | [lec11](lectures/lecture10.pdf)        |      |     |     |
-| 5/4  | Reasoning about Programs using Hoare logic II|    [lec12](lectures/lecture11.pdf)    |      |     |     |
-| 5/9  | Zero-knowledge Proofs in a nutshell (Brian) |   [lec](https://tinyurl.com/yu6v655m)     |      |     |     |
-| 5/11 | Formal Verification for Zero-knowledge Proofs using Ecne (Franklyn)                     |     [lec](https://tinyurl.com/yseccv6x)    |       |     |   R4 |
-| 5/16 | Symbolic Execution               |   [lec13](lectures/lecture13.pdf)      |      |  [HW3](hw3/HW3.md)   |     |
-| 5/18 | Attack Synthesis for Blockchain Security        |         |      |     |    |
-| 5/23 | Invairant Generation with RL  |         |      |     |     |
-| 5/25  | Course Summary                                 |        |      |     |    |
-| 6/1  | Virtual Poster Session                                 |        |      |     |  Final Report (8 pages), HW3  |
+Slack: TBD
+
+
+| #   | Date      | Lecture                                               | Tutorial                  |
+| --- | --------- | ----------------------------------------------------- | ------------------------- |
+| 1   | 4/1/2024  | Overview                                              | Dafny                     |
+| 2   | 4/3/2024  | IMP: Syntax & Semantics                               | OCaml: Basics, Data Types |
+| 3   | 4/8/2024  | Hoare Logic 1                                         | OCaml: Recursive Types    |
+| 4   | 4/10/2024 | Hoare Logic 2                                         | OCaml: Refs, Modules      |
+| 5   | 4/15/2024 | Guarded Commands, VC Gen                              | Project 1 Walkthrough, z3 |
+| 6   | 4/17/2024 | SMT Solvers: Overview                                 |                           |
+| 7   | 4/22/2024 | SAT: Basics, DPLL                                     |                           |
+| 8   | 4/24/2024 | SAT: CDCL                                             |                           |
+| 9   | 4/29/2024 | SAT: Extensions & Applications; Theory of Bit-Vectors |                           |
+| 10  | 5/1/2024  | More Theories: Uninterpreted Functions, Arrays        |                           |
+| 11  | 5/6/2024  | More Theories: LIA, LRA                               |                           |
+| 12  | 5/8/2024  | Nelson-Oppen                                          |                           |
+| 13  | 5/13/2024 | DPLL(T)                                               |                           |
+| 14  | 5/15/2024 | (TBD)                                                 |                           |
+| 15  | 5/20/2024 |                                                       |                           |
+| 16  | 5/22/2024 | -                                                     | -                         |
+| 17  | 5/27/2024 | Symbolic Execution                                    |                           |
+| 18  | 5/29/2024 | Program Synthesis                                     |                           |
+| 19  | 6/3/2024  | Solver-Aided Programming                              |                           |
+| 20  | 6/5/2024  | (Research Topics)                                     | -                         |
+| -   | 6/14/2024 | (Quarter Ends)                                        |                           |
 
 
 # Grading (No curving)
 
-1. Programming assignments: 40%
-    1. 4 programming assignments, 10% each
-
-2. Paper reviews: 20%
-    1. 4 papers, 5% each
-        
-3. Final project: 40%
-    1. Team formed by deadline: 5%
-    2. 1-page project proposal: 10%
-    3. Project presentation (Poster): 10%
-    4. Executable code: 5%
-    5. Final report: 10%
-
 | Letter | Percentage |
-|--------|------------|
+| ------ | ---------- |
 | A+     | 95–100%    |
 | A      | 90–94%     |
 | A-     | 85–89%     |
@@ -62,26 +55,36 @@ Slack: https://join.slack.com/t/slack-bqf3594/shared_invite/zt-161uioa1i-uQFsfot
 | C      | 60–64%     |
 | F      | <60%       |
 
-### Submission
-1. Please submit your homework to gradescope: https://www.gradescope.com
-2. All paper reviews should be in PDF.
+1. Weekly written assignments: 40%
+   - Self-graded on **effort** on a scale of 0-2, but will be checked by the TA:
+     - 0: problem not attempted at all
+     - 1: problem not attempted but not fully solved, and all work shown
+     - 2: problem fully solved
+   - A self-grade of 1 is enough to get full credit for the problem.
 
-# Homework
-
-1. [Homework1](hw1/HW1.md)
-2. [Homework2](hw2/HW2.md)
-3. [Homework3](hw3/HW3.md)
-
-# Reading assignments
-1. A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages. Emina Torlak and Rastislav Bodik. PLDI'14.
-2. Program synthesis using conflict-driven learning. Yu Feng, Ruben Martins, Osbert Bastani, and Isil Dillig.  PLDI'18. **Distinguished Paper Award** 
-3. Scaling symbolic evaluation for automated verification of systems code with Serval. Luke Nelson, James Bornholt, Ronghui Gu, Andrew Baumann, Emina Torlak, and Xi Wang. SOSP'2019. **Best Paper Award**
-4. C. A. R. Hoare. An axiomatic basis for computer programming. Communications of the ACM, vol. 12, no. 10. 1969. ACM DL. **Turing Award**
+2. 3 programming projects: 60%
 
 
-Tips for writing paper [reviews](REVIEW.md).
 
-Tips for writing a project [proposal](PROPOSAL.md).
+# Late Policy
+You have a total of 10 late days to be used throughout the quarter. You can use them in any way you like, but once you run out, late assignments will not be accepted.
+
+
+
+# Academic Integrity
+- Cheating WILL be taken seriously. It is not fair toward honest students to take cheating lightly, nor is it fair to the cheater to let him/her go on thinking that cheating is a reasonable alternative in life.
+- The following is not considered cheating:
+   - discussing broad ideas about programming assignments in groups, without being at a computer (with code-writing and debugging done individually, later).
+- The following is considered cheating:
+   - discussing programming assignments with someone who has already completed the problem, or looking at their completed solution.
+   - looking at anyone else’s solution
+   - Previous versions of the class.
+   - leaving your code (for example in an online repository) visible to others, leading others to look at your solution.
+   - receiving, providing, or soliciting assistance from unauthorized sources during a test.
+- Programming assignments are not intended to be grade-makers, but to prepare you for the tests, which are the grade-makers. Cheating on the programming assignment is not only unethical, but shows a fundamental misunderstanding of the purpose of these assignments.
+- Penalties: First time: a zero for the assignment; Second time: an “F” in the course.
+
+
 
 # References
 
@@ -122,17 +125,4 @@ Tips for writing a project [proposal](PROPOSAL.md).
 - Dai, Wang-Zhou, et al. Bridging machine learning and logical reasoning by abductive learning. NIPS'2019.
 
 
-
-# Academic Integrity
-- Cheating WILL be taken seriously. It is not fair toward honest students to take cheating lightly, nor is it fair to the cheater to let him/her go on thinking that cheating is a reasonable alternative in life.
-- The following is not considered cheating:
-   - discussing broad ideas about programming assignments in groups, without being at a computer (with code-writing and debugging done individually, later).
-- The following is considered cheating:
-   - discussing programming assignments with someone who has already completed the problem, or looking at their completed solution.
-   - looking at anyone else’s solution
-   - Previous versions of the class.
-   - leaving your code (for example in an online repository) visible to others, leading others to look at your solution.
-   - receiving, providing, or soliciting assistance from unauthorized sources during a test.
-- Programming assignments are not intended to be grade-makers, but to prepare you for the tests, which are the grade-makers. Cheating on the programming assignment is not only unethical, but shows a fundamental misunderstanding of the purpose of these assignments.
-- Penalties: First time: a zero for the assignment; Second time: an “F” in the course.
 
