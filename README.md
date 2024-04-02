@@ -14,7 +14,7 @@ TA/Tutorial Instructor: Junrui Liu (junrui@ucsb.edu)
 
 Lecture Time: 11am-12:50pm, M/W, Phelps 3526
 
-Slack: TBD
+Slack: https://join.slack.com/t/cs292c-spring24/shared_invite/zt-2g1hpa39v-OjeYeMBPG1uMa7fCGcujqQ
 
 
 | #   | Date | Lecture                                               | Tutorial                                          | Out                            | Due |
