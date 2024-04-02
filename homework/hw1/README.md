@@ -66,12 +66,16 @@ Attach your code and a brief explanation of your invariant in your submission.
 
 Immediately below `BinarySearch`, we duplicated its implementation into another method called `BuggyBinarySearch`. The only change we made is to make the index variables (`lo`, `mid`, `hi`, etc.) into 4-bit integers (unsigned), whereas in Dafny `int` is the default infinite-precision integer.
 
-Copy and paste the (good) invariant you wrote for `BinarySearch` into `BuggyBinarySearch` and see if Dafny can verify the correctness of the method. You shall see that Dafny cannot verify the correctness of `BuggyBV4BinarySearch`. Your tasks are to:
+Copy and paste the (working) invariant you wrote for `BinarySearch` into `BuggyBinarySearch` and see if Dafny can verify the correctness of the method. Note that to make the invariant well-typed, you may need to do some conversion from `int` to `bv4` using the syntax `x as bv4` which converts a variable of type `int` to `bv4`.
+
+After that, you shall see that Dafny cannot verify the correctness of `BuggyBV4BinarySearch`. Your tasks are to:
 1. locate the exact line where Dafny reports an error,
 2. explain why Dafny cannot verify the correctness of the method
 3. patch *only one line of implementation code* in the loop body to make verification succeed.
 
 Include your answers to the above questions in your submission. You should also attach the modified code with the fix in your submission.
+
+*Hint*: The answers to the above questions can be found in the Wikipedia page for binary search, under the section Implementation Issues.
 
 
 
