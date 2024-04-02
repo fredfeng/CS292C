@@ -17,11 +17,11 @@ Lecture Time: 11am-12:50pm, M/W, Phelps 3526
 Slack: TBD
 
 
-| #   | Date | Lecture                                               | Tutorial                                          |
-| --- | ---- | ----------------------------------------------------- | ------------------------------------------------- |
-| 1   | 4/1  | [Overview](./lectures/lecture1.pdf)                   | Dafny ([demo.dfy](./tutorials/01-dafny/demo.dfy)) |
+| #   | Date | Lecture                                               | Tutorial                                          | Out                            | Due |
+| --- | ---- | ----------------------------------------------------- | ------------------------------------------------- | ------------------------------ | --- |
+| 1   | 4/1  | [Overview](./lectures/lecture1.pdf)                   | Dafny ([demo.dfy](./tutorials/01-dafny/demo.dfy)) | [hw1](/homework/hw1/README.md) |
 | 2   | 4/3  | IMP: Syntax & Semantics                               | OCaml: Basics, Data Types                         |
-| 3   | 4/8  | Hoare Logic 1                                         | OCaml: Recursive Types                            |
+| 3   | 4/8  | Hoare Logic 1                                         | OCaml: Recursive Types                            |                                | hw1 |
 | 4   | 4/10 | Hoare Logic 2                                         | OCaml: Refs, Modules                              |
 | 5   | 4/15 | Guarded Commands, VC Gen                              | Project 1 Walkthrough, z3                         |
 | 6   | 4/17 | SMT Solvers: Overview                                 |                                                   |
