@@ -23,6 +23,8 @@ print_endline "I have installed OCaml!"
 
 Include a screenshot of all of `utop`'s output thus far (including the welcome message) to your PDF file.
 
+If you run into any issues, post in the `#tech-support` Slack channel.
+
 
 
 ---
