@@ -101,10 +101,10 @@ In your PDF file, include the definition of your function, along with **three di
 
 ### Problem 4
 
-The list data structure can be used to implement a basic dictionary. If you have keys of type `'k` and values of type `'v`, then you can represent a dictionary as a list of pairs of keys and values, which has type `('k * 'v) list`:
+The list data structure can be used to implement a basic dictionary. If you have keys of type `'k` and values of type `'v`, then you can represent a dictionary as a list of pairs of keys and values, which has type `('k, 'v) dict`:
 
 ```ocaml
-type ('k, 'v) dict = ('k * 'v) list
+type ('k, 'v) dict = ('k, 'v) dict
 ```
 
 
@@ -128,18 +128,18 @@ Note that in the above code, `k` is a *variable*, whereas `'k` is a generic *typ
 
 Implement the following functions:
 
-1. `mem : ('k -> 'k -> bool) -> 'k -> ('k * 'v) list -> bool` that will check if a key is in a dictionary:
+1. `mem : ('k -> 'k -> bool) -> 'k -> ('k, 'v) dict -> bool` that will check if a key is in a dictionary:
    - the first argument is the equality function for values of type `'k`
    - if the key is found, it will return `true`
    - if the key is not found, it will return `false`.
-2. `lookup : ('k -> 'k -> bool) -> 'k -> ('k * 'v) list -> 'v option` that will look up a key in a dictionary:
+2. `lookup : ('k -> 'k -> bool) -> 'k -> ('k, 'v) dict -> 'v option` that will look up a key in a dictionary:
    - the first argument is the equality function for values of type `'k`
    - if the key is found, it will return `Some v`, where `v` is the value associated with the key
    - if the key is not found, it will return `None`
    - if a dictionary has two entries with the same key (but with possibly different values), then your `lookup` should return the most recently inserted value (i.e., the right-most value).
-3. `remove_key : ('k -> 'k -> bool) -> 'k -> ('k * 'v) list -> ('k * 'v) list` that will remove a given key from a dictionary (if a dictionary has multiple entries with the same key, then remove all of them).
-4. `remove_value : ('v -> bool) -> ('k * 'v) list -> ('k * 'v) list` that will remove all entries whose values satisfy the given predicate `'v -> bool`.
-5. `dedup : ('k -> 'k -> bool) -> ('k * 'v) list -> ('k * 'v) list` that will remove all duplicate keys from a dictionary, keeping only the most recently inserted value for each key.
+3. `remove_key : ('k -> 'k -> bool) -> 'k -> ('k, 'v) dict -> ('k, 'v) dict` that will remove a given key from a dictionary (if a dictionary has multiple entries with the same key, then remove all of them).
+4. `remove_value : ('v -> bool) -> ('k, 'v) dict -> ('k, 'v) dict` that will remove all entries whose values satisfy the given predicate `'v -> bool`.
+5. `dedup : ('k -> 'k -> bool) -> ('k, 'v) dict -> ('k, 'v) dict` that will remove all duplicate keys from a dictionary, keeping only the most recently inserted value for each key.
 
 For each function, in addition to including its definition, also demonstrate it works correctly with with **three distinct, non-trivial test cases and their output**.
 
@@ -169,9 +169,9 @@ We will not concern ourselves about the abysmal performance of this representati
 
 To simplify things, we assume 
 - arrays can have arbitrary lengths in both the positive and the negative direction, so negative indices are allowed.
-- arrays may be non-contiguous, so you can have an array with elements at indices -74, 0, 1, 10, 100.
+- arrays may be non-contiguous, so you can have an array with elements at indices -74, 0, 1, 10, 100, but not at others.
 
-Using the functions you implemented in Problem 4, implement the following functions for arrays:
+Implement the following functions for arrays (try calling the functions you implemented in Problem 4 as much as possible):
 - `empty: 'a array` that will return an empty array
 - `select: 'a array -> int -> 'a option` that will read the value at a given index (return None if the index is not in the array)
 - `store: 'a array -> int -> 'a -> 'a array` that will write a value at a given index
