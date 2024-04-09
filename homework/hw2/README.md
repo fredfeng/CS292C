@@ -44,7 +44,7 @@ Your function should use the first argument `'a -> 'a -> bool` to test for equal
 
 When you're testing your implementation, the equality functions for `int`, `string`, and `bool` are already defined in the OCaml standard library as `Int.equal`, `String.equal`, and `Bool.equal`, respectively. You can use them directly in your tests. List equality is also defined in the standard library as `List.equal`.
 
-In your PDF file, include the definition of your function, along with **three distinct, non-trivial test cases and their output** to show that your function work correctly.
+In your PDF file, include the definition of your function, along with **three distinct, non-trivial test cases and their output** to show that your function works correctly.
 
 
 
@@ -71,7 +71,7 @@ For example, `merge [Some 1; Some 2; Some 3]` will evaluate to `Some [1; 2; 3]`,
 
 
 
-In your PDF file, include the definition of your function, along with **three distinct, non-trivial test cases and their output** to show that your function work correctly.
+In your PDF file, include the definition of your function, along with **three distinct, non-trivial test cases and their output** to show that your function works correctly.
 
 
 > **Important OCaml note:** Indentations don't matter in OCaml. As a corollary, if you want to write a nested pattern match like
@@ -101,45 +101,38 @@ In your PDF file, include the definition of your function, along with **three di
 
 ### Problem 4
 
-The list data structure can be used to implement a basic dictionary. If you have keys of type `'k` and values of type `'v`, then you can represent a dictionary as a list of pairs of keys and values, which has type `('k, 'v) dict`:
-
-```ocaml
-type ('k, 'v) dict = ('k * 'v) list
-```
+The list data structure can be used to implement a basic dictionary. If you have keys of type `'k` and values of type `'v`, then you can represent a dictionary as a list of pairs of keys and values, which has type `('k * 'v) list`.
 
 
 This data structure is called the "association list" in the functional programming community. It is not the most efficient way to implement a dictionary, but it is simple and easy to understand. 
 
-
-> Note that the `dict` type is polymorphic over both the key type and the value type. In OCaml, if a type is polymorphic over multiple types, then it can be defined as `('a, 'b, 'c, ...) t` where `'a`, `'b`, `'c`, etc. are type variables.
-
-For example, the following is a dictionary that maps the key `1` to the value `"one"`, the key `2` to the value `"two"`, and the key `3` to the value `"three"`:
+For example, the following is a dictionary of type `(int * string) list` that maps the key `1` to the value `"one"`, the key `2` to the value `"two"`, and the key `3` to the value `"three"`:
 ```ocaml
 [(1, "one"); (2, "two"); (3, "three")]
 ```
 
 Insertions can be easily implemented by prepending a new key-value pair to the list, like so:
 ```ocaml
-let insert (k: 'k) (v: 'v) (d: ('k, 'v) dict) : ('k, 'v) dict =
+let insert (k: 'k) (v: 'v) (d: ('k * 'v) list) : ('k * 'v) list =
     (k, v) :: d
 ```
 
-Note that in the above code, `k` is a *variable*, whereas `'k` is a generic *type* that can be instantiated to any type such as `int`. The same goes for `v` and `'v`.
+Note that in the above code, `k` is a *variable*, whereas `'k` is a generic *type* that can be instantiated with any type such as `int`. The same goes for `v` and `'v`.
 
 Implement the following functions:
 
-1. `mem : ('k -> 'k -> bool) -> 'k -> ('k, 'v) dict -> bool` that will check if a key is in a dictionary:
+1. `mem : ('k -> 'k -> bool) -> 'k -> ('k * 'v) list -> bool` that will check if a key is in a dictionary:
    - the first argument is the equality function for values of type `'k`
    - if the key is found, it will return `true`
    - if the key is not found, it will return `false`.
-2. `lookup : ('k -> 'k -> bool) -> 'k -> ('k, 'v) dict -> 'v option` that will look up a key in a dictionary:
+2. `lookup : ('k -> 'k -> bool) -> 'k -> ('k * 'v) list -> 'v option` that will look up a key in a dictionary:
    - the first argument is the equality function for values of type `'k`
    - if the key is found, it will return `Some v`, where `v` is the value associated with the key
    - if the key is not found, it will return `None`
    - if a dictionary has two entries with the same key (but with possibly different values), then your `lookup` should return the most recently inserted value (i.e., the right-most value).
-3. `remove_key : ('k -> 'k -> bool) -> 'k -> ('k, 'v) dict -> ('k, 'v) dict` that will remove a given key from a dictionary (if a dictionary has multiple entries with the same key, then remove all of them).
-4. `remove_value : ('v -> bool) -> ('k, 'v) dict -> ('k, 'v) dict` that will remove all entries whose values satisfy the given predicate `'v -> bool`.
-5. `dedup : ('k -> 'k -> bool) -> ('k, 'v) dict -> ('k, 'v) dict` that will remove all duplicate keys from a dictionary, keeping only the most recently inserted value for each key.
+3. `remove_key : ('k -> 'k -> bool) -> 'k -> ('k * 'v) list -> ('k * 'v) list` that will remove a given key from a dictionary (if a dictionary has multiple entries with the same key, then remove all of them).
+4. `remove_value : ('v -> bool) -> ('k * 'v) list -> ('k * 'v) list` that will remove all entries whose values satisfy the given predicate `'v -> bool`.
+5. `dedup : ('k -> 'k -> bool) -> ('k * 'v) list -> ('k * 'v) list` that will remove all duplicate keys from a dictionary, keeping only the most recently inserted value for each key.
 
 For each function, in addition to including its definition, also demonstrate it works correctly with with **three distinct, non-trivial test cases and their output**.
 
@@ -163,7 +156,7 @@ We say that arrays are "functional" because `store` does not modify the original
 
 Thus, abstractly, arrays are just dictionaries that map integers to values:
 ```ocaml
-type 'a array = Arr of (int, 'a) dict
+type 'a array = Arr of (int * 'a) list
 ```
 We will not concern ourselves about the abysmal performance of this representation, as we are only interested in the conceptual behavior of arrays.
 
@@ -184,7 +177,7 @@ The `empty`, `select`, `store` functions should satisfy the following properties
 - `select (store a i v) i` should return `Some v` for all i.
 - `select (store a i v) j` should return the same value as `select a j` for all `j <> i`.
 
-In your PDF file, for each of the functions, include the definition along with **three distinct, non-trivial test cases and their output** to show that your function work correctly.
+In your PDF file, for each of the functions, include the definition along with **three distinct, non-trivial test cases and their output** to show that your function works correctly.
 
 
 
@@ -258,7 +251,7 @@ Write a function `subst : string -> string -> aexp -> aexp` that will substitute
 - : aexp = Aop (Add, Var "y", Var "y")
 ```
 
-In your PDF file, include the function definition along with **three distinct, non-trivial test cases and their output** to show that your function work correctly.
+In your PDF file, include the function definition along with **three distinct, non-trivial test cases and their output** to show that your function works correctly.
 
 
 ### Problem 8
@@ -267,7 +260,7 @@ The *semantics* of a programming language feature answers the question "what hap
 
 1. The semantics of `aexp` simply evaluates an arithmetic expression to an integer value. However, since we don't know the values of the variables that may appear in an `aexp`, we also need an abstract memory store -- an *abstract heap* -- to keep track of the values of variables. We can represent the abstract heap as a dictionary that maps variable names to integer values:
      ```ocaml
-     type heap = (string, int) dict
+     type heap = Heap of (string * int) list
      ```
 
      Implement the function `eval_aexp : heap -> aexp -> int` that will evaluate an arithmetic expression given an abstract heap. For example:
@@ -289,15 +282,16 @@ The *semantics* of a programming language feature answers the question "what hap
 3. The semantics of `stmt` is slightly different: a statement does not produce any value of its own; instead, given a heap memory, a statement can *modify/update* the memory. So the semantics of a statement is a function that takes a heap memory and returns a (potentially) new heap memory. Implement the function `eval_stmt : heap -> stmt -> heap` that will evaluate a statement given an abstract heap. For example:
      ```ocaml
      # eval_stmt [("x", 1); ("y", 2)] (Assign ("x", Aop (Add, Var "x", Var "y")));;
-     - : heap = [("x", 3); ("y", 2)]
+     - : heap = Heap [("x", 3); ("x", 1); ("y", 2)]
      ```
+     Note that it's ok for the heap to contain entries with the same variable, as long as the right-most entry is the most recent value. So you don't need to call `dedup`.
 
      If a referenced variable is not found in the heap, you should call "failwith" with an appropriate error message which will crash the function.
 
 
 
 
-In your PDF file, for each of the functions, include the definition along with **three distinct, non-trivial test cases and their output** to show that your function work correctly.
+In your PDF file, for each of the functions, include the definition along with **three distinct, non-trivial test cases and their output** to show that your function works correctly.
 
 Finally, the following IMP program computes the 10-th Fibonacci number:
   ```
@@ -350,13 +344,13 @@ type aexp =
   | Int of int  (** integer constant *)
   | Aop of aop * aexp * aexp  (** arithmetic op *)
   | Var of string  (** variable *)
-  | Select of 'a array * aexp (** array read *)
-  | Store of 'a array * aexp * aexp (** array write *)
+  | Select of aexp * aexp (** array read *)
+  | Store of aexp * aexp * aexp (** array write *)
 ```
 
 For example, the IMP expression `a[i][j]` will be represented as `Select (Select (a, i), j)`.
 
-Array assignments need some care when translated from concrete syntax to abstract syntax. In imperative languages, we can write `a[i] := 1` to update the value at index `i` in array `a` to be one. 
+Array assignments need some care when they're translated from concrete syntax to abstract syntax. In imperative languages, we can write `a[i] := 1` to update the value at index `i` in array `a` to be one. 
 This kind of array update syntax needs to be translated to the more basic array operations of `select` and `store`, and the IMP assignment statement.
 
 For example, the IMP statement `a[i] := 1` can be translated to the following IMP statement:
@@ -366,7 +360,7 @@ Assign ("a",
   Store (Var "a", Var "i", Int 1)
 )
 ```
-That is, the variable `a` is updated with a new array whose contents are the same as the array previously referred to be `a`, except that the value at index `i` is now `1`.
+That is, the variable `a` is updated with a new array whose contents are the same as the array previously referred to by `a`, except that the value at index `i` is now `1`.
 
 And `a[i] := a[j] + 1` can be translated into the following IMP statement:
 ```ocaml
@@ -379,7 +373,7 @@ Assign ("a",
 (* i.e., a := write(a, i, read(a, j) + 1) *)
 ```
 
-For the following array assignment statements, translate them to the corresponding abstract syntax trees:
+For the following array assignment statements, translate them to the corresponding abstract syntax trees using a combination of `Select` and `Store`:
 
 - `x := a[i] * a[j];`
 - `y := a[a[i]];`
@@ -396,15 +390,15 @@ For the following array assignment statements, translate them to the correspondi
 
 In general, an array access expression like `a[i][j]...[k]` can be represented as an *access path*:
 ```ocaml
-type path = string * aexp list
+type path = Path of string * aexp list
 ```
-where the first element of the tuple is the name of the array, and the second element is a list of indices. For example, the access path `("a", [Var "i"; Aop (Add, Var "j", Int 1)])` represents the expression `a[i][j+1]`.
+where the first element of the tuple is the name of the array, and the second element is a list of index expressions. For example, the access path `Path ("a", [Var "i"; Aop (Add, Var "j", Int 1)])` represents the expression `a[i][j+1]`.
 
 Recall your answer to Problem 9. You may have noticed that the same access path will get translated into different `aexp` depending on whether the path appears as the LHS of an assignment (i.e., the path is being written to), or as the RHS of an assignment (i.e., the path is being read from).
 
 Implement the following functions in OCaml:
-- `path_to_rhs_aexp : path -> aexp` that will convert an access path being read from to the corresponding `aexp`.
-- `path_to_lhs_stmt : path -> aexp -> stmt` that take an access path, an RHS `aexp` that will be written to the path, and return the corresponding assignment `stmt` that will update the array at the given path with the new value.
+- `read_from_path : path -> aexp` that will convert an access path being read from to the corresponding `aexp`.
+- `write_to_path : path -> aexp -> stmt` that will take a LHS access path, an RHS `aexp` that will be written to the path, and return the corresponding assignment `stmt` that will update the array at the given path with the new value.
 
 In addition to including the definitions of these functions, also include the following tests in your PDF file:
 
@@ -422,15 +416,17 @@ type value =
   | VInt of int
   | VArr of value array
 ```
+Note that in `VArr`, the array itself recursively contains other values, which can be either integers or arrays. This allows for multi-dimensional arrays.
+
 And heap memory is now a dictionary that maps variable names to values:
 ```ocaml
-type heap = (string, value) dict
+type heap = Heap of (string * value) list
 ```
 
 Update the functions your implemented in Problem 8 to work with the new `value` type:
-- `eval_aexp : heap -> aexp -> value` (reuse your array `select` and `store` functions to evaluate `Select` and `Store` expressions)
-- `eval_bexp : heap -> bexp -> bool` (this should be unchanged except you should call the new `eval_aexp` function)
-- `eval_stmt : heap -> stmt -> heap` (this should be unchanged except you should call the new `eval_aexp` and `eval_bexp` functions)
+- `eval_aexp : heap -> aexp -> value`: reuse your array `select` and `store` functions to evaluate `Select` and `Store` expressions
+- `eval_bexp : heap -> bexp -> bool`: this should be unchanged except you should call the new `eval_aexp` function
+- `eval_stmt : heap -> stmt -> heap`: this should be unchanged except you should call the new `eval_aexp` and `eval_bexp` functions
 
 
 Once you're done, include your code in the PDF file, and do the following:
@@ -448,4 +444,5 @@ Once you're done, include your code in the PDF file, and do the following:
        ```
 
        First, translate this program into an abstract syntax tree (i.e., an OCaml expression of type `stmt`). Then, run this program with an initial heap that maps `fib` to the empty array. Upon entering the `eval_stmt` function, you should print the current statement being evaluated, along with the incoming heap memory at each step. Once `eval_stmt` returns, print the final heap memory. Include the output in your PDF file.
+
 2. Adapt the `min2d` from HW1 into this IMP language (you may need to de-sugar access paths into `aexp`, and make function parameters into local variables). Then run the adapted program with an initial heap that maps `a` to the array `[[3; 2; 5]; []; [-1]; [7; -10; 10]]` and `min` to `100`. Print the intermediate heap memory and command at each step, and print the final heap. Your final heap should show that the local variable `min` is set to `-1`. Include the output in your PDF file.
