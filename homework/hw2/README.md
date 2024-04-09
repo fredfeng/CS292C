@@ -104,7 +104,7 @@ In your PDF file, include the definition of your function, along with **three di
 The list data structure can be used to implement a basic dictionary. If you have keys of type `'k` and values of type `'v`, then you can represent a dictionary as a list of pairs of keys and values, which has type `('k, 'v) dict`:
 
 ```ocaml
-type ('k, 'v) dict = ('k, 'v) dict
+type ('k, 'v) dict = ('k * 'v) list
 ```
 
 
