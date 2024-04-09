@@ -129,7 +129,7 @@ Implement the following functions:
    - the first argument is the equality function for values of type `'k`
    - if the key is found, it will return `Some v`, where `v` is the value associated with the key
    - if the key is not found, it will return `None`
-   - if a dictionary has two entries with the same key (but with possibly different values), then your `lookup` should return the most recently inserted value (i.e., the right-most value).
+   - if a dictionary has two entries with the same key (but with possibly different values), then your `lookup` should return the most recently inserted value (i.e., the left-most value).
 3. `remove_key : ('k -> 'k -> bool) -> 'k -> ('k * 'v) list -> ('k * 'v) list` that will remove a given key from a dictionary (if a dictionary has multiple entries with the same key, then remove all of them).
 4. `remove_value : ('v -> bool) -> ('k * 'v) list -> ('k * 'v) list` that will remove all entries whose values satisfy the given predicate `'v -> bool`.
 5. `dedup : ('k -> 'k -> bool) -> ('k * 'v) list -> ('k * 'v) list` that will remove all duplicate keys from a dictionary, keeping only the most recently inserted value for each key.
@@ -284,7 +284,7 @@ The *semantics* of a programming language feature answers the question "what hap
      # eval_stmt [("x", 1); ("y", 2)] (Assign ("x", Aop (Add, Var "x", Var "y")));;
      - : heap = Heap [("x", 3); ("x", 1); ("y", 2)]
      ```
-     Note that it's ok for the heap to contain entries with the same variable, as long as the right-most entry is the most recent value. So you don't need to call `dedup`.
+     Note that it's ok for the heap to contain entries with the same variable, as long as the left-most entry is the most recent value. So you don't need to call `dedup`.
 
      If a referenced variable is not found in the heap, you should call "failwith" with an appropriate error message which will crash the function.
 
