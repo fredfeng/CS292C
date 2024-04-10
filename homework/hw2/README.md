@@ -348,7 +348,7 @@ type aexp =
   | Store of aexp * aexp * aexp (** array write *)
 ```
 
-For example, the IMP expression `a[i][j]` will be represented as `Select (Select (a, i), j)`.
+For example, the IMP expression `a[i][j]` will be represented as `Select (Select (Var "a", Var "i"), Var "j")`.
 
 Array assignments need some care when they're translated from concrete syntax to abstract syntax. In imperative languages, we can write `a[i] := 1` to update the value at index `i` in array `a` to be one. 
 This kind of array update syntax needs to be translated to the more basic array operations of `select` and `store`, and the IMP assignment statement.
