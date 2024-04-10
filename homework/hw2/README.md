@@ -200,7 +200,11 @@ We can extend this to include boolean expressions, and the full IMP language:
 (** Comparison ops  *)
 type comp = 
   | Eq (** equal *)
-  | Geq (** greater or equal *)
+  | Geq (** greater than or equal to *)
+  | Gt (* greater than *)
+  | Lt  (** less than *)
+  | Leq (** less than or equal to *)
+  | Neq (** not equal *)
 
 (** Boolean expressions (which can appear in conditions *)
 type bexp =
@@ -208,6 +212,9 @@ type bexp =
   | Bool of bool
   (* integer comparison *)
   | Comp of comp * aexp * aexp
+  | Not of bexp (* negation *)
+  | And of bexp * bexp (* conjunction *)
+  | Or of bexp * bexp (* disjunction *)
 
 (** Statements *)
 type stmt =
