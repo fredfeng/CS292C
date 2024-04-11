@@ -411,8 +411,8 @@ In addition to including the definitions of these functions, also include the fo
 
 For each abstract syntax tree you wrote down in Problem 9,
 
-- for every access path P that is being read from (in both the RHS and the LHS of an assignment), convert it to the corresponding `aexp` using `path_to_rhs_aexp`, and include the output in your PDF file.
-- for every access path P that is being updated with a new value, call `path_to_lhs_stmt` with the access path P and some dummy value (`Int 0`, for example), and include the output in your PDF file.
+- for every access path P that is being read from (in both the RHS and the LHS of an assignment), convert it to the corresponding `aexp` using `read_from_path`, and include the output in your PDF file.
+- for every access path P that is being updated with a new value, call `write_to_path` on the access path P with some dummy value (`Int 0`, for example), and include the output in your PDF file.
 
 
 ### Problem 11
