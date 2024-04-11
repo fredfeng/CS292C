@@ -22,7 +22,7 @@ Slack: https://join.slack.com/t/cs292c-spring24/shared_invite/zt-2g1hpa39v-OjeYe
 | 1   | 4/1  | [Overview](./lectures/lecture1.pdf)                   | Dafny ([demo.dfy](./tutorials/01-dafny/demo.dfy)) | [hw1](/homework/hw1/README.md) |
 | 2   | 4/3  | [IMP: Syntax & Semantics](./lectures/lecture2.pdf)                               | OCaml: Basics, Data Types                         |
 | 3   | 4/8  | [Hoare Logic 1](./lectures/lecture3.pdf)                                        | OCaml: Recursive Types                            |                                | hw1 |
-| 4   | 4/10 | Hoare Logic 2                                         | OCaml: Refs, Modules                              |
+| 4   | 4/10 | [Hoare Logic 2](./lectures/lecture4.pdf)                                         | OCaml: Refs, Modules                              |
 | 5   | 4/15 | Guarded Commands, VC Gen                              | Project 1 Walkthrough, z3                         |
 | 6   | 4/17 | SMT Solvers: Overview                                 |                                                   |
 | 7   | 4/22 | SAT: Basics, DPLL                                     |                                                   |
