@@ -1,0 +1,32 @@
+(lang dune 3.12)
+
+(name proj1)
+
+(generate_opam_files true)
+
+(source
+ (github username/reponame))
+
+(authors "Junrui Liu")
+
+(maintainers "Junrui Liu")
+
+(documentation https://url/to/documentation)
+
+(using menhir 2.1)
+
+(package
+ (name proj1)
+ (synopsis "CS292C Project 1")
+ (depends
+  ocaml
+  dune
+  base
+  stdio
+  menhir
+  nice_parser
+  ppx_jane
+  alcotest
+  fmt
+  logs
+  z3))

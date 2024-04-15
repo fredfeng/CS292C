@@ -1,0 +1,17 @@
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
+
+(ocamllex
+ (modules lexer))
+
+(menhir
+ (modules menhir_parser))
+
+(library
+ (name lib)
+ (libraries nice_parser base fmt logs z3)
+ (preprocess
+  (pps ppx_jane))
+ (inline_tests))

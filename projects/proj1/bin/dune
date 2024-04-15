@@ -1,0 +1,8 @@
+(executable
+ (public_name difny)
+ (name main)
+ (libraries base fmt logs logs.fmt cmdliner lib))
+
+(install
+ (section bin)
+ (files main.exe))
