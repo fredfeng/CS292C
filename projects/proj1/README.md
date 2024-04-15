@@ -39,7 +39,7 @@ You will be implementing a verification-condition (VC) generator for a simple im
    ```
    This will automatically open the `Base` module, which contains the most commonly used functions and types in OCaml. **Do not remove this line.**
    
-   You can find the documentation for the `base` library [here](https://ocaml.janestreet.com/ocaml-core/latest/doc/base/Base/index.html). You may find the functions in [Base.List](https://ocaml.org/p/base/v0.16.3/doc/Base/List/index.html) especially useful for this project.
+   You can find the documentation for the `base` library [here](https://ocaml.org/p/base/v0.16.3/doc/Base/List/index.html). You may find the functions in [Base.List](https://ocaml.org/p/base/v0.16.3/doc/Base/List/index.html) especially useful for this project.
 
 If you run into any issues, please report them in the `#tech-support` channel on Slack.
 
@@ -235,7 +235,7 @@ The following semantic simplifications are made in Difny to simplify the impleme
 
 
 - Function parameters are immutable, just like in Dafny. This means that if you wish to modify a parameter, you must first copy it into a local variable, and modify the local variable instead.
-- Everything is Difny is by-value, and nothing is by-reference. This includes assignments and method calls:
+- Everything in Difny is by-value, and nothing is by-reference. This includes assignments and method calls:
   - Assignments to arrays are by-value. For example, `a := b;` will copy the entire array `b` into `a`.
   - Function calls and returns are by-value. For example, in `a := f(b);`, the return value will be copied into `a`.
 
@@ -419,7 +419,7 @@ You may subdivide this level into smaller sublevels if you find it more convenie
 This level adds array support to Difny. The only changes you need to make are:
 1. Copy over your code from HW2 to `desugar.ml`. You should not need to modify `compile` or `wp` for this level.
 2. Go to `smt.ml` and finish the `aexp` function, and complete the translation of array `Select` and `Store` expressions into Z3 `expr`. Then, finish the implementation of `sort_of_ty` which converts a Difny type into a Z3 `sort`.
-   - Z3's array theory is [documented here](https://microsoft.github.io/Z3guide/docs/theories/Arrays/). The OCaml bindings for Z3 arrays are contained in the `Z3Array` module.
+   - Z3's array theory is [documented here](https://microsoft.github.io/z3guide/docs/theories/Arrays/). The OCaml bindings for Z3 arrays are contained in the `Z3Array` module.
 
 
 All the functions you need to implement are stubbed with `Todo.at_level 2`. You should replace those stubs with your own code. Feel free to define your own helper functions if you feel the need to do so.
