@@ -32,6 +32,15 @@ rule next_token = parse
   | '/' { DIV }
   | '%' { MOD }
 
+  (* bool *)
+  | "!"   { NOT }
+  | "&&"  { AND }
+  | "||"  { OR }
+  | "==>" { IMPLY }
+  | "<==>" { IFF }
+  | "true" { TRUE }
+  | "false" { FALSE }
+
   (* comparison *)
   | "==" { EQ }
   | "!=" { NEQ }
@@ -39,15 +48,6 @@ rule next_token = parse
   | "<=" { LEQ }
   | ">"  { GT }
   | ">=" { GEQ }
-
-  (* bool *)
-  | "!"   { NOT }
-  | "&&"  { AND }
-  | "||"  { OR }
-  | "==>" { IMPLY }
-  | "<=>" { IFF }
-  | "true" { TRUE }
-  | "false" { FALSE }
 
   (* commands *)
   | ":="   { ASSIGN }
