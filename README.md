@@ -17,29 +17,29 @@ Lecture Time: 11am-12:50pm, M/W, Phelps 3526
 Slack: https://join.slack.com/t/cs292c-spring24/shared_invite/zt-2g1hpa39v-OjeYeMBPG1uMa7fCGcujqQ
 
 
-| #   | Date | Lecture                                               | Tutorial                                          | Out                            | Due |
-| --- | ---- | ----------------------------------------------------- | ------------------------------------------------- | ------------------------------ | --- |
-| 1   | 4/1  | [Overview](./lectures/lecture1.pdf)                   | Dafny ([demo.dfy](./tutorials/01-dafny/demo.dfy)) | [hw1](/homework/hw1/README.md) |
-| 2   | 4/3  | [IMP: Syntax & Semantics](./lectures/lecture2.pdf)                               | OCaml: Basics, Data Types                         |
-| 3   | 4/8  | [Hoare Logic 1](./lectures/lecture3.pdf)                                        | OCaml: Recursive Types                            |                                | hw1 |
-| 4   | 4/10 | [Hoare Logic 2](./lectures/lecture4.pdf)                                         | OCaml: Refs, Modules                              |
-| 5   | 4/15 | Guarded Commands, VC Gen                              | Project 1 Walkthrough, z3                         |
-| 6   | 4/17 | SMT Solvers: Overview                                 |                                                   |
-| 7   | 4/22 | SAT: Basics, DPLL                                     |                                                   |
-| 8   | 4/24 | SAT: CDCL                                             |                                                   |
-| 9   | 4/29 | SAT: Extensions & Applications; Theory of Bit-Vectors |                                                   |
-| 10  | 5/1  | More Theories: Uninterpreted Functions, Arrays        |                                                   |
-| 11  | 5/6  | More Theories: LIA, LRA                               |                                                   |
-| 12  | 5/8  | Nelson-Oppen                                          |                                                   |
-| 13  | 5/13 | DPLL(T)                                               |                                                   |
-| 14  | 5/15 | (TBD)                                                 |                                                   |
-| 15  | 5/20 |                                                       |                                                   |
-| 16  | 5/22 | -                                                     | -                                                 |
-| 17  | 5/27 | Symbolic Execution                                    |                                                   |
-| 18  | 5/29 | Program Synthesis                                     |                                                   |
-| 19  | 6/3  | Solver-Aided Programming                              |                                                   |
-| 20  | 6/5  | (Research Topics)                                     | -                                                 |
-| -   | 6/14 | (Quarter Ends)                                        |                                                   |
+| #   | Date | Lecture                                               | Tutorial                                                  | Out                            | Due              |
+| --- | ---- | ----------------------------------------------------- | --------------------------------------------------------- | ------------------------------ | ---------------- |
+| 1   | 4/1  | [Overview](./lectures/lecture1.pdf)                   | [Dafny](./tutorials/01-dafny/demo.dfy))                   | [hw1](/homework/hw1/README.md) |
+| 2   | 4/3  | [IMP: Syntax & Semantics](./lectures/lecture2.pdf)    | [OCaml: Basics, Data Types](./tutorials/02-ocaml/demo.ml) |
+| 3   | 4/8  | [Hoare Logic 1](./lectures/lecture3.pdf)              | [OCaml: Recursive Types](./tutorials/03-ocaml/)           | [hw2](./homework/hw2/)         | hw1              |
+| 4   | 4/10 | [Hoare Logic 2](./lectures/lecture4.pdf)              | [OCaml: List, Arrays, ASTs](./homework/hw2)               |
+| 5   | 4/15 | Guarded Commands, VC Gen                              | Project 1 Walkthrough                                     | [proj1](./projects/proj1/)     | hw2              |
+| 6   | 4/17 | SMT Solvers: Overview                                 |                                                           |
+| 7   | 4/22 | SAT: Basics, DPLL                                     |                                                           |
+| 8   | 4/24 | SAT: CDCL                                             |                                                           |                                | proj1-benchmarks |
+| 9   | 4/29 | SAT: Extensions & Applications; Theory of Bit-Vectors |                                                           |                                | proj1            |
+| 10  | 5/1  | More Theories: Uninterpreted Functions, Arrays        |                                                           |
+| 11  | 5/6  | More Theories: LIA, LRA                               |                                                           |
+| 12  | 5/8  | Nelson-Oppen                                          |                                                           |
+| 13  | 5/13 | DPLL(T)                                               |                                                           |
+| 14  | 5/15 | (TBD)                                                 |                                                           |
+| 15  | 5/20 |                                                       |                                                           |
+| 16  | 5/22 | -                                                     | -                                                         |
+| 17  | 5/27 | Symbolic Execution                                    |                                                           |
+| 18  | 5/29 | Program Synthesis                                     |                                                           |
+| 19  | 6/3  | Solver-Aided Programming                              |                                                           |
+| 20  | 6/5  | (Research Topics)                                     | -                                                         |
+| -   | 6/14 | (Quarter Ends)                                        |                                                           |
 
 
 # Grading (No curving)
