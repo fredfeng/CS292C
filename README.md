@@ -6,7 +6,7 @@ This course is a graduate level introduction to formal program verification tech
 
 Instructor : Yu Feng
 
-- Office hour: TBD
+- Office hour: 9am-10am, Tuesday
 
 TA/Tutorial Instructor: Junrui Liu (junrui@ucsb.edu)
 
