@@ -1,0 +1,12 @@
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
+
+(test
+ (name test_proj1)
+ (libraries base alcotest lib fmt)
+ (preprocess
+  (pps ppx_jane))
+ (deps
+  (source_tree public)))
