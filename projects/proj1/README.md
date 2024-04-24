@@ -247,7 +247,7 @@ The following semantic simplifications are made in Difny to simplify the impleme
 
 ### 2.7 Examples
 
-Example Difny programs can be found in the [examples](./examples/) directory. Note that any Difny program is a valid Dafny program.
+Example Difny programs can be found in the [test/public](./test/public/) directory. Note that any Difny program is a valid Dafny program.
 
 
 
