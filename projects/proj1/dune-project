@@ -27,6 +27,7 @@
   nice_parser
   ppx_jane
   alcotest
+  csv
   fmt
   logs
   z3))

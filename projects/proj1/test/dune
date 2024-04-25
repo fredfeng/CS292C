@@ -5,7 +5,7 @@
 
 (test
  (name test_proj1)
- (libraries base alcotest lib fmt)
+ (libraries base alcotest lib fmt csv)
  (preprocess
   (pps ppx_jane))
  (deps

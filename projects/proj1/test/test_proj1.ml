@@ -1,40 +1,36 @@
 open Base
 
+exception Timeout
+
+(* run a function with specified timeout:
+   https://discuss.ocaml.org/t/computation-with-time-constraint/5548/9 *)
+let with_timeout timeout f =
+  let _ =
+    Stdlib.Sys.set_signal Stdlib.Sys.sigalrm
+      (Stdlib.Sys.Signal_handle (fun _ -> raise Timeout))
+  in
+  ignore (Unix.alarm timeout);
+  try
+    let r = f () in
+    ignore (Unix.alarm 0);
+    r
+  with e ->
+    ignore (Unix.alarm 0);
+    raise e
+
+let public_dir = "public"
+let public_csv_filename = "bench.csv"
+
 let public_cases =
-  [
-    "binary_search.dfy";
-    "binary_search2.dfy";
-    "binary_search_bad1.dfy";
-    "binary_search_bad2.dfy";
-    "even_odd.dfy";
-    "even_odd_bad.dfy";
-    "fib.dfy";
-    "fib_arr.dfy";
-    "fib_arr_bad.dfy";
-    "fib_diverge.dfy";
-    "fn_args.dfy";
-    "fn_ret.dfy";
-    "fn_ret2.dfy";
-    "map_min.dfy";
-    "map_min_bad.dfy";
-    "max.dfy";
-    "max_arr.dfy";
-    "max_arr_rec.dfy";
-    "max_arr_rec_bad.dfy";
-    "max_fn.dfy";
-    "min2d.dfy";
-    "mul.dfy";
-    "mul_arr.dfy";
-    "mul_arr_fn.dfy";
-    "mul_fn.dfy";
-    "rand.dfy";
-    "test.dfy";
-    "while1d.dfy";
-    "while2d.dfy";
-    "while2d_weak.dfy";
-    "while_false.dfy";
-    "while_true.dfy";
-  ]
+  Stdlib.Filename.concat public_dir public_csv_filename
+  |> Csv.load
+  |> Csv.to_array
+  |> Array.filter_map ~f:(function
+       | [| filename; category |] ->
+           Option.map (Int.of_string_opt category) ~f:(fun n -> (filename, n))
+       | _ -> None)
+  |> Array.to_list
+  |> List.sort ~compare:(fun (_, n1) (_, n2) -> Int.compare n1 n2)
 
 type result = Verified | NotVerified | Unknown [@@deriving compare, equal]
 
@@ -65,7 +61,8 @@ let _ = Logs.set_reporter (Logs.format_reporter ~app:out_buffer_formatter ())
 let _ = Logs.set_level (Some Logs.Debug)
 
 let parse_exp_list out_list_str : out list =
-  out_list_str |> String.split_lines
+  out_list_str
+  |> String.split_lines
   |> List.filter_map ~f:(fun line ->
          match String.split ~on:':' line with
          | [ method_name; result_str ] -> (
@@ -105,8 +102,8 @@ let t_exp_list =
         (List.dedup_and_sort ~compare:compare_out l1)
         (List.dedup_and_sort ~compare:compare_out l2))
 
-let test_case ~suite filename () =
-  let dfy_path = suite ^ "/" ^ filename in
+let test_case ~dir filename () =
+  let dfy_path = Stdlib.Filename.concat dir filename in
   let prog = Lib.Parser.Prog.parse_file dfy_path in
   let expected =
     dfy_path ^ ".expected" |> Stdio.In_channel.read_all |> parse_exp_list
@@ -115,7 +112,7 @@ let test_case ~suite filename () =
   let () = validate_out_list expected in
   Logs.info (fun m -> m "Running verifier");
   Buffer.reset out_buffer;
-  let () = List.iter prog ~f:(Lib.Verify.go prog) in
+  let () = with_timeout 10 (fun () -> List.iter prog ~f:(Lib.Verify.go prog)) in
   let actual = Buffer.contents out_buffer |> parse_exp_list in
   Logs.info (fun m -> m "Validating actual results");
   let () = validate_out_list actual in
@@ -126,7 +123,9 @@ let () =
   Alcotest.run "difny"
     [
       ( "public",
-        List.map public_cases ~f:(fun filename ->
-            Alcotest.test_case filename `Quick
-              (test_case ~suite:"public" filename)) );
+        List.map public_cases ~f:(fun (filename, n) ->
+            Alcotest.test_case
+              Fmt.(str "[cat: %d] %s" n filename)
+              `Quick
+              (test_case ~dir:"public" filename)) );
     ]
