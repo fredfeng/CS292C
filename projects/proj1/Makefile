@@ -14,7 +14,7 @@ install: build
 	dune install
 
 $(ARCHIVE): $(FILES)
-	zip $(ARCHIVE) $(FILES)
+	zip -r $(ARCHIVE) $(FILES)
 
 zip: $(ARCHIVE)
 
