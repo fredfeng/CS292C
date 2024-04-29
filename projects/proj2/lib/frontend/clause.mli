@@ -3,7 +3,7 @@
 open Base
 
 type t = Set.M(Lit).t [@@deriving compare, equal, sexp, hash]
-(** A clause is a conjuction of literals, represented as a list *)
+(** A clause is a disjunction of literals, represented as a set *)
 
 val pp : t Fmt.t
 (** Pretty-printer for clauses *)
