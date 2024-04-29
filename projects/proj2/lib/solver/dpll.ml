@@ -20,7 +20,7 @@ struct
 
   (** Construct a resolution proof of the current (partial) decision assignment *)
   let make_proof (a : Assign.t) (unsat : Clause.t) : Proof.t =
-    Todo.part 3 "Dpll.make_proof" ~dummy:(Proof.fact unsat)
+    Todo.part 4 "Dpll.make_proof" ~dummy:(Proof.fact unsat)
 
   exception Backtrack of Proof.t
 
