@@ -1,0 +1,10 @@
+(executable
+ (public_name z4)
+ (name main)
+ (libraries frontend solver cmdliner)
+ (preprocess
+  (pps ppx_jane)))
+
+(install
+ (section bin)
+ (files main.exe))

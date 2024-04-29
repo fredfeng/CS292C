@@ -1,0 +1,12 @@
+bench0,common
+bench1,common
+bench2,common
+pigeon-hole,common
+parity,common
+pret,cdcl
+inductive-inference,cdcl
+dubois,cdcl
+jnh,cdcl
+ssa,cdcl
+bf,cdcl
+sat09,cdcl

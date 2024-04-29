@@ -1,0 +1,11 @@
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
+
+(library
+ (public_name proj2.solver)
+ (name solver)
+ (libraries base fmt logs frontend)
+ (preprocess
+  (pps ppx_jane ppx_deriving.show)))

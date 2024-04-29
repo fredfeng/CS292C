@@ -1,0 +1,17 @@
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
+
+(ocamllex scanner)
+
+(menhir
+ (modules menhir_parser))
+
+(library
+ (public_name proj2.frontend)
+ (name frontend)
+ (libraries base fmt logs nice_parser utils)
+ (preprocess
+  (pps ppx_jane ppx_deriving.show))
+ (wrapped false))

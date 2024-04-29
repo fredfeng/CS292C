@@ -1,0 +1,12 @@
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
+
+(tests
+ (names dpll_sat cdcl_sat dpll_unsat cdcl_unsat dpll_proof cdcl_proof)
+ (libraries base alcotest csv frontend solver)
+ (preprocess
+  (pps ppx_jane))
+ (deps
+  (source_tree bench)))
