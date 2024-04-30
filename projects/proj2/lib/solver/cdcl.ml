@@ -74,18 +74,17 @@ struct
     (conflict, proof, beta)
 
   exception Backtrack of int
+  exception Restart
 
-  (** [restart ~thn ~els] restarts the solver if the number of learned conflicts
-      in the current run exceeds the threshold, and if so, calls the restart
-      continuation [thn]. Otherwise, it calls the normal continuation [els]. *)
-  let restart ~(thn : unit -> 'a) ~(els : unit -> 'a) : 'a =
+  (** [check_result ()] restarts the solver by raising [Restart] if the number
+      of learned conflicts in the current run exceeds the threshold. *)
+  let check_restart () : unit =
     if !restart_count >= !restart_threshold then (
       Logs.info (fun m ->
           m "Reached threshold: %d. Restarting..." !restart_threshold);
       restart_threshold := restart_inc !restart_threshold;
       restart_count := 0;
-      thn ())
-    else els ()
+      raise Restart)
 
   let rec solve (s0 : State.t) : State.t =
     Logs.debug (fun m -> m ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
@@ -94,51 +93,53 @@ struct
     Logs.debug (fun m ->
         m "%a" Fmt.(vbox @@ list Clause.pp) (curr_conflicts ()));
 
-    restart
-      ~thn:(fun () -> (* restart with the initial state *)
-                      solve State.init)
-      ~els:(fun () ->
-        (* continue solving the input formula and current conflict clauses *)
-        let r, a = Bcp.run s0.level s0.a (cs @ curr_conflicts ()) in
-        (* update the assignment in the solver state *)
-        let s = { s0 with a } in
-        Logs.debug (fun m -> m "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
-        Logs.debug (fun m -> m "State after unit-prop: %a" State.pp s);
+    check_restart ();
 
-        match r with
-        | Sat ->
-            Logs.debug (fun m -> m "BCP: SAT");
-            s
-        | Unsat c ->
-            Logs.debug (fun m -> m "BCP: Found unsat clause: %a" Clause.pp c);
-            let c, proof, beta = analyze s.level s.a c in
-            learn_conflict s c proof;
-            Logs.debug (fun m -> m "Backtracking to level %d" beta);
-            raise (Backtrack beta)
-        | Unknown ->
-            Logs.debug (fun m -> m "BCP: Unknown");
-            let decision =
-              (* pick a literal that hasn't been assigned *)
-              (* NOTE: you might want to replace this with [Heuristics.next_unassigned]
-                 for debugging purposes to eliminate randomness *)
-              Heuristics.best_unassigned vars s.a s.h
-              |> Option.value_exn
-                   ~error:(Error.of_string "No unassigned variable")
-            in
-            Todo.part 2 "Cdcl.solve: branching and backtracking")
+    let r, a = Bcp.run s0.level s0.a (cs @ curr_conflicts ()) in
+    (* update the assignment in the solver state *)
+    let s = { s0 with a } in
+    Logs.debug (fun m -> m "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+    Logs.debug (fun m -> m "State after unit-prop: %a" State.pp s);
 
-  (** Solving result *)
-  let result : Solution.t =
+    match r with
+    | Sat ->
+        Logs.debug (fun m -> m "BCP: SAT");
+        s
+    | Unsat c ->
+        Logs.debug (fun m -> m "BCP: Found unsat clause: %a" Clause.pp c);
+        let c, proof, beta = analyze s.level s.a c in
+        learn_conflict s c proof;
+        Logs.debug (fun m -> m "Backtracking to level %d" beta);
+        raise (Backtrack beta)
+    | Unknown ->
+        Logs.debug (fun m -> m "BCP: Unknown");
+        let decision =
+          (* pick a literal that hasn't been assigned *)
+          (* NOTE: you might want to replace this with [Heuristics.next_unassigned]
+             for debugging purposes to eliminate randomness *)
+          Heuristics.best_unassigned vars s.a s.h
+          |> Option.value_exn ~error:(Error.of_string "No unassigned variable")
+        in
+        Todo.part 2 "Cdcl.solve: branching and backtracking"
+
+  let rec run () : Solution.t =
     let s = State.init in
     try
       let s' = solve s in
       SATISFIABLE s'.a.nu
-    with Backtrack _ ->
-      (* backtracked to the initial level, so unsat overall *)
-      Logs.debug (fun m -> m "Backtracked to the initial level");
-      (* produce a proof script consisting of all learned lemmas,
-         followed by the proof of the empty clause *)
-      UNSATISFIABLE (Script.make (List.rev !lemmas) (Proof.fact Clause.empty))
+    with
+    | Backtrack _ ->
+        (* backtracked to the initial level, so unsat overall *)
+        Logs.debug (fun m -> m "Backtracked to the initial level");
+        (* produce a proof script consisting of all learned lemmas,
+           followed by the proof of the empty clause *)
+        UNSATISFIABLE (Script.make (List.rev !lemmas) (Proof.fact Clause.empty))
+    | Restart ->
+        (* restart the solver *)
+        run ()
+
+  (** Solving result *)
+  let result = run ()
 end
 
 (** Run CDCL algorithm *)
