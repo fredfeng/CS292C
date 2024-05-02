@@ -28,7 +28,7 @@ Slack: https://join.slack.com/t/cs292c-spring24/shared_invite/zt-2g1hpa39v-OjeYe
 | 7   | 4/22 | [SAT: Basics, DPLL](./lectures/lecture4.pdf)              | DPLL Refutation                                           |
 | 8   | 4/24 | [SAT: CDCL](./lectures/lecture5.pdf)                      | CDCL Refutation                                           |                            |       |
 | 9   | 4/29 | [SAT: Extensions & Applications](./lectures/lecture6.pdf) | Project 2 Walkthrough                                     | [proj2](./projects/proj2/) | proj1 |
-| 10  | 5/1  | More Theories: Uninterpreted Functions, Arrays            | [Coq: Basics](./tutorials/coq/MyBasics.v)                 | [hw3](./homework/hw3/)     |
+| 10  | 5/1  | [More Theories: Uninterpreted Functions, Arrays](./lectures/lecture7.pdf)            | [Coq: Basics](./tutorials/coq/MyBasics.v)                 | [hw3](./homework/hw3/)     |
 | 11  | 5/6  | More Theories: LIA, LRA                                   |                                                           |
 | 12  | 5/8  | Nelson-Oppen                                              |                                                           |                            | hw3   |
 | 13  | 5/13 | DPLL(T)                                                   |                                                           |
