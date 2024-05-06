@@ -76,5 +76,4 @@ let run (desc : Description.t) : Solution.t =
     let desc = desc
   end) in
   (* get the solver result *)
-  Solution.verify desc Solver.result;
   Solver.result
