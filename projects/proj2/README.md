@@ -75,7 +75,7 @@ The type representation of clauses and formulas, in contrast, are not abstract: 
 > 
 > You should **not** need to understand the implementation details of, or modify, this module. 
 
-We have provided a reference interpreter for CNF formulas in [lib/solver/eval.mli](./lib/solver/eval.mli). This module exports:
+We have provided a reference interpreter for CNF formulas in [lib/frontend/eval.mli](./lib/frontend/eval.mli). This module exports:
 - `type u = bool option`, which represents potentially undetermined truth values.
 - an abstract type `t` that represents maps from variables to their truth-values, and functions `var`, `lit`, `clause`, and `formula` that evaluate variables, literals, clauses, and formulas, respectively.
 
