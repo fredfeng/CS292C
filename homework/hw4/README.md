@@ -39,7 +39,7 @@ opam install vscoq-language-server
    make
    ```
    which will compile all the `.v` files in the directory. You can also compile individual files by running `make <filanem>.vo`, **NOT `make <filename>.v`**!
-3. You will be modifying `Induction.v` and `Lists.v` in this HW. You must compile at least `Basics.v` first before you can do the exercises in `Induction` and `Lists`. You can compile `Basics` by running `make Basics.vo`.
+3. You will be modifying `Induction.v`, `Lists.v`, and `Poly.v` in this HW. You must compile at least `Basics.v` using `make` first before you can do the exercises in `Induction.v`. (If you wish to compile just `Basics.v`, you can run `make Basics.vo`, NOT `make Basics.v`.)
 
 
 ### Installing Coq using docker (NOT recommended)
