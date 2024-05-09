@@ -17,29 +17,29 @@ Lecture Time: 11am-12:50pm, M/W, Phelps 3526
 Slack: https://join.slack.com/t/cs292c-spring24/shared_invite/zt-2g1hpa39v-OjeYeMBPG1uMa7fCGcujqQ
 
 
-| #   | Date | Lecture                                                   | Tutorial                                                  | Out                        | Due   |
-| --- | ---- | --------------------------------------------------------- | --------------------------------------------------------- | -------------------------- | ----- |
-| 1   | 4/1  | [Overview](./lectures/lecture1.pdf)                       | [Dafny](./tutorials/01-dafny/demo.dfy)                    | [hw1](./homework/hw1/)     |
-| 2   | 4/3  | [IMP: Syntax & Semantics](./lectures/lecture2.pdf)        | [OCaml: Basics, Data Types](./tutorials/02-ocaml/demo.ml) |
-| 3   | 4/8  | [Hoare Logic 1](./lectures/lecture3.pdf)                  | [OCaml: Recursive Types](./tutorials/03-ocaml/)           | [hw2](./homework/hw2/)     | hw1   |
-| 4   | 4/10 | [Hoare Logic 2](./lectures/lecture3.pdf)                  | [OCaml: List, Arrays, ASTs](./homework/hw2)               |
-| 5   | 4/15 | [Guarded Commands, VC Gen](./lectures/lecture3.pdf)       | Project 1 Walkthrough                                     | [proj1](./projects/proj1/) | hw2   |
-| 6   | 4/17 | [SMT Solvers: Overview](./lectures/lecture4.pdf)          |                                                           |
-| 7   | 4/22 | [SAT: Basics, DPLL](./lectures/lecture4.pdf)              | DPLL Refutation                                           |
-| 8   | 4/24 | [SAT: CDCL](./lectures/lecture5.pdf)                      | CDCL Refutation                                           |                            |       |
-| 9   | 4/29 | [SAT: Extensions & Applications](./lectures/lecture6.pdf) | Project 2 Walkthrough                                     | [proj2](./projects/proj2/) | proj1 |
-| 10  | 5/1  | [More Theories: Uninterpreted Functions, Arrays](./lectures/lecture7.pdf)            | [Coq: Basics](./tutorials/coq/MyBasics.v)                 | [hw3](./homework/hw3/)     |
-| 11  | 5/6  | More Theories: LIA, LRA                                   |                                                           |
-| 12  | 5/8  | Nelson-Oppen                                              |                                                           |                            | hw3   |
-| 13  | 5/13 | DPLL(T)                                                   |                                                           |
-| 14  | 5/15 | (TBD)                                                     |                                                           |
-| 15  | 5/20 |                                                           |                                                           |                            | proj2 |
-| 16  | 5/22 | -                                                         | -                                                         |
-| 17  | 5/27 | Symbolic Execution                                        |                                                           |
-| 18  | 5/29 | Program Synthesis                                         |                                                           |
-| 19  | 6/3  | Solver-Aided Programming                                  |                                                           |
-| 20  | 6/5  | (Research Topics)                                         | -                                                         |
-| -   | 6/14 | (Quarter Ends)                                            |                                                           |
+| #   | Date | Lecture                                                                   | Tutorial                                                  | Out                        | Due   |
+| --- | ---- | ------------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------- | ----- |
+| 1   | 4/1  | [Overview](./lectures/lecture1.pdf)                                       | [Dafny](./tutorials/01-dafny/demo.dfy)                    | [hw1](./homework/hw1/)     |
+| 2   | 4/3  | [IMP: Syntax & Semantics](./lectures/lecture2.pdf)                        | [OCaml: Basics, Data Types](./tutorials/02-ocaml/demo.ml) |
+| 3   | 4/8  | [Hoare Logic 1](./lectures/lecture3.pdf)                                  | [OCaml: Recursive Types](./tutorials/03-ocaml/)           | [hw2](./homework/hw2/)     | hw1   |
+| 4   | 4/10 | [Hoare Logic 2](./lectures/lecture3.pdf)                                  | [OCaml: List, Arrays, ASTs](./homework/hw2)               |
+| 5   | 4/15 | [Guarded Commands, VC Gen](./lectures/lecture3.pdf)                       | Project 1 Walkthrough                                     | [proj1](./projects/proj1/) | hw2   |
+| 6   | 4/17 | [SMT Solvers: Overview](./lectures/lecture4.pdf)                          |                                                           |
+| 7   | 4/22 | [SAT: Basics, DPLL](./lectures/lecture4.pdf)                              | DPLL Refutation                                           |
+| 8   | 4/24 | [SAT: CDCL](./lectures/lecture5.pdf)                                      | CDCL Refutation                                           |                            |       |
+| 9   | 4/29 | [SAT: Extensions & Applications](./lectures/lecture6.pdf)                 | Project 2 Walkthrough                                     | [proj2](./projects/proj2/) | proj1 |
+| 10  | 5/1  | [More Theories: Uninterpreted Functions, Arrays](./lectures/lecture7.pdf) | [Coq: Basics](./tutorials/coq/Script.v)                   | [hw3](./homework/hw3/)     |
+| 11  | 5/6  | More Theories: LIA, LRA                                                   | [Coq: Induction](./tutorials/coq/Script.v)                |
+| 12  | 5/8  | Nelson-Oppen                                                              | [Coq: Lists, Poly](./tutorials/coq/Script.v)              | [hw4](./homework/hw4/)     | hw3   |
+| 13  | 5/13 | DPLL(T)                                                                   |                                                           |
+| 14  | 5/15 | (TBD)                                                                     |                                                           |                            | hw4   |
+| 15  | 5/20 |                                                                           |                                                           |                            | proj2 |
+| 16  | 5/22 | -                                                                         | -                                                         |
+| 17  | 5/27 | Symbolic Execution                                                        |                                                           |
+| 18  | 5/29 | Program Synthesis                                                         |                                                           |
+| 19  | 6/3  | Solver-Aided Programming                                                  |                                                           |
+| 20  | 6/5  | (Research Topics)                                                         | -                                                         |
+| -   | 6/14 | (Quarter Ends)                                                            |                                                           |
 
 
 # Grading (No curving)
