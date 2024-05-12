@@ -33,9 +33,9 @@ Slack: https://join.slack.com/t/cs292c-spring24/shared_invite/zt-2g1hpa39v-OjeYe
 | 12  | 5/8  | [Nelson-Oppen](./lectures/lecture9.pdf)                                                             | [Coq: Lists, Poly](./tutorials/coq/Script.v)              | [hw4](./homework/hw4/)     | hw3   |
 | 13  | 5/13 | DPLL(T)                                                                   |                                                           |
 | 14  | 5/15 | (TBD)                                                                     |                                                           |                            | hw4   |
-| 15  | 5/20 |                                                                           |                                                           |                            | proj2 |
+| 15  | 5/20 |  No class (Out of town)                                                                         |                                                           |                            | proj2 |
 | 16  | 5/22 | -                                                                         | -                                                         |
-| 17  | 5/27 | Symbolic Execution                                                        |                                                           |
+| 17  | 5/27 | Memorial Day                                                        |                                                           |
 | 18  | 5/29 | Program Synthesis                                                         |                                                           |
 | 19  | 6/3  | Solver-Aided Programming                                                  |                                                           |
 | 20  | 6/5  | (Research Topics)                                                         | -                                                         |
