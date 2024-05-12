@@ -30,7 +30,7 @@ Slack: https://join.slack.com/t/cs292c-spring24/shared_invite/zt-2g1hpa39v-OjeYe
 | 9   | 4/29 | [SAT: Extensions & Applications](./lectures/lecture6.pdf)                 | Project 2 Walkthrough                                     | [proj2](./projects/proj2/) | proj1 |
 | 10  | 5/1  | [More Theories: Uninterpreted Functions, Arrays](./lectures/lecture7.pdf) | [Coq: Basics](./tutorials/coq/Script.v)                   | [hw3](./homework/hw3/)     |
 | 11  | 5/6  | More Theories: LIA, LRA                                                   | [Coq: Induction](./tutorials/coq/Script.v)                |
-| 12  | 5/8  | Nelson-Oppen                                                              | [Coq: Lists, Poly](./tutorials/coq/Script.v)              | [hw4](./homework/hw4/)     | hw3   |
+| 12  | 5/8  | [Nelson-Oppen](./lectures/lecture9.pdf)                                                             | [Coq: Lists, Poly](./tutorials/coq/Script.v)              | [hw4](./homework/hw4/)     | hw3   |
 | 13  | 5/13 | DPLL(T)                                                                   |                                                           |
 | 14  | 5/15 | (TBD)                                                                     |                                                           |                            | hw4   |
 | 15  | 5/20 |                                                                           |                                                           |                            | proj2 |
