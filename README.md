@@ -30,12 +30,12 @@ Slack: https://join.slack.com/t/cs292c-spring24/shared_invite/zt-2g1hpa39v-OjeYe
 | 9   | 4/29 | [SAT: Extensions & Applications](./lectures/lecture6.pdf)                 | Project 2 Walkthrough                                     | [proj2](./projects/proj2/) | proj1 |
 | 10  | 5/1  | [More Theories: Uninterpreted Functions, Arrays](./lectures/lecture7.pdf) | [Coq: Basics](./tutorials/coq/Script.v)                   | [hw3](./homework/hw3/)     |
 | 11  | 5/6  | More Theories: LIA, LRA                                                   | [Coq: Induction](./tutorials/coq/Script.v)                |
-| 12  | 5/8  | [Nelson-Oppen](./lectures/lecture9.pdf)                                                             | [Coq: Lists, Poly](./tutorials/coq/Script.v)              | [hw4](./homework/hw4/)     | hw3   |
+| 12  | 5/8  | [Nelson-Oppen](./lectures/lecture9.pdf)                                   | [Coq: Lists, Poly](./tutorials/coq/Script.v)              | [hw4](./homework/hw4/)     | hw3   |
 | 13  | 5/13 | DPLL(T)                                                                   |                                                           |
-| 14  | 5/15 | (TBD)                                                                     |                                                           |                            | hw4   |
-| 15  | 5/20 |  No class (Out of town)                                                                         |                                                           |                            | proj2 |
-| 16  | 5/22 | -                                                                         | -                                                         |
-| 17  | 5/27 | Memorial Day                                                        |                                                           |
+| 14  | 5/15 | (TBD)                                                                     |                                                           | [hw5](./homework/hw5/)     | hw4   |
+| 15  | 5/20 | No class (Out of town)                                                    |                                                           |                            | proj2 |
+| 16  | 5/22 | -                                                                         | -                                                         |                            | hw5   |
+| 17  | 5/27 | Memorial Day                                                              |                                                           |
 | 18  | 5/29 | Program Synthesis                                                         |                                                           |
 | 19  | 6/3  | Solver-Aided Programming                                                  |                                                           |
 | 20  | 6/5  | (Research Topics)                                                         | -                                                         |
