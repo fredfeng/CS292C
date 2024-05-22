@@ -34,12 +34,12 @@ Slack: https://join.slack.com/t/cs292c-spring24/shared_invite/zt-2g1hpa39v-OjeYe
 | 13  | 5/13 | DPLL(T)                                                                   |                                                           |
 | 14  | 5/15 | (TBD)                                                                     |                                                           | [hw5](./homework/hw5/)     | hw4   |
 | 15  | 5/20 | No class (Out of town)                                                    |                                                           |                            | proj2 |
-| 16  | 5/22 | -                                                                         | -                                                         |                            | hw5   |
+| 16  | 5/22 | -                                                                         | -                                                         | [hw6](./homework/hw6)      | hw5   |
 | 17  | 5/27 | Memorial Day                                                              |                                                           |
-| 18  | 5/29 | Program Synthesis                                                         |                                                           |
+| 18  | 5/29 | Program Synthesis                                                         |                                                           | proj3                      | hw6   |
 | 19  | 6/3  | Solver-Aided Programming                                                  |                                                           |
 | 20  | 6/5  | (Research Topics)                                                         | -                                                         |
-| -   | 6/14 | (Quarter Ends)                                                            |                                                           |
+| -   | 6/14 | (Quarter Ends)                                                            |                                                           |                            | proj3 |
 
 
 # Grading (No curving)
