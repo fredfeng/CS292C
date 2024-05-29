@@ -25,7 +25,7 @@ make
 
 Turn in the following files to Gradescope:
 - `SAT.v` (Part 1)
-- `Imp.v`, `ImpCEvalFun.v`, `Hoare.v` and `HoareAsLogic.v` (Part 2)
+- `Imp.v`, `ImpCEvalFun.v`, `Hoare.v`, `Hoare2.v` and `HoareAsLogic.v` (Part 2)
 
 
 
@@ -247,9 +247,10 @@ However, you may use specific *instances* of LEM for a proposition P **provided 
 > Consequently, you will receive credit for Part 2 **only if you got 100% in Part 1**.
 
 Complete all exercises in the following chapters of Software Foundations:
-- (10%) [Imp](https://softwarefoundations.cis.upenn.edu/lf-current/Imp.html) and [ImpCEvalFun](https://softwarefoundations.cis.upenn.edu/lf-current/ImpCEvalFun.html).
+- (5%) [Imp](https://softwarefoundations.cis.upenn.edu/lf-current/Imp.html) and [ImpCEvalFun](https://softwarefoundations.cis.upenn.edu/lf-current/ImpCEvalFun.html).
 - (10%) [Hoare](https://softwarefoundations.cis.upenn.edu/plf-current/Hoare.html) from the *second* volume of Software Foundations.
-- (10%) [HoareAsLogic](https://softwarefoundations.cis.upenn.edu/plf-current/HoareAsLogic.html) from the *second* volume of Software Foundations.
+- (10%) [Hoare2](https://softwarefoundations.cis.upenn.edu/plf-current/Hoare2.html) from the *second* volume of Software Foundations.
+- (5%) [HoareAsLogic](https://softwarefoundations.cis.upenn.edu/plf-current/HoareAsLogic.html) from the *second* volume of Software Foundations.
 
 
 ### Scoring 
