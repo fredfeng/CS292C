@@ -62,23 +62,23 @@ The logic of the `solve` function is simple: it first evaluates `f` using curren
   - if `n` is `0`, then everything has been decided. It doesn't matter what we return in this case, because if everything has been decided then `f` cannot possibly evaluate to unknown. We simply return a dummy `None` in this case.
   - if `n` is `S n'`, then the next variable to be assigned is `n'`. So we try solving again by setting `n'` to true or false. The notation `<|>` is for the `option_merge` function, which simply combines two options (with a bias towards the left).
 
-The entry point of the solver is the `decide` function, which simply calls `solve` with the empty assignment and the previous assigned variable set to 1 plus the maximum variable that occurs in `f`, so that the first ever decision will be `max_var f`, the second one will be `max_var f - 1`, ..., down to `0`:
+The entry point of the solver is the `z4` function, which simply calls `solve` with the empty assignment and the previous assigned variable set to 1 plus the maximum variable that occurs in `f`, so that the first ever decision will be `max_var f`, the second one will be `max_var f - 1`, ..., down to `0`:
 ```coq
-Definition decide (f: formula) :=
+Definition z4 (f: formula) :=
   let m := max_var f in
   solve (S m) empty f.
 ```
 
-Your task is to show that `decide` is a sound and complete decision procedure for the SAT problem:
+Your task is to show that `z4` is a sound and complete decision procedure for the SAT problem:
 ```coq
-Theorem decide_sound: forall f v,
-  decide f = Some v ->
+Theorem z4_sound: forall f v,
+  z4 f = Some v ->
   v |= f.
 Proof.
 Admitted.
 
-Theorem decide_complete: forall f,
-  decide f = None ->
+Theorem z4_complete: forall f,
+  z4 f = None ->
   forall v, ~(v |= f).
 Proof.
 Admitted.
@@ -86,7 +86,7 @@ Admitted.
 
 From which you should prove that 
 1. SAT is decidable, and
-2. whether a formula is satisfiable is `reflect`ed by whether `decide` returns `Some` or `None`:
+2. whether a formula is satisfiable is `reflect`ed by whether `z4` returns `Some` or `None`:
 ```coq
 Definition decidable (P: Prop) : Prop := P \/ ~P.
 
@@ -101,8 +101,8 @@ Admitted.
 Definition is_some {A} (o: option A) : bool :=
   if o then true else false.
 
-Theorem decide_spec: forall f,
-  reflect (is_sat f) (is_some (decide f)).
+Theorem z4_spec: forall f,
+  reflect (is_sat f) (is_some (z4 f)).
 Proof.
 Admitted.
 ```
@@ -127,7 +127,7 @@ Lemma solve_complete: forall n v f u,
 Proof.
 Admitted.
 ```
-You may find `solve_sound` useful in proving `decide_sound` and `solve_complete` useful in proving `decide_complete`. However, you don't have to prove or use any provided lemmas if you choose to embark on an alternative route.
+You may find `solve_sound` useful in proving `z4_sound` and `solve_complete` useful in proving `z4_complete`. However, you don't have to prove or use any provided lemmas if you choose to embark on an alternative route.
 
 
 ### A word on notation
@@ -207,11 +207,11 @@ Here're some ways to fully maximize the power of `crush`:
 
 For each task, you must **fully prove** the required theorems to receive credits. 
 
-For example, the proof of `decide_sound` may **not** depend on anything that you haven't yet proven. To confirm this, you can run
+For example, the proof of `z4_sound` may **not** depend on anything that you haven't yet proven. To confirm this, you can run
 ```coq
-Print Assumptions decide_sound.
+Print Assumptions z4_sound.
 ```
-to print out a list of yet-to-be-proven propositions which `decide_sound` depends on (transitively). The list should be empty for you to receive credit.
+to print out a list of yet-to-be-proven propositions which `z4_sound` depends on (transitively). The list should be empty for you to receive credit.
 
 
 The only allowed axioms -- which you assume without providing a proof for -- are
