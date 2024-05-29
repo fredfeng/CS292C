@@ -19,6 +19,8 @@ coq_makefile -f _CoqProject *.v -o Makefile
 make
 ```
 
+
+
 ## Submission
 
 Turn in the following files to Gradescope:
@@ -59,10 +61,10 @@ The logic of the `solve` function is simple: it first evaluates `f` using curren
 - If the evaluation returns `Some true`, then `v` already satisfies `f`.
 - If the evaluation returns `Some false`, then some decision that resulted in `v` must have been wrong, so `solve` returns `None` to signal a backtrack.
 - If the evaluation returns `None`, that means that the status `f` is unknown, so we need to keep making decisions. This is where the natural number `n` comes into play: **it represents the variable that was last decided on** (at least this is true to a first approximation). Since we'll be making decisions in decreasing order of the variables, this means that
-  - if `n` is `0`, then everything has been decided. It doesn't matter what we return in this case, because if everything has been decided then `f` cannot possibly evaluate to unknown. We simply return a dummy `None` in this case.
-  - if `n` is `S n'`, then the next variable to be assigned is `n'`. So we try solving again by setting `n'` to true or false. The notation `<|>` is for the `option_merge` function, which simply combines two options (with a bias towards the left).
+  - if `n` is `0`, then everything has been decided. It doesn't matter what we return in this case, because if everything has been decided then `f` cannot possibly evaluate to unknown. We just return a dummy `None` in this case.
+  - if `n` is `S n'`, then the next variable to be assigned is `n'`. So we try solving again by setting `n'` to true or false. The notation `<|>` is for the `option_merge` function, which combines two options (with a bias towards the left).
 
-The entry point of the solver is the `z4` function, which simply calls `solve` with the empty assignment and the previous assigned variable set to 1 plus the maximum variable that occurs in `f`, so that the first ever decision will be `max_var f`, the second one will be `max_var f - 1`, ..., down to `0`:
+The entry point of the solver is the `z4` function, which calls `solve` with the empty assignment and the previous assigned variable set to 1 plus the maximum variable that occurs in `f`, so that the first ever decision will be `max_var f`, the second one will be `max_var f - 1`, ..., down to `0`:
 ```coq
 Definition z4 (f: formula) :=
   let m := max_var f in
@@ -173,14 +175,14 @@ If you're unsure about the meaning of a notation, you can always run, say, `Loca
 
 1. You're highly encourage to factor a complex proof into multiple smaller lemmas. In fact, this is necessary in some cases, because some lemmas needed to be proven by induction by themselves.
 2. Whenever you see an expression of type `bool`, `bool option`, `X option`, or any non-recursive enum type, chances are you need to do a case analysis on it using `destruct`.
-3. Whenever you see an integer comparison **computation** as part of your goal or the current context, like `n <? m`, `n <=? m`, `n =? m`, etc., you should consider doing a case analysis on it. In this case, you should destruct the reflection theorem of the target comparison function. For example, if you see `n <? m`, you should do `destruct (Nat.ltb_spec n m)`: this will generates two sub-goals, where in each case `n <? m` will be replaced by `true` or `false`, **and** you'll automatically get an additional **proposition** that tells you either `n < m` or `n >= m` so that `lia` can reason about `n` and `m`.
+3. Whenever you see an integer comparison **computation** as part of your goal or the current context, like `n <? m`, `n <=? m`, `n =? m`, etc., you should consider doing a case analysis on it. In this case, you should destruct the reflection theorem of the target comparison function. For example, if you see `n <? m`, you should do `destruct (Nat.ltb_spec n m)`: this will generate two sub-goals, where in each case `n <? m` will be replaced by `true` or `false`, **and** you'll automatically get an additional **proposition** that tells you either `n < m` or `n >= m` so that `lia` can reason about `n` and `m`.
 
 
 ### Proof automation
 
-> Good automation is critical to maintaining your sanity when you do proof engineering in any interactive theorem prover.
+Good automation is critical to maintaining your sanity when you do proof engineering in any interactive theorem prover.
 
-To make your lives *much* easier, we have provided a magical tactic called `crush`, which is like a mini SMT solver that is extremely power and can automate many tedious proofs. Specifically, crush can handle:
+To make your lives *much* easier, we have provided a magical tactic called `crush`, which is like a mini SMT solver embedded in Coq that is extremely power and can automate many tedious proofs. Specifically, crush can handle:
 - Reasoning about propositional logic: `/\`, `\/`, `->`, `<->`, `~`. For this fragment of Coq, `crush` has roughly the same power as Coq's `intuition` tactic.
 - Reasoning about the theory of equalities with constructors. For this fragment of Coq, `crush` has roughly the same power as Coq's `rewrite`, `discriminate`, `congruence`, and `inversion` combined.
 - Reasoning about the theory of linear integer arithmetic. For this fragment of Coq, `crush` has roughly the same power as Coq's `lia` tactic.
@@ -192,7 +194,7 @@ Even if `crush` cannot solve the goal immediately, it will often simplify the pr
 
 Here're some ways to fully maximize the power of `crush`:
 
-- If you see an equation involving boolean-like operators, e.g., `b1 && b2 = Some true`, you should first "reflect" this equation into a proposition, e.g., `b1 = Some true /\ b2 = Some true`. Then you can use `crush`, because native `crush` cannot reason about custom operators. This is where the inversion lemmas like the ones you proved in HW5 will come especially handy. For example, `andu b1 b2 = None -> b1 = None \/ b2 = None`. You need to do this because `crush` can only `destruct` either `\/` or `/\`, not custom operators (unless you tell it to do so).
+- If you see an equation involving boolean-like operators, e.g., `b1 && b2 = Some true`, you should first "reflect" this equation into a proposition, e.g., `b1 = Some true /\ b2 = Some true`. Then you can use `crush`, because native `crush` cannot reason about custom operators. This is where the inversion lemmas like the ones you proved in HW5 will come especially handy. For example, `andu b1 b2 = None -> (b1 = None /\ b2 = Some true) \/ (b2 = None /\ b1 = Some true)`. You need to do this because `crush` can only `destruct` either `\/` or `/\`, not custom operators (unless you tell it to do so).
 
 - If you want `crush` to prove equalities using rewrites, you should always structure your equations so that the RHS is strictly simpler than the LHS, since `crush` by default rewrites from left to right. Otherwise, `crush` will loop infinitely.
 
@@ -211,10 +213,8 @@ For example, the proof of `z4_sound` may **not** depend on anything that you hav
 ```coq
 Print Assumptions z4_sound.
 ```
-to print out a list of yet-to-be-proven propositions which `z4_sound` depends on (transitively). The list should be empty for you to receive credit.
+to print out a list of yet-to-be-proven propositions which `z4_sound` depends on (transitively). The list should be empty for you to receive credit. The only exceptions are the following whitelist of axioms -- which you may assume without providing a proof for:
 
-
-The only allowed axioms -- which you assume without providing a proof for -- are
 - Functional extensionality:
     ```coq
     functional_extensionality_dep : forall (A : Type) (B : A -> Type) (f g : forall x : A, B x),
