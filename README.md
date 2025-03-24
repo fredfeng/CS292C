@@ -8,13 +8,9 @@ Instructor : Yu Feng
 
 - Office hour: 9am-10am, Tuesday, HFH 2157
 
-TA/Tutorial Instructor: Junrui Liu (junrui@ucsb.edu)
+Lecture Time: 1pm-2:50pm, T/TR, Phelps 3526
 
-- Office hour: 2pm-3pm, Friday, Place TBD
-
-Lecture Time: 11am-12:50pm, M/W, Phelps 3526
-
-Slack: https://join.slack.com/t/cs292c-spring24/shared_invite/zt-2g1hpa39v-OjeYeMBPG1uMa7fCGcujqQ
+Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9Sr6eGWBECoebHwRQ
 
 
 | #   | Date | Lecture                                                                   | Tutorial                                                  | Out                        | Due   |
