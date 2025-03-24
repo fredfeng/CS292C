@@ -42,9 +42,8 @@ Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9
 
 | Letter | Percentage |
 | ------ | ---------- |
-| A+     | 95–100%    |
-| A      | 90–94%     |
-| A-     | 85–89%     |
+| A      | 93–100%    |
+| A-     | 85–92%     |
 | B+     | 80–84%     |
 | B      | 75–79%     |
 | B-     | 70–74%     |
