@@ -38,7 +38,7 @@ Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9
 | -   | 6/14 | (Quarter Ends)                                                            |                                                           |                            | proj3 |
 
 
-# Grading (No curving)
+## Grading (No curving)
 
 | Letter | Percentage |
 | ------ | ---------- |
@@ -51,23 +51,124 @@ Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9
 | C      | 60–64%     |
 | F      | <60%       |
 
-- Weekly written assignments: 40%
-   - Self-graded on **effort** on a scale of 0-2, but will be checked by the TA:
-     - 0: problem not attempted at all
-     - 1: problem attempted, but not fully solved, and all work shown
-     - 2: problem fully solved
-   - *A self-grade of 1 is enough to get full credit for a problem.*
+- 3 programming projects: 30%
+- Midterm (closed book, closed note): 40%
+- Final project: 30%
+   - Well-documented README: 10%
+   - Complete, executable codebase: 10%
+   - Lightning talk: 10%
 
-- 3 programming projects: 60%
+## 🗂️ Course Outline
+
+### Part I: Foundations of Program Reasoning (Weeks 1–2)
+1. **Overview & Motivation**  
+   Introduction to software verification, real-world motivation, course logistics
+
+2. **IMP: Syntax & Semantics**  
+   Big-step and small-step semantics for a simple imperative language
+
+3. **Hoare Logic I**  
+   Hoare triples, rules for sequencing, conditionals, and loops
+
+4. **Hoare Logic II + Verification Condition Generation (VCG)**  
+   Derivation rules, soundness, and VCG overview
+
+📘 **Assignment 1**: Implement a Hoare-style verifier for a subset of IMP
+
+---
+
+### Part II: Logic & Solvers (Weeks 3–4)
+5. **SAT Solving Basics: CNF, DPLL**  
+   Propositional logic, SAT solving, DPLL algorithm
+
+6. **CDCL and Practical SAT Solvers**  
+   Conflict-driven clause learning, watched literals
+
+7. **SMT Solvers Overview + Theories (EUF, Arrays)**  
+   First-order logic, SMT solvers, uninterpreted functions
+
+8. **SMT with Arithmetic: LIA, LRA, Bitvectors**  
+   Numeric theories and solver support
+
+📘 **Assignment 2**: Use Z3/CVC5 to solve verification tasks
+
+---
+
+### Part III: Programs + Solvers (Weeks 5–6)
+9. **Guarded Commands & Weakest Preconditions (WP)**  
+   Dijkstra’s weakest precondition calculus, symbolic reasoning
+
+10. **Interprocedural Reasoning & Invariants**  
+    Procedure summaries, loop invariants, invariant inference
+
+11. **Nelson-Oppen Combination**  
+    Combining theories in SMT solving
+
+12. **DPLL(T): Architecture of Modern SMT Solvers**  
+    How SAT and theory solvers interact in tools
+
+📝 **Midterm** (Week 6): Covers Lectures 1–12
+
+---
+
+### Part IV: From Verification to Synthesis (Weeks 7–9)
+13. **Introduction to Program Synthesis**  
+    Syntax-guided synthesis (SyGuS), relation to verification
+
+14. **CEGIS & Inductive Synthesis**  
+    Counterexample-guided synthesis, invariant synthesis
+
+15. **Solver-Aided Programming (Rosette)**  
+    Symbolic execution for testing and synthesis
+
+16. **Verification Tools in Practice**  
+    Overview of Dafny, Why3, Frama-C, etc.
+
+17. **Synthesis for Program Repair & Bug Finding**  
+    Automated repair, angelic execution, fuzzing vs. synthesis
+
+📘 **Assignment 3**: Use Rosette (or similar) to synthesize or repair a small program
+
+---
+
+### Part V: Final Presentations & Wrap-up (Week 10)
+18. **Student Presentations I**  
+    Project demos, paper talks, or tool evaluations
+
+📘 **Final Project**   
+Design a verifier, explore a synthesis/repair technique, or evaluate a tool on a real-world program
+
+---
+
+## 🧠 Learning Outcomes
+
+By the end of this course, students will be able to:
+
+- Reason about program correctness using formal methods  
+- Encode verification conditions and solve them using SMT solvers  
+- Build simple verifiers and synthesizers using modern tools  
+- Understand and critique state-of-the-art verification research  
+
+---
+
+## 🛠 Tools & Resources
+
+- [Z3 SMT Solver](https://github.com/Z3Prover/z3)  
+- [Rosette](https://emina.github.io/rosette/)  
+- [Dafny](https://github.com/dafny-lang/dafny)  
+- [Why3](http://why3.lri.fr/)
+
+---
+
+## 📅 Key Dates
+
+- **Midterm**: Week 6 (May TBD)  
+- **Final Presentations**: Week 10 (June TBD)  
+- **Assignment Deadlines**: To be posted on course page  
 
 
 
-# Late Policy
-You have a total of 10 late days to be used throughout the quarter. You can use them in any way you like.
-
-
-
-# Academic Integrity
+## Academic Integrity
 - Cheating WILL be taken seriously. It is not fair toward honest students to take cheating lightly, nor is it fair to the cheater to let him/her go on thinking that cheating is a reasonable alternative in life.
 - The following is not considered cheating:
    - discussing broad ideas about programming assignments in groups, without being at a computer (with code-writing and debugging done individually, later).
@@ -81,44 +182,6 @@ You have a total of 10 late days to be used throughout the quarter. You can use 
 - Penalties: First time: a zero for the assignment; Second time: an “F” in the course.
 
 
-
-# References
-
-- Rondon, Patrick M., Ming Kawaguci, and Ranjit Jhala. "Liquid types." PLDI'2008.
-
-- Ali Sinan Köksal, Yewen Pu, Saurabh Srivastava, Rastislav Bodík, Jasmin Fisher, Nir Piterman. Synthesis of biological models from mutation experiments. Principles of Programming Languages (POPL). 2013. ACM DL
-
-- Srivastava, Saurabh, Sumit Gulwani, and Jeffrey S. Foster. From program verification to program synthesis. POPL 2010.
-
-- Jha, Susmit, et al. Oracle-guided component-based program synthesis. ICSE 2010.
-
-- Gulwani, Sumit. Automating string processing in spreadsheets using input-output examples. POPL 2011.
-
-- Phothilimthana, Phitchaya Mangpo, et al. "Scaling up superoptimization." ASPLOS 2016.
-
-- Chandra, Kartik, and Rastislav Bodik. Bonsai: synthesis-based reasoning for type systems. POPL 2017.
-
-- Bornholt, James, et al. Optimizing synthesis with metasketches. POPL 2016.
-
-- Yaghmazadeh, Navid, et al. SQLizer: query synthesis from natural language. OOPSLA 2017. **Distinguished Paper Award**
-
-- Deepcoder: Learning to write programs. Matej, et al. ICLR'16.
-
-- Helgi Sigurbjarnarson, James Bornholt, Emina Torlak, and Xi Wang. Push-Button Verification of File Systems via Crash Refinement. OSDI 2016. **Best Paper Award**
-
-- Shaon Barman, Sarah E. Chasins, Rastislav Bodik, Sumit Gulwani. Ringer: web automation by demonstration. OOPSLA 2016.
-
-- Luke Nelson, Jacob Van Geffen, Emina Torlak, and Xi Wang. Specification and verification in the field: Applying formal methods to BPF just-in-time compilers in the Linux kernel. OSDI 2020.
-
-- Chenming Wu, Haisen Zhao, Chandrakana Nandi, Jeff Lipton, Zachary Tatlock, Adriana Schulz. Carpentry Compiler. SIGGRAPH ASIA 2019.
-
-- Permenev, Anton, et al. Verx: Safety verification of smart contracts. 2020 IEEE Symposium on Security and Privacy 2020.
-
-- Chenglong Wang, Yu Feng, Ras Bodik, Alvin Cheung, Isil Dillig. Visualization by Example. POPL'2020.
-
-- Beckett, Ryan, et al. Network configuration synthesis with abstract topologies. PLDI'2017.
-
-- Dai, Wang-Zhou, et al. Bridging machine learning and logical reasoning by abductive learning. NIPS'2019.
 
 
 
