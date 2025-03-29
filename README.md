@@ -12,30 +12,30 @@ Lecture Time: 1pm-2:50pm, T/TR, Phelps 3526
 
 Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9Sr6eGWBECoebHwRQ
 
+| #   | Date  | Lecture                                                                 | Out                        | Due   |
+| --- | ----- | ----------------------------------------------------------------------- | -------------------------- | ----- |
+| 1   | 4/1   | [Overview & Motivation](./lectures/lecture1.pdf)                        | [hw1](./homework/hw1/)     |       |
+| 2   | 4/3   | [IMP: Syntax & Semantics](./lectures/lecture2.pdf)                      |                            |       |
+| 3   | 4/8   | [Hoare Logic I](./lectures/lecture3.pdf)                                 |                            |       |
+| 4   | 4/10  | [Hoare Logic II + VCG](./lectures/lecture4.pdf)                         |                            | hw1   |
+| 5   | 4/15  | [SAT Basics: CNF, DPLL](./lectures/lecture5.pdf)                        | [hw2](./homework/hw2/)     |       |
+| 6   | 4/17  | [SAT Solvers: CDCL](./lectures/lecture6.pdf)                            |                            |       |
+| 7   | 4/22  | [SMT Solvers & Theories I: EUF, Arrays](./lectures/lecture7.pdf)        |                            |       |
+| 8   | 4/24  | [SMT Solvers & Theories II: LIA, LRA](./lectures/lecture8.pdf)          |                            | hw2   |
+| 9   | 4/29  | [Nelson-Oppen Combination](./lectures/lecture9.pdf)                     |                            |       |
+| 10  | 5/1   | [DPLL(T): SMT Solver Architecture](./lectures/lecture10.pdf)            |                            |       |
+| 11  | 5/6   | [Guarded Commands & Weakest Preconditions](./lectures/lecture11.pdf)    |                            |       |
+| 12  | 5/8   | [Interprocedural Reasoning & Invariants](./lectures/lecture12.pdf)      | [hw3](./homework/hw3/)     |       |
+| 13  | 5/13  | **Midterm** (In Class)                                                  |                            |       |
+| 14  | 5/15  | [Program Synthesis: Overview](./lectures/lecture13.pdf)                 |                            |       |
+| 15  | 5/20  | No Class (Out of Town)                                                  |                            |       |
+| 16  | 5/22  | [CEGIS & Inductive Synthesis](./lectures/lecture14.pdf)                 |                            |       |
+| 17  | 5/27  | [Program Repair & Synthesis Applications](./lectures/lecture15.pdf)     |                            |       |
+| 18  | 5/29  | [Solver-Aided Programming (Rosette)](./lectures/lecture16.pdf)          |                            |       |
+| 19  | 6/3   | [Formal Verification in Practice: Dafny, Why3, Frama-C](./lectures/lecture17.pdf) |                    |       |
+| 20  | 6/5   | **Student Presentations + Wrap-up**                                      |                            | hw3   |
+| -   | 6/14  | **Quarter Ends**                                                         |                            |       |
 
-| #   | Date | Lecture                                                                   | Tutorial                                                  | Out                        | Due   |
-| --- | ---- | ------------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------- | ----- |
-| 1   | 4/1  | [Overview](./lectures/lecture1.pdf)                                       | [Dafny](./tutorials/01-dafny/demo.dfy)                    | [hw1](./homework/hw1/)     |
-| 2   | 4/3  | [IMP: Syntax & Semantics](./lectures/lecture2.pdf)                        | [OCaml: Basics, Data Types](./tutorials/02-ocaml/demo.ml) |
-| 3   | 4/8  | [Hoare Logic 1](./lectures/lecture3.pdf)                                  | [OCaml: Recursive Types](./tutorials/03-ocaml/)           | [hw2](./homework/hw2/)     | hw1   |
-| 4   | 4/10 | [Hoare Logic 2](./lectures/lecture3.pdf)                                  | [OCaml: List, Arrays, ASTs](./homework/hw2)               |
-| 5   | 4/15 | [Guarded Commands, VC Gen](./lectures/lecture3.pdf)                       | Project 1 Walkthrough                                     | [proj1](./projects/proj1/) | hw2   |
-| 6   | 4/17 | [SMT Solvers: Overview](./lectures/lecture4.pdf)                          |                                                           |
-| 7   | 4/22 | [SAT: Basics, DPLL](./lectures/lecture4.pdf)                              | DPLL Refutation                                           |
-| 8   | 4/24 | [SAT: CDCL](./lectures/lecture5.pdf)                                      | CDCL Refutation                                           |                            |       |
-| 9   | 4/29 | [SAT: Extensions & Applications](./lectures/lecture6.pdf)                 | Project 2 Walkthrough                                     | [proj2](./projects/proj2/) | proj1 |
-| 10  | 5/1  | [More Theories: Uninterpreted Functions, Arrays](./lectures/lecture7.pdf) | [Coq: Basics](./tutorials/coq/Script.v)                   | [hw3](./homework/hw3/)     |
-| 11  | 5/6  | More Theories: LIA, LRA                                                   | [Coq: Induction](./tutorials/coq/Script.v)                |
-| 12  | 5/8  | [Nelson-Oppen](./lectures/lecture9.pdf)                                   | [Coq: Lists, Poly](./tutorials/coq/Script.v)              | [hw4](./homework/hw4/)     | hw3   |
-| 13  | 5/13 | DPLL(T)                                                                   |                                                           |
-| 14  | 5/15 | (TBD)                                                                     |                                                           | [hw5](./homework/hw5/)     | hw4   |
-| 15  | 5/20 | No class (Out of town)                                                    |                                                           |                            | proj2 |
-| 16  | 5/22 | -                                                                         | -                                                         | [hw6](./homework/hw6)      | hw5   |
-| 17  | 5/27 | Memorial Day                                                              |                                                           |
-| 18  | 5/29 | Program Synthesis                                                         |                                                           | [proj3](./projects/proj3/) | hw6   |
-| 19  | 6/3  | Solver-Aided Programming                                                  |                                                           |
-| 20  | 6/5  | (Research Topics)                                                         | -                                                         |
-| -   | 6/14 | (Quarter Ends)                                                            |                                                           |                            | proj3 |
 
 
 ## Grading (No curving)
