@@ -14,22 +14,22 @@ Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9
 
 | #   | Date  | Lecture                                                                 | Out                        | Due   |
 | --- | ----- | ----------------------------------------------------------------------- | -------------------------- | ----- |
-| 1   | 4/1   | [Overview & Motivation](./lectures/lecture1.pdf)                        | [hw1](#)     |       |
+| 1   | 4/1   | [Overview & Motivation](./lectures/lecture1.pdf)                        |      |       |
 | 2   | 4/3   | [IMP: Syntax & Semantics](./lectures/lecture2.pdf)                      |                            |       |
 | 3   | 4/8   | [Hoare Logic I](#)                                 |                            |       |
-| 4   | 4/10  | [Hoare Logic II + VCG](#)                         |                            | hw1   |
-| 5   | 4/15  | [SAT Basics: CNF, DPLL](#)                        | [hw2](#)     |       |
+| 4   | 4/10  | [Hoare Logic II + VCG](#)                         |                            |    |
+| 5   | 4/15  | [SAT Basics: CNF, DPLL](#)                        | [hw1](#)     |       |
 | 6   | 4/17  | [SAT Solvers: CDCL](#)                            |                            |       |
 | 7   | 4/22  | [SMT Solvers & Theories I: EUF, Arrays](#)        |                            |       |
-| 8   | 4/24  | [SMT Solvers & Theories II: LIA, LRA](#)          |                            | hw2   |
+| 8   | 4/24  | [SMT Solvers & Theories II: LIA, LRA](#)          |                            |    |
 | 9   | 4/29  | [Nelson-Oppen Combination](#)                     |                            |       |
-| 10  | 5/1   | [DPLL(T): SMT Solver Architecture](#)            |                            |       |
+| 10  | 5/1   | [DPLL(T): SMT Solver Architecture](#)            |  [hw2](#)                          |    hw1   |
 | 11  | 5/6   | [Guarded Commands & Weakest Preconditions](#)    |                            |       |
-| 12  | 5/8   | [Interprocedural Reasoning & Invariants](#)      | [hw3](#)     |       |
+| 12  | 5/8   | [Interprocedural Reasoning & Invariants](#)      |      |       |
 | 13  | 5/13  | **Midterm** (In Class)                                                  |                            |       |
 | 14  | 5/15  | [Program Synthesis: Overview](#)                 |                            |       |
 | 15  | 5/20  | No Class (Out of Town)                                                  |                            |       |
-| 16  | 5/22  | [CEGIS & Inductive Synthesis](#)                 |                            |       |
+| 16  | 5/22  | [CEGIS & Inductive Synthesis](#)                 |  [hw3](#)                          |   hw2    |
 | 17  | 5/27  | [Program Repair & Synthesis Applications](#)     |                            |       |
 | 18  | 5/29  | [Solver-Aided Programming (Rosette)](#)          |                            |       |
 | 19  | 6/3   | [Formal Verification in Practice: Dafny, Why3, Frama-C](./lectures/lecture17.pdf) |                    |       |
