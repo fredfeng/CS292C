@@ -15,7 +15,7 @@ Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9
 | #   | Date  | Lecture                                                                 | Out                        | Due   |
 | --- | ----- | ----------------------------------------------------------------------- | -------------------------- | ----- |
 | 1   | 4/1   | [Overview & Motivation](./lectures/lecture1.pdf)                        | [hw1](#)     |       |
-| 2   | 4/3   | [IMP: Syntax & Semantics](#)                      |                            |       |
+| 2   | 4/3   | [IMP: Syntax & Semantics](./lectures/lecture2.pdf)                      |                            |       |
 | 3   | 4/8   | [Hoare Logic I](#)                                 |                            |       |
 | 4   | 4/10  | [Hoare Logic II + VCG](#)                         |                            | hw1   |
 | 5   | 4/15  | [SAT Basics: CNF, DPLL](#)                        | [hw2](#)     |       |
