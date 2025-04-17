@@ -458,6 +458,10 @@ which sets the log level to `debug`. The default log level is `app`, which only 
 You can run `difny --help` and `difny verify --help` to see all available commands and options. 
 
 
+### Running the tests
+Simply run `dune runtest`. This will run your verifier on all public benchmarks.
+
+
 ### What you need to implement
 
 The only files you need to modify are `desugar.ml`, `verify.ml`, and `smt.ml`. Below is a suggested progression/leveling guide, although you are free to complete this project in any order you like.
