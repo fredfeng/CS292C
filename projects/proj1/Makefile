@@ -1,4 +1,4 @@
-FILES := lib/desugar.ml lib/verify.ml lib/smt.ml benchmarks
+FILES := lib/desugar.ml lib/verify.ml lib/smt.ml
 ARCHIVE := submission.zip
 
 all: build

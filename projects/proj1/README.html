@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>CS292C Project 1&colon; Difny</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="cs292c-project-1-difny">CS292C Project 1: Difny</h1>
+<blockquote>
+<p><strong>Benchmarks Due: Wed, April 24 at 11:59pm</strong></p>
+<p><strong>Implementation Due: Monday, April 29 at 11:59pm</strong></p>
+<p>This is an <em>individual</em> project.</p>
+</blockquote>
+<p>You will be implementing a verification-condition (VC) generator for a simple imperative language called Difny[^difny], which is a blend of <ins>D</ins>a<ins>fny</ins> and <ins>I</ins>MP.</p>
+<img src="file:////Users/work/git/CS292C/projects/proj1/difny.png" alt="drawing" width="300"/>
+<h2 id="1-preparation">1. Preparation</h2>
+<ol>
+<li>
+<p>Install Dafny by following <a href="https://dafny.org/dafny/Installation">these instructions</a>. We recommend simply installing the <a href="https://dafny.org/dafny/Installation#Visual-Studio-Code">Dafny VSCode extension</a>. If you're on macOS or Linux, you will be prompted in VSCode to install .NET 6.0 once you open a <code>.dfy</code> file. Simply follow the link in the prompt to install it. You should install Dafny 4. If you're prompted by VSCode to upgrade from Dafny 3 to Dafny 4, you should let it automatically upgrade. The whole process should be fairly quick, taking no more than 5 minutes.</p>
+</li>
+<li>
+<p>Install OCaml by following the <a href="https://github.com/fredfeng/CS162/blob/master/sections/sec01/install.md">these instructions</a>. Once you're done, enter <code>utop</code> and evaluate the following expression:</p>
+<pre><code class="language-ocaml">print_endline <span class="hljs-string">&quot;I have installed OCaml!&quot;</span>;;
+</code></pre>
+<p>to make sure everything works.</p>
+</li>
+<li>
+<p>Please make sure you have <code>opam</code> and <code>dune</code>. Then, run</p>
+<pre><code class="language-bash">dune build
+</code></pre>
+<p>You will see some error messages that complain some libraries are missing. Ignore them, and run the following:</p>
+<pre><code class="language-bash">opam install . --deps-only -y
+</code></pre>
+<p>which will automatically install the necessary dependencies.</p>
+</li>
+<li>
+<p>Download and install the binary for version 4.13.0 of the <a href="https://github.com/Z3Prover/z3/releases">Z3 SMT solver</a>. MacOS users can install Z3 using Homebrew:</p>
+<pre><code class="language-bash">brew install z3
+</code></pre>
+<p>You do not install any language bindings for Z3. The OCaml binding should have been installed in the previous step by <code>opam</code>.</p>
+</li>
+<li>
+<p>This project will use Jane Street's <code>base</code> library, which is the de facto OCaml standard library (because OCaml's native standard library is notoriously inconsistent and encourages bad programming habits). You will see that every file in this project starts with the following line:</p>
+<pre><code class="language-ocaml"><span class="hljs-keyword">open</span> <span class="hljs-type">Base</span>
+</code></pre>
+<p>This will automatically open the <code>Base</code> module, which contains the most commonly used functions and types in OCaml. <strong>Do not remove this line.</strong></p>
+<p>You can find the documentation for the <code>base</code> library <a href="https://ocaml.org/p/base/v0.16.3/doc/Base/List/index.html">here</a>. You may find the functions in <a href="https://ocaml.org/p/base/v0.16.3/doc/Base/List/index.html">Base.List</a> especially useful for this project.</p>
+</li>
+</ol>
+<p>If you run into any issues, please report them in the <code>#tech-support</code> channel on Slack.</p>
+<h2 id="1-from-imp-to-dafny">1. From IMP to Dafny</h2>
+<p>You've learned IMP in class, and how to generate verification conditions for IMP. It turns out that IMP is used as the basis of many program verifiers. In this project, you'll apply what you learned to build a program verifier similar to the Dafny verifier. The syntax of Dafny is similar to that of IMP and many imperative languages. You can read more about Dafny <a href="https://dafny.org/latest/OnlineTutorial/guide">here</a>.</p>
+<p>Below are some additional exercises to help you get familiar with Dafny. They are ungraded and you don't need to submit them.</p>
+<h3 id="problem">Problem</h3>
+<p>In <a href="./min.dfy">min.dfy</a>, you will find a Dafny method that finds the minimum of a 2D array. Your tasks are:</p>
+<ol>
+<li>
+<p>State the correctness property of this method in terms of pre-condition(s) (using the <code>requires</code> keyword) and post-condition(s) (using the <code>ensures</code> keyword).</p>
+<p>Your pre-condition(s) should allow Dafny to prove that there is no out-of-bound array access.</p>
+</li>
+<li>
+<p>Annotate each of the two loops with appropriate invariants that allow Dafny to verify the overall correctness of the method.</p>
+<blockquote>
+<p><em>Hints</em>:</p>
+<ul>
+<li>The invariant for the outer should be very similar to your post-condition.</li>
+<li>For the inner loop, you may need to provide <em>two</em> different invariants:
+<ul>
+<li>the first invariant talks about <em>all</em> elements from sub-arrays <code>a[0]</code> up to <code>a[i-1]</code> inclusive, and</li>
+<li>the second invariant specifically looks at the sub-array <code>a[i]</code> and talks about its elements between <code>0</code> and <code>j-1</code> inclusive.</li>
+</ul>
+</li>
+</ul>
+<p>It may help draw a dummy 2D array on paper, and mark the elements that have been processed so far when the loop is at (i,j)-th position. Those processed elements will be the ones (and the only ones) that are mentioned in the invariants.</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="problem-1">Problem</h3>
+<p>The file <a href="./binary_search.dfy">binary_search.dfy</a> contains a method <code>BinarySearch</code> that performs binary search on a sorted array. The sorted-ness is guaranteed by the <code>Ordered(a)</code> predicate, which is just a formula that asserts <code>a[i] &lt;= a[j]</code> for all <code>i &lt;= j</code>. The post-condition is provided, which says that the method returns <code>true</code> if and only if the key <code>x</code> is contained in the array. Also, note that the while-loop is annotated with <code>decreases hi - lo</code>, which enables Dafny to prove that the loop terminates because the quantifier <code>(hi - lo)</code> monotonically decreases in each iteration of the loop.</p>
+<p>Your task is to replace <code>invariant true</code> in the while-loop of <code>BinarySearch</code> with an appropriate loop invariant that allows Dafny to verify the correctness of the method.</p>
+<blockquote>
+<p><em>Hint</em>: Your invariant needs to talk about where <code>x</code> <em>cannot</em> be found in the array based on the current values of <code>lo</code> and <code>hi</code>.</p>
+</blockquote>
+<h3 id="problem-2">Problem</h3>
+<p>Immediately below <code>BinarySearch</code>, we duplicated its implementation into another method called <code>BuggyBinarySearch</code>. The only change we made is to make the index variables (<code>lo</code>, <code>mid</code>, <code>hi</code>, etc.) into 4-bit integers (unsigned), whereas in Dafny <code>int</code> is the default infinite-precision integer.</p>
+<p>Copy and paste the (working) invariant you wrote for <code>BinarySearch</code> into <code>BuggyBinarySearch</code> and see if Dafny can verify the correctness of the method. Note that to make the invariant well-typed, you may need to do some conversion from <code>int</code> to <code>bv4</code> using the syntax <code>x as bv4</code> which converts a variable of type <code>int</code> to <code>bv4</code>.</p>
+<p>After that, you shall see that Dafny cannot verify the correctness of <code>BuggyBV4BinarySearch</code>. Your tasks are to:</p>
+<ol>
+<li>locate the exact line where Dafny reports an error,</li>
+<li>explain why Dafny cannot verify the correctness of the method</li>
+<li>patch <em>only one line of implementation code</em> in the loop body to make verification succeed.</li>
+</ol>
+<p><em>Hint</em>: The answers to the above questions can be found in the Wikipedia page for binary search, under the section Implementation Issues.</p>
+<h3 id="problem-3">Problem</h3>
+<p>Implement bubble sort in Dafny, and prove its correctness. There are multiple levels you can aim for in terms of the complexity of your implementation and the strength of your correctness proof:</p>
+<ul>
+<li>Your bubble sort outputs an ordered list</li>
+<li>Your bubble sort outputs an ordered list whose elements form the same <em>set</em> as the input list</li>
+<li>Your bubble sort outputs an ordered list whose elements form the same <em>multiset</em> as the input list</li>
+</ul>
+<p>You may choose to aim for any of the above levels, but you should clearly state which level you are aiming for in your submission.</p>
+<p>You may find this tutorial on <a href="https://dafny.org/blog/2023/10/11/insertion-sort/">verifying selection sort in Dafny</a> helpful.</p>
+<p>Attach your implementation, including all necessary annotations, in your submission. You should also informally explain in plain English the meaning of your pre- and post-conditions, and the loop invariants you used.</p>
+<h2 id="2-difny-language-specification">2. Difny Language Specification</h2>
+<blockquote>
+<p>Difny is strictly a subset of Dafny, and a superset of IMP, so you can use your knowledge of these languages to help you understand Difny. Differences between Difny and Dafny/IMP will be highlighted.</p>
+</blockquote>
+<p>We will first describe the concrete syntax of the Difny language using context-free grammars. Then we will go over some important semantic differences between Difny and Dafny.</p>
+<h3 id="20-types">2.0 Types</h3>
+<p>Difny has two types: <code>int</code> and <code>array</code>. An <code>array</code> type is a type constructor that takes another type as an argument. For example, <code>array&lt;int&gt;</code> is the type of an array of integers, and <code>array&lt;array&lt;int&gt;&gt;</code> is the type of an array of arrays of integers.</p>
+<pre><code>TYPE := &quot;int&quot; | &quot;array&quot; &quot;&lt;&quot; TYPE &quot;&gt;&quot;
+</code></pre>
+<p>Difny does not have <code>bool</code> as an explicit type, although it supports boolean expressions in conditionals.</p>
+<h3 id="21-arithmetic-expressions">2.1 Arithmetic expressions</h3>
+<pre><code>AEXP := n              (* integer constant *)
+      | PATH           (* memory read *)
+      | &quot;-&quot; AEXP       (* unary minus *)
+      | AEXP &quot;+&quot; AEXP  (* addition *)
+      | AEXP &quot;-&quot; AEXP  (* subtraction *)
+      | AEXP &quot;*&quot; AEXP  (* multiplication *)
+      | AEXP &quot;%&quot; AEXP  (* modulo *)
+      | &quot;(&quot; AEXP &quot;)&quot;   (* parentheses *)
+
+PATH :=
+      | id (&quot;[&quot; AEXP &quot;]&quot;)* (* variable / array access *)
+</code></pre>
+<p>Notes:</p>
+<ul>
+<li>All binary operators are left-associative. &quot;*&quot; and &quot;%&quot; have higher precedence than &quot;+&quot; and &quot;-&quot;.</li>
+<li>An <code>id</code> is a letter or an underscore, followed by any number of letters, digits, or underscores. It cannot start with a digit.</li>
+<li>The PATH non-terminal represents a memory location. It can be a simple variable <code>x</code> or an array access <code>x[i+1]</code>. Array accesses can be nested, e.g., <code>x[i+1][j-2][y[k]]</code>.</li>
+</ul>
+<h3 id="22-boolean-expressions">2.2 Boolean expressions</h3>
+<pre><code>BEXP := &quot;true&quot;         (* true *)
+      | &quot;false&quot;        (* false *)
+      | COMP           (* comparison *)
+      | &quot;!&quot; BEXP       (* negation *)
+      | BEXP &quot;&amp;&amp;&quot; BEXP (* conjunction *)
+      | BEXP &quot;||&quot; BEXP (* disjunction *)
+      | &quot;(&quot; BEXP &quot;)&quot;   (* parentheses *)
+
+COMP :=
+      | AEXP &quot;==&quot; AEXP (* equality *)
+      | AEXP &quot;!=&quot; AEXP (* inequality *)
+      | AEXP &quot;&lt;&quot; AEXP  (* less than *)
+      | AEXP &quot;&lt;=&quot; AEXP (* less than or equal to *)
+      | AEXP &quot;&gt;&quot; AEXP  (* greater than *)
+      | AEXP &quot;&gt;=&quot; AEXP (* greater than or equal to *)
+</code></pre>
+<p>Notes:</p>
+<ul>
+<li>Both &quot;&amp;&amp;&quot; and &quot;||&quot; are left-associative. &quot;!&quot; has higher precedence than &quot;&amp;&amp;&quot;, which has higher precedence than &quot;||&quot;.</li>
+<li>Comparisons are non-associative, and only integers can be compared.</li>
+<li>Although not stated in the grammar, consecutive comparisons are allowed. E.g., <code>x &lt; y &gt;= z == 1</code> will be parsed into <code>(x &lt; y) &amp;&amp; (y &gt;= z) &amp;&amp; (z == 1)</code>.</li>
+</ul>
+<h3 id="23-formulas">2.3 Formulas</h3>
+<p><code>FORMULA</code>s form a superset of <code>BEXP</code>s, as they additionally allow quantifiers, as well as <code>==&gt;</code> (implication) and <code>&lt;==&gt;</code> (if-and-only-if) as logical connectives.</p>
+<pre><code>FORMULA :=
+        (* boolean constants *)
+        | &quot;true&quot; | &quot;false&quot;
+        (* comparison *)
+        | COMP
+        (* negation *)
+        | &quot;!&quot; FORMULA
+        (* logical connective *)
+        | FORMULA CONN FORMULA
+        (* universal quantification *)
+        | &quot;forall&quot; id &quot;::&quot; FORMULA 
+        (* existential quantification *)
+        | &quot;exists&quot; id &quot;::&quot; FORMULA 
+        (* parentheses *)
+        | &quot;(&quot; FORMULA &quot;)&quot; 
+
+CONN := &quot;&amp;&amp;&quot; | &quot;||&quot; | &quot;==&gt;&quot; | &quot;&lt;==&gt;&quot; 
+</code></pre>
+<p>Notes:</p>
+<ul>
+<li>The precedence of logical connectives is as follows: &quot;!&quot; &gt; &quot;&amp;&amp;&quot; &gt; &quot;||&quot; &gt; &quot;==&gt;&quot; = &quot;&lt;==&gt;&quot;.</li>
+<li>Quantification can only be made over integer variables, not arrays.</li>
+<li>Quantifiers have lower precedence than all the logical connectives. So <code>forall x :: P &amp;&amp; Q</code> is equivalent to <code>forall x :: (P &amp;&amp; Q)</code>.</li>
+</ul>
+<h3 id="24-statements">2.4 Statements</h3>
+<pre><code>STMT := 
+     (* assignment *) 
+     | PATH &quot;:=&quot; AEXP &quot;;&quot;
+     (* conditional *) 
+     | &quot;if&quot; BEXP &quot;{&quot; BLOCK &quot;}&quot; &quot;else&quot; &quot;{&quot; BLOCK &quot;}&quot; 
+     (* while loop *)
+     | &quot;while&quot; BEXP INVARIANT* &quot;{&quot; BLOCK &quot;}&quot;
+     (* assertion *)
+     | &quot;assert&quot; FORMULA &quot;;&quot; 
+     (* assumption *)
+     | &quot;assume&quot; FORMULA &quot;;&quot; 
+     (* havoc (i.e. nondeterministic assignment) *)
+     | id &quot;:=&quot; &quot;*&quot; &quot;;&quot; 
+     (* method call *)
+     | id &quot;:=&quot; id &quot;(&quot; ARGS &quot;)&quot; &quot;;&quot;
+     (* print *)
+     | &quot;print&quot; AEXP &quot;;&quot;
+
+BLOCK := STMT*
+
+INVARIANT := &quot;invariant&quot; BEXP
+
+ARGS := any number of AEXP separated by &quot;,&quot;
+</code></pre>
+<p>Notes:</p>
+<ul>
+<li>There are three kinds of &quot;assignments&quot;:
+<ol>
+<li><code>PATH &quot;:=&quot; AEXP;</code> is a regular assignment. It updates the value of a memory location represented by <code>PATH</code> to the value of <code>AEXP</code>.</li>
+<li><code>id &quot;:=&quot; &quot;*&quot;;</code> is a havoc statement. It assigns a nondeterministic value to the variable <code>id</code>. To simplify your implementation, we disallow <code>PATH</code> to be on the left-hand side of a havoc statement.</li>
+<li><code>id &quot;:=&quot; id &quot;(&quot; ARGS &quot;);&quot;</code> is a method call. Again, to simplify your implementation, method calls are always statements (i.e., they can not appear as a part of an expression), and the return value of a method is always assigned to a variable, not an arbitrary <code>PATH</code>. Note that it's easy to circumvent these restrictions in the <em>source program</em> by using temporary variables. Thus, we put slightly more burden on the programmer, and less on the parser and the verifier.</li>
+</ol>
+</li>
+<li>A block is simply a sequence of statements. A block can be empty, which is equivalent to the <code>skip</code> statement in IMP.</li>
+<li>An <code>if</code> statement must have an <code>else</code> branch. If you want to write an <code>if</code> statement without an <code>else</code> branch, you can leave the else block empty, as in <code>if b { c1; c2; ... } else { }</code>.</li>
+<li><code>assert</code>, <code>assume</code>, and <code>x := *</code> corresponds to the same commands in the guarded command language (the intermediate language that Difny will be compiled to). The reason we allow them in the surface language will become clear.</li>
+</ul>
+<h3 id="25-methods-and-programs">2.5 Methods and programs</h3>
+<p>A Difny program is a list of methods:</p>
+<pre><code>PROG := METHOD+
+</code></pre>
+<p>The methods have roughly the same syntax as Dafny:</p>
+<pre><code>METHOD := 
+    &quot;method&quot; id &quot;(&quot; PARAMS &quot;)&quot; 
+    &quot;returns&quot; &quot;(&quot; id &quot;:&quot; TYPE &quot;)&quot;
+    REQUIRES*
+    ENSURES*
+    &quot;{&quot; 
+      LOCAL*
+      BLOCK
+      &quot;return&quot; AEXP &quot;;&quot;
+    &quot;}&quot;
+
+PARAMS := a (possibly empty) list of `id &quot;:&quot; TYPE` separated by &quot;,&quot;
+REQUIRES := &quot;requires&quot; FORMULA &quot;;&quot;
+ENSURES := &quot;ensures&quot; FORMULA &quot;;&quot;
+LOCAL := &quot;var&quot; id &quot;:&quot; TYPE &quot;;&quot;
+</code></pre>
+<p>We place some syntactic restrictions to simplify your verifier implementation:</p>
+<ul>
+<li>A method must always return some value. This manifests in two ways:
+<ol>
+<li>
+<p>The method must be annotated with a return variable and its type immediately after the parameters.</p>
+</li>
+<li>
+<p>The method must end with a <code>return</code> statement that returns a value of the correct type. No early return is allowed (although this restriction can easily be circumvented by using extra variables and branching).</p>
+<p>If you don't need to return anything, you can do</p>
+<pre><code class="language-dafny">method Foo() returns (unused: int)
+{
+   ...
+   return 0;
+}
+</code></pre>
+</li>
+</ol>
+</li>
+<li>All local variables must be declared at the beginning of the method. This makes scoping trivial, as every local variable is in scope for the entirety of the method.</li>
+<li>The return variable named by the <code>returns</code> annotation (NOT the return statement) can appear in the <code>ensures</code> clauses, but not in <code>requires</code>. The parameter variables can appear in both <code>requires</code> and <code>ensures</code> clauses. Local variables cannot appear in <code>requires</code> or <code>ensures</code> clauses.</li>
+</ul>
+<p>Finally, Difny allows <code>//</code> for single-line comments. Indentations and extra white spaces are ignored.</p>
+<h3 id="26-semantic-differences-between-difny-and-dafny">2.6 Semantic differences between Difny and Dafny</h3>
+<p>The following semantic simplifications are made in Difny to simplify the implementation of the verifier:</p>
+<ul>
+<li>
+<p>Function parameters are immutable, just like in Dafny. This means that if you wish to modify a parameter, you must first copy it into a local variable, and modify the local variable instead.</p>
+</li>
+<li>
+<p>Everything in Difny is by-value, and nothing is by-reference. This includes assignments and method calls:</p>
+<ul>
+<li>
+<p>Assignments to arrays are by-value. For example, <code>a := b;</code> will copy the entire array <code>b</code> into <code>a</code>.</p>
+</li>
+<li>
+<p>Function calls and returns are by-value. For example, in <code>a := f(b);</code>, the return value will be copied into <code>a</code>.</p>
+<p>Reasoning about references (and hence pointers and aliasing) is more difficult and is beyond the scope of this project.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Arrays always have infinite length, and negative indices are allowed. That is, 'a[100]' and 'a[-9999]' always exist and, except if specified by a precondition, their value is initially undefined (like with regular variables). Although there is no way to get the length of an array, we can simulate this by having a local variable or a method parameter to represent the length of an array.</p>
+</li>
+</ul>
+<h3 id="27-examples">2.7 Examples</h3>
+<p>Example Difny programs can be found in the <a href="./test/public/">test/public</a> directory. Note that any Difny program is a valid Dafny program, so you can use the Dafny verifier to run them (or any of the custom benchmarks you write).</p>
+<h2 id="3-implementing-the-vc-generator">3. Implementing the VC generator</h2>
+<p>We will first give an overview of the architecture of the VC generator, and align each of its components with the corresponding file/module in the skeleton code. Then, we will go over what you need to implement.</p>
+<h3 id="30-roadmap">3.0 Roadmap</h3>
+<p>The general pipeline of the verifier is as follows:</p>
+<pre><code>Difny source program
+    ||
+    || I. parse
+    ||
+    vv  
+Abstract Syntax Tree (AST)
+    ||
+    || II. compile
+    ||
+    vv
+Guarded Command Language (GCL)
+    ||
+    || III. wp
+    ||
+    vv
+VC Formulas
+    ||
+    || IV. encode
+    ||
+    vv
+SMT constraints
+    ||
+    || V. solve
+    ||
+    vv
+Either &quot;Yes, verified&quot;,
+or &quot;No, here's an counterexample&quot;
+</code></pre>
+<p>In this project, we will focus on steps II-IV; the first step, the parser, has been implemented for you, and we shall rely on an off-the-shelf SMT solver (Z3) to do the last step.</p>
+<h3 id="31-detailed-walkthrough">3.1 Detailed walkthrough</h3>
+<p>The starter code for this project can be found in <a href="./lib/">lib/</a>. The following sections assume we're at the root of the <code>lib</code> directory.</p>
+<h4 id="step-i-parse">Step I: parse</h4>
+<p>The lexer and the parser are provided in <a href="./lib/lexer.mll">lexer.mll</a> and <a href="./lib/menhir_parser.mly">menhir_parser.mly</a>, respectively. You should not need to understand or modify these files.</p>
+<p>The AST of the Difny language is defined in <a href="./lib/lang.ml">lang.ml</a>. In some of the constructors, we use <a href="https://dev.realworldocaml.org/guided-tour.html#scrollNav-4">records</a> instead of tuples to disambiguate the meaning of each component. A record is just a tuple where each component is given a name. For example, the <code>meth</code> type which represents methods is defined as follows:</p>
+<pre><code class="language-ocaml"><span class="hljs-keyword">type</span> meth = {
+  id : <span class="hljs-built_in">string</span>;  <span class="hljs-comment">(** method name *)</span>
+  requires : formula <span class="hljs-built_in">list</span>;  <span class="hljs-comment">(** preconditions *)</span>
+  ensures : formula <span class="hljs-built_in">list</span>;  <span class="hljs-comment">(** postconditions *)</span>
+  ...
+}
+</code></pre>
+<p>The same file also contains a few utility modules:</p>
+<ul>
+<li><code>Syntax</code> defines functions to construct AST nodes (as an alternative to writing out constructors manually).</li>
+<li><code>Utils</code> contains helper functions to lookup the type of a variable in a type environment.</li>
+</ul>
+<p>The pretty printers for the AST are in <a href="./lib/pretty.ml">pretty.ml</a>.</p>
+<p>You should not need to modify any of the files mentioned above. However, the parser does rely on <a href="./lib/desugar.ml">desugar.ml</a> to translate a <code>path</code> into an <code>aexp</code> (if the path is being read from), or to an <code>Assign</code> statement if the path is being written to. You will need to copy over the code you wrote for HW2 to <code>desugar.ml</code>. Do NOT change the name of the functions there or their types in <code>desugar.ml</code>.</p>
+<h4 id="step-ii-compile">Step II: compile</h4>
+<p>Here, we will translate Difny ASTs into the guarded command language (GCL). The data type that represents GCL syntax trees is defined in <a href="./lib/lang.ml">lang.ml</a> by the <code>gcom</code> data type, and the compiler itself is in <a href="./lib/verify.ml">verify.ml</a>. You should find the language of guarded commands exactly the same as what was covered in the lectures.</p>
+<p>The file <a href="./lib/verify.ml">verify.ml</a> is where the interesting things happen. Locate the <code>compile</code> function in the <code>Make</code> module. This function has type <code>stmt -&gt; gcom list</code>, which means it takes a Difny statement and translates it into a list of guarded commands. You will need to fill in the implementation of this function, using the translation rules covered in the lectures.</p>
+<p>During compilation, you may need to generate fresh variables. This can be done by calling the provided <code>fresh_var</code> function. For example, <code>fresh_var t ~hint:&quot;x&quot;</code> will generate a unique string <code>$x_&lt;n&gt;</code> where <code>&lt;n&gt;</code> is some internal counter, and it will also automatically record the fact that the new variable has type <code>t</code> (this info will be needed in step IV).</p>
+<h4 id="step-iii-weakest-pre-condition-wp">Step III: weakest pre-condition (WP)</h4>
+<p>Immediately below the <code>compile</code> function, you will find <code>wp : gcom -&gt; formula -&gt; formula</code> which computes the weakest pre-condition of a guarded command with respect to a given post-condition. You will need to fill in the implementation of this function using the rules covered in the lectures. You might need to generate fresh variables here, so you can use the <code>fresh_var</code> function as before.</p>
+<h4 id="step-iv-encoding-vc-formulas-into-smt-constraints">Step IV: encoding VC formulas into SMT constraints</h4>
+<p>The verification condition computed by <code>wp</code> will be translated into SMT constraints. This is done in <a href="./lib/smt.ml">smt.ml</a>. The <code>aexp</code> and the <code>formula</code> functions translate Difny arithmetic expressions and formulas into Z3 expressions and constraints, and Difny types are converted into Z3 sorts.</p>
+<h4 id="step-v-solving">Step V: solving</h4>
+<p>In <a href="./lib/smt.ml">smt.ml</a>, you will find the <code>check_validity</code> function that checks the validity of a VC formula by sending the corresponding constraints to Z3. The result of the verification is captured by the <code>status</code> type, defined at the beginning of the same file:</p>
+<pre><code class="language-ocaml"><span class="hljs-comment">(** Status of a formula *)</span>
+<span class="hljs-keyword">type</span> status =
+  | <span class="hljs-type">Valid</span>  <span class="hljs-comment">(** formula is valid *)</span>
+  | <span class="hljs-type">Invalid</span> <span class="hljs-keyword">of</span> <span class="hljs-built_in">string</span>  <span class="hljs-comment">(** formula is invalid, with a counter-example *)</span>
+  | <span class="hljs-type">Unknown</span>  <span class="hljs-comment">(** formula status cannot be determined *)</span>
+</code></pre>
+<p>That is, if the verification succeeds, <code>check_validity</code> will return <code>Valid</code>. If the verification fails, it will return <code>Invalid</code> with a counter-example (represented as a string). Finally, it is possible that Z3 cannot determine the status of the formula, in which case <code>Unknown</code> is returned.</p>
+<h3 id="putting-it-all-together">Putting it all together</h3>
+<p>The glue code is implemented by the <code>result</code> function in the <code>Make</code> module in <a href="./lib/verify.ml">verify.ml</a>. This function takes the Difny method passed into the <code>Make</code> module, compiles it into GCL, computes the weakest pre-condition, encodes the VC formula into SMT constraints, and then checks the validity of the constraints using Z3. The <code>result</code> function simply prints the result of the verification to the console, and returns nothing, so its return type is <code>unit</code>.</p>
+<h3 id="running-the-verifier">Running the verifier</h3>
+<blockquote>
+<p>This section assumes you're in the root of the <em>project</em> directory.</p>
+</blockquote>
+<p>To run the verifier, first run <code>make install</code> in your terminal, which will compile the OCaml project into an executable called <code>difny</code>, and install the executable into the path so that <code>difny</code> can be run from anywhere.</p>
+<p>You can now run</p>
+<pre><code class="language-bash">difny verify &lt;file&gt;
+</code></pre>
+<p>to verify a Difny program. This will verify each method in the program. For each method, it will print <code>&lt;method_name&gt;: verified</code> if the method is correct, or <code>&lt;method_name&gt;: not verified</code> followed by a counter-example if the method is incorrect.</p>
+<p>(Internally, the entry point of the executable is the <code>go</code> function in <a href="./bin/main.ml">bin/main.ml</a>. This function invokes the <code>go</code> function in <a href="./lib/verify.ml">lib/verify.ml</a>, which in turn performs the five steps described above.)</p>
+<p>The executable accepts other arguments, e.g., to set the debug level to print the intermediate results and log the execution of the verifier:</p>
+<pre><code class="language-bash">difny verify &lt;file&gt; -v debug
+</code></pre>
+<p>which sets the log level to <code>debug</code>. The default log level is <code>app</code>, which only prints the final result of the verification. Logs can be created with <code>Logs.debug</code>, <code>Logs.info</code>, <code>Logs.app</code>, etc. See <a href="./lib/verify.ml">lib/verify.ml</a> for examples of how to use the logging library. The documentation for the logging library can be found <a href="https://erratique.ch/software/logs">here</a>.</p>
+<p>You can run <code>difny --help</code> and <code>difny verify --help</code> to see all available commands and options.</p>
+<h3 id="what-you-need-to-implement">What you need to implement</h3>
+<p>The only files you need to modify are <code>desugar.ml</code>, <code>verify.ml</code>, and <code>smt.ml</code>. Below is a suggested progression/leveling guide, although you are free to complete this project in any order you like.</p>
+<h4 id="level-1-imp">Level 1: IMP</h4>
+<p>This level implements a subset of Difny that exactly corresponds to the IMP language. We make the following assumptions:</p>
+<ul>
+<li>Each method has no parameters, no <code>requires</code>, no <code>ensures</code>, and returns a dummy integer (say <code>0</code>).</li>
+<li>Pre- and post-conditions are specified using <code>assert</code>, <code>assume</code>, and havoc statements.</li>
+<li>Only integer operations are allowed. No arrays, and no method calls.</li>
+</ul>
+<p>Your task is to modify <code>compile</code> and <code>wp</code> in <a href="./lib/verify.ml">lib/verify.ml</a> to handle this subset of Difny by following what is covered in the lectures. The only differences between the lecture slides and this level is that we use lists to represent sequences of statements, and the empty list to represent the <code>Skip</code> statement.</p>
+<p>Then, go to <a href="./lib/smt.ml">lib/smt.ml</a>, and finish the <code>check_validity</code> function by sending an appropriate formula to the solver, and based on the result of Z3 (which can be <a href="https://Z3prover.github.io/api/html/ml/Z3.Solver.html">SATISFIABLE, UNSATISFIABLE, or UNKNOWN</a>), determine the status of the VC, and include a counter-example if the VC is not verified.</p>
+<p>All the functions you need to implement are stubbed with <code>Todo.at_level 1</code>. You should replace those stubs with your own code. Feel free to define your own helper functions if you feel the need to do so.</p>
+<p>You may find the following documentation helpful:</p>
+<ul>
+<li>Z3's <a href="https://Z3prover.github.io/api/html/ml/Z3.html">OCaml bindings</a></li>
+<li>Z3's <a href="https://Z3prover.github.io/api/html/group__capi.html">C bindings</a> which are documented more thoroughly than the OCaml bindings</li>
+</ul>
+<p>To debug your verifier, you can invoke <code>difny</code> with the <code>-v debug</code> flag to see the intermediate results of the verifier:</p>
+<pre><code class="language-bash">difny verify &lt;file&gt; -v debug
+</code></pre>
+<p>You can also add more log statements yourself. The <a href="./lib/verify.ml">verify.ml</a> file contains some log statements that you can use as a reference. The documentation for the logging library can be found <a href="https://erratique.ch/software/logs">here</a>.</p>
+<p>You may subdivide this level into smaller sublevels if you find it more convenient. For example, you may want to first make sure IMP programs with no loops are verified correctly, and then move on to IMP programs with loops and invariants.</p>
+<h4 id="level-2-arrays">Level 2: arrays</h4>
+<p>This level adds array support to Difny. The only changes you need to make are:</p>
+<ol>
+<li>Copy over your code from HW2 to <code>desugar.ml</code>. You should not need to modify <code>compile</code> or <code>wp</code> for this level.</li>
+<li>Go to <code>smt.ml</code> and finish the <code>aexp</code> function, and complete the translation of array <code>Select</code> and <code>Store</code> expressions into Z3 <code>expr</code>. Then, finish the implementation of <code>sort_of_ty</code> which converts a Difny type into a Z3 <code>sort</code>.
+<ul>
+<li>Z3's array theory is <a href="https://microsoft.github.io/z3guide/docs/theories/Arrays/">documented here</a>. The OCaml bindings for Z3 arrays are contained in the <code>Z3Array</code> module.</li>
+</ul>
+</li>
+</ol>
+<p>All the functions you need to implement are stubbed with <code>Todo.at_level 2</code>. You should replace those stubs with your own code. Feel free to define your own helper functions if you feel the need to do so.</p>
+<p><strong>Important note on array representation</strong></p>
+<p>The essence of arrays can be captured by two operations:</p>
+<ul>
+<li><code>select : 'a array -&gt; int -&gt; 'a</code>, where <code>select a i</code> will read the value at index <code>i</code> in array <code>a</code></li>
+<li><code>store : 'a array -&gt; int -&gt; 'a -&gt; 'a array</code>, where <code>store a i v</code> will write value <code>v</code> at index <code>i</code> in array <code>a</code>, and returning a new array with the updated value.</li>
+</ul>
+<p>We say that arrays are &quot;functional&quot; because <code>store</code> does not modify the original array, but instead returns a new array with the updated value.</p>
+<p>To represent those two operations, we add them to the abstract-syntax tree of <code>aexp</code>:</p>
+<pre><code class="language-ocaml"><span class="hljs-keyword">type</span> aexp = 
+  | <span class="hljs-type">Int</span> <span class="hljs-keyword">of</span> <span class="hljs-built_in">int</span>  <span class="hljs-comment">(** integer constant *)</span>
+  | <span class="hljs-type">Aop</span> <span class="hljs-keyword">of</span> aop * aexp * aexp  <span class="hljs-comment">(** arithmetic op *)</span>
+  | <span class="hljs-type">Var</span> <span class="hljs-keyword">of</span> <span class="hljs-built_in">string</span>  <span class="hljs-comment">(** variable *)</span>
+  | <span class="hljs-type">Select</span> <span class="hljs-keyword">of</span> aexp * aexp <span class="hljs-comment">(** array read *)</span>
+  | <span class="hljs-type">Store</span> <span class="hljs-keyword">of</span> aexp * aexp * aexp <span class="hljs-comment">(** array write *)</span>
+</code></pre>
+<p>(The actual <code>aexp</code> in <a href="./lib/lang.ml">lib/lang.ml</a> uses labels for the constructor fields, but we omit them here for brevity.)</p>
+<p>For example, the IMP expression <code>a[i][j]</code> will be represented as <code>Select (Select (Var &quot;a&quot;, Var &quot;i&quot;), Var &quot;j&quot;)</code>.</p>
+<p>Array assignments need some care when they're translated from concrete syntax to abstract syntax. In imperative languages, we can write <code>a[i] := 1</code> to update the value at index <code>i</code> in array <code>a</code> to be one.
+This kind of array update syntax needs to be translated to the more basic array operations of <code>select</code> and <code>store</code>, and the IMP assignment statement.</p>
+<p>For example, the IMP statement <code>a[i] := 1</code> can be translated to the following IMP statement:</p>
+<pre><code class="language-ocaml"><span class="hljs-type">Assign</span> (<span class="hljs-string">&quot;a&quot;</span>,
+  <span class="hljs-type">Store</span> (<span class="hljs-type">Var</span> <span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-type">Var</span> <span class="hljs-string">&quot;i&quot;</span>, <span class="hljs-type">Int</span> <span class="hljs-number">1</span>)
+)
+</code></pre>
+<p>That is, the variable <code>a</code> is updated with a new array whose contents are the same as the array previously referred to by <code>a</code>, except that the value at index <code>i</code> is now <code>1</code>.</p>
+<p>And <code>a[i] := a[j] + 1</code> can be translated into the following IMP statement:</p>
+<pre><code class="language-ocaml"><span class="hljs-type">Assign</span> (<span class="hljs-string">&quot;a&quot;</span>,
+  <span class="hljs-type">Store</span> (<span class="hljs-type">Var</span> <span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-type">Var</span> <span class="hljs-string">&quot;i&quot;</span>, 
+    <span class="hljs-type">Aop</span> (<span class="hljs-type">Add</span>, 
+      <span class="hljs-type">Select</span> (<span class="hljs-type">Var</span> <span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-type">Var</span> <span class="hljs-string">&quot;j&quot;</span>), 
+      <span class="hljs-type">Int</span> <span class="hljs-number">1</span>))
+)
+<span class="hljs-comment">(* i.e., a := write(a, i, read(a, j) + 1) *)</span>
+</code></pre>
+<p><strong>Exercise</strong>: For the following array assignment statements, translate them to the corresponding abstract syntax trees using a combination of <code>Select</code> and <code>Store</code>:</p>
+<ul>
+<li><code>x := a[i] * a[j];</code></li>
+<li><code>y := a[a[i]];</code></li>
+<li><code>a[x - y] := z;</code></li>
+<li><code>a[i + j] := a[i] + a[j];</code></li>
+<li><code>a[a[i]] := y;</code></li>
+<li><code>a[a[i] + a[j]] := a[a[i] * a[j]];</code></li>
+<li><code>a[i][j] := a[j][i];</code></li>
+<li><code>a[i][j][k] := a[k][j][i];</code></li>
+</ul>
+<p>In general, an array access expression like <code>a[i][j]...[k]</code> can be represented as an <em>access path</em>:</p>
+<pre><code class="language-ocaml"><span class="hljs-keyword">type</span> path = <span class="hljs-type">Path</span> <span class="hljs-keyword">of</span> <span class="hljs-built_in">string</span> * aexp <span class="hljs-built_in">list</span>
+</code></pre>
+<p>where the first element of the tuple is the name of the array, and the second element is a list of index expressions. For example, the access path <code>Path (&quot;a&quot;, [Var &quot;i&quot;; Aop (Add, Var &quot;j&quot;, Int 1)])</code> represents the expression <code>a[i][j+1]</code>.</p>
+<p>Recall your answer to the previous exercise. You may have noticed that the same access path will get translated into different <code>aexp</code> depending on whether the path appears as the LHS of an assignment (i.e., the path is being written to), or as the RHS of an assignment (i.e., the path is being read from).</p>
+<p>You might find it helpful to implement the following functions in OCaml:</p>
+<ul>
+<li><code>read_from_path : path -&gt; aexp</code> that will convert an access path being read from to the corresponding <code>aexp</code>.</li>
+<li><code>write_to_path : path -&gt; aexp -&gt; stmt</code> that will take a LHS access path, an RHS <code>aexp</code> that will be written to the path, and return the corresponding assignment <code>stmt</code> that will update the array at the given path with the new value.</li>
+</ul>
+</details>
+<h4 id="level-3-methods">Level 3: methods</h4>
+<p>This level allows a program to contain multiple methods, and each method may have any number of parameters, <code>requires</code>, and <code>ensures</code>. Method calls are also allowed, and methods can be (mutually) recursive.</p>
+<p>Before you jump into this level, take a pause to ponder over the following question:</p>
+<blockquote>
+<p>To verify a loop, loop invariants are needed in order to summarize the behavior of loop, and circumvent the undecidable problem of inferring invariants automatically.</p>
+<p>Recursion (i.e., method definitions and calls) has exactly the same expressive power as loops. This implies some kind of &quot;invariant&quot; annotation is needed in order to verify methods. What is the equivalent of loop invariants for methods?</p>
+</blockquote>
+<p>You will need to make the following changes:</p>
+<ol>
+<li>The <code>verify</code> function in <a href="./lib/verify.ml">lib/verify.ml</a> only verifies the body of a method. Now that methods can have <code>requires</code> and <code>ensures</code>, you may need to modify this function to handle those stuff as well.</li>
+<li>Handle Difny's method call (represented by the <code>Call</code> constructor) in the <code>compile</code> function. <em>Hint</em>: Since recursion is allowed, inlining method calls is not a viable option. Instead, use your answer to the question above to guide your implementation.</li>
+</ol>
+<p>All the functions you need to implement are stubbed with <code>Todo.at_level 3</code>. You should replace those stubs with your own code. Feel free to define your own helper functions if you feel the need to do so.</p>
+<h2 id="4-scoring">4. Scoring</h2>
+<p>Your verifier will be tested on benchmarks from the following categories:</p>
+<ol>
+<li>Difny/\IMP programs with no arrays or loops</li>
+<li>Difny/\IMP programs with loops but no arrays</li>
+<li>Difny/\IMP programs with both arrays and loops</li>
+<li>Difny programs with non-recursive method calls</li>
+<li>Difny programs with recursive method calls</li>
+</ol>
+<p>where Difny/\IMP is the fragment of Difny such that a program can only contain methods with no parameters, no <code>requires</code>, no <code>ensures</code>, no method calls, and each method must return a dummy integer (say <code>0</code>). The public benchmarks are in the <a href="./test/public/">test/public</a>.</p>
+<h2 id="5-submission">5. Submission</h2>
+<p>Run</p>
+<pre><code class="language-bash">make zip
+</code></pre>
+<p>which will create a zip file called <code>submission.zip</code> containing <code>lib/{desugar, verify, smt}.ml</code>. Upload this zip file to Gradescope.</p>
+<p>[^difny]: (ChatGPT's rendering of the beautiful Difny language. Don't ask me what those grey hairy things are <a href="https://dafny.org/images/dafny-logo.jpg">in the original Dafny logo</a>... I think they are supposed to be coconut trees?)</p>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>

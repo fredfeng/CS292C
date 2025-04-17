@@ -14,9 +14,18 @@ You will be implementing a verification-condition (VC) generator for a simple im
 
 
 
+
 ## 1. Preparation
 
-1. Please make sure you have `opam` and `dune`. Then, run
+1. Install Dafny by following [these instructions](https://dafny.org/dafny/Installation). We recommend simply installing the [Dafny VSCode extension](https://dafny.org/dafny/Installation#Visual-Studio-Code). If you're on macOS or Linux, you will be prompted in VSCode to install .NET 6.0 once you open a `.dfy` file. Simply follow the link in the prompt to install it. You should install Dafny 4. If you're prompted by VSCode to upgrade from Dafny 3 to Dafny 4, you should let it automatically upgrade. The whole process should be fairly quick, taking no more than 5 minutes.
+
+2. Install OCaml by following the [these instructions](https://github.com/fredfeng/CS162/blob/master/sections/sec01/install.md). Once you're done, enter `utop` and evaluate the following expression:
+   ```ocaml
+   print_endline "I have installed OCaml!";;
+   ```
+   to make sure everything works.
+
+3. Please make sure you have `opam` and `dune`. Then, run
    ```bash
    dune build
    ```
@@ -26,7 +35,7 @@ You will be implementing a verification-condition (VC) generator for a simple im
    ```
    which will automatically install the necessary dependencies.
 
-2. Download and install the binary for version 4.13.0 of the [Z3 SMT solver](https://github.com/Z3Prover/z3/releases). MacOS users can install Z3 using Homebrew:
+4. Download and install the binary for version 4.13.0 of the [Z3 SMT solver](https://github.com/Z3Prover/z3/releases). MacOS users can install Z3 using Homebrew:
    ```bash
    brew install z3
    ```
@@ -42,6 +51,74 @@ You will be implementing a verification-condition (VC) generator for a simple im
    You can find the documentation for the `base` library [here](https://ocaml.org/p/base/v0.16.3/doc/Base/List/index.html). You may find the functions in [Base.List](https://ocaml.org/p/base/v0.16.3/doc/Base/List/index.html) especially useful for this project.
 
 If you run into any issues, please report them in the `#tech-support` channel on Slack.
+
+
+
+## 1. From IMP to Dafny
+
+You've learned IMP in class, and how to generate verification conditions for IMP. It turns out that IMP is used as the basis of many program verifiers. In this project, you'll apply what you learned to build a program verifier similar to the Dafny verifier. The syntax of Dafny is similar to that of IMP and many imperative languages. You can read more about Dafny [here](https://dafny.org/latest/OnlineTutorial/guide).
+
+Below are some additional exercises to help you get familiar with Dafny. They are ungraded and you don't need to submit them.
+
+
+### Problem
+
+In [min.dfy](./min.dfy), you will find a Dafny method that finds the minimum of a 2D array. Your tasks are:
+1. State the correctness property of this method in terms of pre-condition(s) (using the `requires` keyword) and post-condition(s) (using the `ensures` keyword). 
+    
+    Your pre-condition(s) should allow Dafny to prove that there is no out-of-bound array access. 
+
+2. Annotate each of the two loops with appropriate invariants that allow Dafny to verify the overall correctness of the method.
+
+   > *Hints*: 
+   > - The invariant for the outer should be very similar to your post-condition.
+   > - For the inner loop, you may need to provide *two* different invariants:
+   >   - the first invariant talks about *all* elements from sub-arrays `a[0]` up to `a[i-1]` inclusive, and
+   >   - the second invariant specifically looks at the sub-array `a[i]` and talks about its elements between `0` and `j-1` inclusive.
+   > 
+   > It may help draw a dummy 2D array on paper, and mark the elements that have been processed so far when the loop is at (i,j)-th position. Those processed elements will be the ones (and the only ones) that are mentioned in the invariants.
+
+
+
+
+### Problem
+
+The file [binary_search.dfy](./binary_search.dfy) contains a method `BinarySearch` that performs binary search on a sorted array. The sorted-ness is guaranteed by the `Ordered(a)` predicate, which is just a formula that asserts `a[i] <= a[j]` for all `i <= j`. The post-condition is provided, which says that the method returns `true` if and only if the key `x` is contained in the array. Also, note that the while-loop is annotated with `decreases hi - lo`, which enables Dafny to prove that the loop terminates because the quantifier `(hi - lo)` monotonically decreases in each iteration of the loop.
+
+Your task is to replace `invariant true` in the while-loop of `BinarySearch` with an appropriate loop invariant that allows Dafny to verify the correctness of the method. 
+
+> *Hint*: Your invariant needs to talk about where `x` *cannot* be found in the array based on the current values of `lo` and `hi`.
+
+
+
+### Problem
+
+Immediately below `BinarySearch`, we duplicated its implementation into another method called `BuggyBinarySearch`. The only change we made is to make the index variables (`lo`, `mid`, `hi`, etc.) into 4-bit integers (unsigned), whereas in Dafny `int` is the default infinite-precision integer.
+
+Copy and paste the (working) invariant you wrote for `BinarySearch` into `BuggyBinarySearch` and see if Dafny can verify the correctness of the method. Note that to make the invariant well-typed, you may need to do some conversion from `int` to `bv4` using the syntax `x as bv4` which converts a variable of type `int` to `bv4`.
+
+After that, you shall see that Dafny cannot verify the correctness of `BuggyBV4BinarySearch`. Your tasks are to:
+1. locate the exact line where Dafny reports an error,
+2. explain why Dafny cannot verify the correctness of the method
+3. patch *only one line of implementation code* in the loop body to make verification succeed.
+
+
+*Hint*: The answers to the above questions can be found in the Wikipedia page for binary search, under the section Implementation Issues.
+
+
+
+### Problem
+
+Implement bubble sort in Dafny, and prove its correctness. There are multiple levels you can aim for in terms of the complexity of your implementation and the strength of your correctness proof:
+- Your bubble sort outputs an ordered list
+- Your bubble sort outputs an ordered list whose elements form the same *set* as the input list
+- Your bubble sort outputs an ordered list whose elements form the same *multiset* as the input list
+
+You may choose to aim for any of the above levels, but you should clearly state which level you are aiming for in your submission.
+
+You may find this tutorial on [verifying selection sort in Dafny](https://dafny.org/blog/2023/10/11/insertion-sort/) helpful.
+
+Attach your implementation, including all necessary annotations, in your submission. You should also informally explain in plain English the meaning of your pre- and post-conditions, and the loop invariants you used. 
 
 
 
@@ -247,7 +324,7 @@ The following semantic simplifications are made in Difny to simplify the impleme
 
 ### 2.7 Examples
 
-Example Difny programs can be found in the [test/public](./test/public/) directory. Note that any Difny program is a valid Dafny program.
+Example Difny programs can be found in the [test/public](./test/public/) directory. Note that any Difny program is a valid Dafny program, so you can use the Dafny verifier to run them (or any of the custom benchmarks you write).
 
 
 
@@ -291,7 +368,7 @@ or "No, here's an counterexample"
 
 In this project, we will focus on steps II-IV; the first step, the parser, has been implemented for you, and we shall rely on an off-the-shelf SMT solver (Z3) to do the last step.
 
-### 3.1 Alignment
+### 3.1 Detailed walkthrough
 
 The starter code for this project can be found in [lib/](./lib/). The following sections assume we're at the root of the `lib` directory.
 
@@ -424,6 +501,78 @@ This level adds array support to Difny. The only changes you need to make are:
 
 All the functions you need to implement are stubbed with `Todo.at_level 2`. You should replace those stubs with your own code. Feel free to define your own helper functions if you feel the need to do so.
 
+**Important note on array representation**
+
+
+The essence of arrays can be captured by two operations:
+- `select : 'a array -> int -> 'a`, where `select a i` will read the value at index `i` in array `a`
+- `store : 'a array -> int -> 'a -> 'a array`, where `store a i v` will write value `v` at index `i` in array `a`, and returning a new array with the updated value.
+
+We say that arrays are "functional" because `store` does not modify the original array, but instead returns a new array with the updated value.
+
+To represent those two operations, we add them to the abstract-syntax tree of `aexp`: 
+```ocaml
+type aexp = 
+  | Int of int  (** integer constant *)
+  | Aop of aop * aexp * aexp  (** arithmetic op *)
+  | Var of string  (** variable *)
+  | Select of aexp * aexp (** array read *)
+  | Store of aexp * aexp * aexp (** array write *)
+```
+(The actual `aexp` in [lib/lang.ml](./lib/lang.ml) uses labels for the constructor fields, but we omit them here for brevity.)
+
+For example, the IMP expression `a[i][j]` will be represented as `Select (Select (Var "a", Var "i"), Var "j")`.
+
+Array assignments need some care when they're translated from concrete syntax to abstract syntax. In imperative languages, we can write `a[i] := 1` to update the value at index `i` in array `a` to be one. 
+This kind of array update syntax needs to be translated to the more basic array operations of `select` and `store`, and the IMP assignment statement.
+
+For example, the IMP statement `a[i] := 1` can be translated to the following IMP statement:
+
+```ocaml
+Assign ("a",
+  Store (Var "a", Var "i", Int 1)
+)
+```
+That is, the variable `a` is updated with a new array whose contents are the same as the array previously referred to by `a`, except that the value at index `i` is now `1`.
+
+And `a[i] := a[j] + 1` can be translated into the following IMP statement:
+```ocaml
+Assign ("a",
+  Store (Var "a", Var "i", 
+    Aop (Add, 
+      Select (Var "a", Var "j"), 
+      Int 1))
+)
+(* i.e., a := write(a, i, read(a, j) + 1) *)
+```
+
+**Exercise**: For the following array assignment statements, translate them to the corresponding abstract syntax trees using a combination of `Select` and `Store`:
+
+- `x := a[i] * a[j];`
+- `y := a[a[i]];`
+- `a[x - y] := z;`
+- `a[i + j] := a[i] + a[j];`
+- `a[a[i]] := y;`
+- `a[a[i] + a[j]] := a[a[i] * a[j]];`
+- `a[i][j] := a[j][i];`
+- `a[i][j][k] := a[k][j][i];`
+
+
+In general, an array access expression like `a[i][j]...[k]` can be represented as an *access path*:
+```ocaml
+type path = Path of string * aexp list
+```
+where the first element of the tuple is the name of the array, and the second element is a list of index expressions. For example, the access path `Path ("a", [Var "i"; Aop (Add, Var "j", Int 1)])` represents the expression `a[i][j+1]`.
+
+Recall your answer to the previous exercise. You may have noticed that the same access path will get translated into different `aexp` depending on whether the path appears as the LHS of an assignment (i.e., the path is being written to), or as the RHS of an assignment (i.e., the path is being read from).
+
+You might find it helpful to implement the following functions in OCaml:
+- `read_from_path : path -> aexp` that will convert an access path being read from to the corresponding `aexp`.
+- `write_to_path : path -> aexp -> stmt` that will take a LHS access path, an RHS `aexp` that will be written to the path, and return the corresponding assignment `stmt` that will update the array at the given path with the new value.
+
+
+</details>
+
 #### Level 3: methods
 
 This level allows a program to contain multiple methods, and each method may have any number of parameters, `requires`, and `ensures`. Method calls are also allowed, and methods can be (mutually) recursive.
@@ -446,10 +595,6 @@ All the functions you need to implement are stubbed with `Todo.at_level 3`. You 
 
 ## 4. Scoring
 
-Your total score will consist of two parts:
-1. Benchmark construction (10%)
-2. Verifier correctness (90%)
-
 Your verifier will be tested on benchmarks from the following categories:
 
 1. Difny/\IMP programs with no arrays or loops
@@ -458,63 +603,7 @@ Your verifier will be tested on benchmarks from the following categories:
 4. Difny programs with non-recursive method calls
 5. Difny programs with recursive method calls
 
-where Difny/\IMP is the fragment of Difny such that a program can only contain methods with no parameters, no `requires`, no `ensures`, no method calls, and each method must return a dummy integer (say `0`).
-
-
-There will be two sources of benchmarks:
-1. Instructor-written benchmarks (70%):
-   - Public: 50%. For each category, you must pass all of the public benchmarks to receive full credit for that category. (Hard-coding the public benchmarks will result in a score of 0.)
-   - Private: 20%. Your score will be the *percentage* of private benchmarks you pass.
-2. Student-written benchmarks (20%). This part consists of all of the benchmarks written by each and every one of you (described in more detail below). Your score will be the *percentage* of all student-contributed benchmarks you pass.
-
-
-### Student-written benchmarks
-
-> **Due: Wed, April 24 at 11:59pm**
-> 
-> No late days can be used for this part.
->
-> You may continue to share benchmarks after the due date, but **only the benchmarks submitted before the due date will be considered for scoring**.
-
-
-Keep the benchmarks that you use to test your code. You should submit at least 5 benchmarks, one for each category. They should be original, and should NOT be adapted from the Dafny programs that you verified in HW1 (because we have already included `min2d` and `binary_search` as part of the public instructor-written benchmark suite). 
-
-
-**Do NOT copy other students' benchmarks**. This will both reduce your collective chance of scoring better in the private instructor-written benchmark suite -- since you will have fewer and less diverse public tests to work with -- and be a violation of the academic integrity policy.
-
-Try to make your benchmarks perform interesting computation, and make sure they have non-trivial pre- and post-conditions and invariants. For example:
-- You can implement your favorite array, graph, or number-theoretic algorithms, and annotate them with their specification and the necessary invariants.
-- Not all of your benchmarks should be positive (verifiable). You may also want to construct negative (non-verifiable) benchmarks: e.g. take a working positive benchmark, and slightly mutate its pre- and post-conditions, or the loop invariants, to make it no longer verifiable.
-
-
-We ask that you share your benchmarks in the `proj1-benchmarks` channel on Slack. We recommend posting a message in the following format for each benchmark:
-
-```
-Category: <a number between 1 - 5>
-Expected verification status:
-  - Method X: verified
-  - Method Y: not verified
-      - Reason: loop invariant is not inductive enough because ...
-  - Method Z: not verified
-      - Reason: pre-condition P is too weak because ...
-      - Reason: loop invariant fails upon entry because ...
-  - Method ...
-    - Reason ...
-```
-Then, include the benchmark file as a whole **as a file attachment**. We suggest that you not copy and paste the code itself into the message, since it will make it hard for others to use your benchmark.
-
-
-In addition to sharing your benchmarks on Slack, you should also include them in the `benchmarks` directory of your submission.
-
-There are two ways to validate your benchmark:
-1. First, you should make sure that your benchmark can be executed without runtime errors. We have provided an interpreter for Difny:
-    ```bash
-    difny run <file>
-    ```
-    which will run the Difny program and print the final values of all local variables. This can be useful for debugging your benchmarks initially.
-
-2. To make sure that the expected verification statuses of your benchmarks are correct, you can use Dafny for validation, although you may need to enable the `--relax-definite-assignment` flag when you run Dafny on Difny programs, and ignore all array out-of-bounds errors. Dafny sometimes can infer conditions that are not explicitly stated in the program (i.e. it can be more powerful than your verifier), so use it with caution. We *may* let you run your benchmark on a reference verifier (more details soon).
-
+where Difny/\IMP is the fragment of Difny such that a program can only contain methods with no parameters, no `requires`, no `ensures`, no method calls, and each method must return a dummy integer (say `0`). The public benchmarks are in the [test/public](./test/public/).
 
 
 ## 5. Submission
@@ -523,7 +612,7 @@ Run
 ```bash
 make zip
 ```
-which will create a zip file called `submission.zip` containing `lib/{desugar, verify, smt}.ml`, and the `benchmarks` directory. Upload this zip file to Gradescope.
+which will create a zip file called `submission.zip` containing `lib/{desugar, verify, smt}.ml`. Upload this zip file to Gradescope.
 
 
 
