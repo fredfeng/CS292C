@@ -1,8 +1,7 @@
 # CS292C Project 1: Difny
 
-> **Benchmarks Due: Wed, April 24 at 11:59pm**
-> 
-> **Implementation Due: Monday, April 29 at 11:59pm**
+
+> **Implementation Due: TBD**
 > 
 > This is an *individual* project.
 
