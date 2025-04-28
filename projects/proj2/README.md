@@ -1,6 +1,6 @@
 # CS292C Project 2: The Z4 SAT Solver
 > 
-> **Due: Monday, May 20 at 11:59pm**
+> **Due: TBD by Yu**
 > 
 > This project can be done either *individually or in pairs*.
 
@@ -29,11 +29,11 @@ You will be implementing a SAT solver called Z4:
     ```
     which will build the documentation for the project. You can view the documentation by opening `_build/default/_doc/_html/index.html` in your browser. The documentation will be extremely important, since they explain what each module does and what functions are provided to you. In general, you should **not** read the code implementing the provided functions, but instead rely on the documentation to understand how to use them.
 
-3. Review the lecture slides on DPLL and CDCL, and read through [this PDF](https://www.cs.princeton.edu/~zkincaid/courses/fall18/readings/SATHandbook-CDCL.pdf), which contains a complete description of the CDCL algorithm (more detailed than the lecture slides), as well as several extensions that are implemented in the starter code. You should carefully read this PDF, work through all contained examples, and have a good understanding of the following sections before you write any code:
+3. Review the lecture slides on DPLL and CDCL, and read through [this definitive paper on CDCL](https://www.cs.princeton.edu/~zkincaid/courses/fall18/readings/SATHandbook-CDCL.pdf), which contains a complete description of the CDCL algorithm (more detailed than the lecture slides), as well as several extensions that are implemented in the starter code. You should carefully read this paper, work through all contained examples, and have a good understanding of the following sections before you write any code:
    - Sections 4.1-4.5, which explains the core CDCL algorithm
    - Section 4.5.2-4.5.4, which explains important extensions that make CDCL work in practice.
     
-    The starter code will use similar terminology to the PDF.
+    The starter code will use similar terminology to the paper.
 
 
 Post any questions you have in the `#proj2` Slack channel.
@@ -175,7 +175,7 @@ Each of the two suites is worth 10 points. For each suite, you must pass all ben
 
 
 
-## Part 2. CDCL (20 points)
+## Part 2. CDCL (30 points)
 
 > Library: `Solver`
 >
@@ -233,15 +233,15 @@ Each of the two suites is worth 10 points. For each suite, you must pass all ben
 
 
 
-## Interlude: CS292C SAT Competition 2024 (Extra Credit)
+## Interlude: CS292C SAT Competition 2025 (Extra Credit)
 
-Upon submission, your solver will automatically enter the inaugural CS292C SAT Competition 2024. Your solver will be evaluated on both correctness and performance using previously mentioned benchmarks, as well as real-world benchmarks drawn from the actual [SAT Competition](https://satcompetition.github.io/). Extra-credits will be awarded to the top solvers.
-
-
+Upon submission, your solver will automatically enter the inaugural CS292C SAT Competition 2025. Your solver will be evaluated on both correctness and performance using previously mentioned benchmarks, as well as real-world benchmarks drawn from the actual [SAT Competition](https://satcompetition.github.io/). Extra-credits will be awarded to the top solvers.
 
 
 
-## Part 3. Proof of CDCL Unsatisfiability (10 points)
+
+
+## Part 3. Proof of CDCL Unsatisfiability (Extra Credit: 5 points)
 
 If a DPLL/CDCL solver returns UNSAT, there's nothing we can do, except to trust the solver that it has indeed exhausted the entire search space. An obvious way to eliminate the trust issue is by implementing the solver in Dafny and formally verify its correctness. However, this approach is WRONG (think about why).
 
@@ -324,7 +324,7 @@ The `-c` flag will now verify the proof script returned by the solver using `Sol
 The test suite is worth 10 points. You must pass all benchmarks to receive credit.
 
 
-## Part 4. Proof of DPLL Unsatisfiability (10 points)
+## Part 4. Proof of DPLL Unsatisfiability (Extra Credit: 5 points)
 
 The DPLL solver can similarly return a unsatisfiability proof. However, the proof is much simpler than the CDCL proof, because DPLL doesn't learn conflict clauses. Instead, the proof is simply a tree of resolutions that eventually resolves into the empty clause; the proof script won't contain any lemmas.
 
