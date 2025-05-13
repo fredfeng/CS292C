@@ -18,7 +18,7 @@ Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9
 | 2   | 4/3   | [IMP: Syntax & Semantics](https://cs292c-2-computer-aided--djjky8d.gamma.site/)                      |                            |       |
 | 3   | 4/8   | [Hoare Logic I](https://cs292c-3-computer-aided--jw6kwbl.gamma.site/)                                 |                            |       |
 | 4   | 4/10  | [Ocaml in a Nutshell](https://ocaml-crash-course-f3bila9.gamma.site/)                         |                            |    |
-| 5   | 4/15  | [Hoare Logic II + VCG(https://cs292c-4-computer-aided--xb19i4z.gamma.site/)                        | [hw1](./projects/proj1)     |       |
+| 5   | 4/15  | [Hoare Logic II + VCG](https://cs292c-4-computer-aided--xb19i4z.gamma.site/)                        | [hw1](./projects/proj1)     |       |
 | 6   | 4/17  | [Hoare Logic II + VCG](https://cs292c-4-computer-aided--xb19i4z.gamma.site/)                            |                            |       |
 | 7   | 4/22  | [SAT Basics: CNF, DPLL](https://cs292c-5-computer-aided--o4c5z7q.gamma.site/)        |                            |       |
 | 8   | 4/24  | [SAT Solvers: CDCL](https://cs292c-6-computer-aided--1pq10d8.gamma.site/)          |                            |    |
