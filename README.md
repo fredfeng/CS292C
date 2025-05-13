@@ -26,7 +26,7 @@ Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9
 | 10  | 5/1   | [SMT Solvers and Theories](https://cs292c-8-computer-aided--328ag8m.gamma.site/)            |                         |       |
 | 11  | 5/6   | [Nelson-Oppen Combination](https://cs292c-9-computer-aided--874veey.gamma.site/)    |                            |       |
 | 12  | 5/8   | [DPLL(T): SMT Solver](https://cs292c-10-computer-aided-jpp64js.gamma.site/ )      |      |       |
-| 13  | 5/13  | **Midterm** (In Class)                                                  |   [final project](#)                           |  hw2     |
+| 13  | 5/13  | **Midterm** (In Class)                                                  |   [final project](https://github.com/fredfeng/CS292C/tree/master/projects/final)                           |  hw2     |
 | 14  | 5/15  |  No Class (Out of Town)                |                            |       |
 | 15  | 5/20  |  [Program Synthesis: Overview](#)                                                 |                            |       |
 | 16  | 5/22  | [CEGIS & Inductive Synthesis](#)                 |                          |       |
