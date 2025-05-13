@@ -14,21 +14,21 @@ Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9
 
 | #   | Date  | Lecture                                                                 | Out                        | Due   |
 | --- | ----- | ----------------------------------------------------------------------- | -------------------------- | ----- |
-| 1   | 4/1   | [Overview & Motivation](./lectures/lecture1.pdf)                        |      |       |
-| 2   | 4/3   | [IMP: Syntax & Semantics](./lectures/lecture2.pdf)                      |                            |       |
-| 3   | 4/8   | [Hoare Logic I](#)                                 |                            |       |
-| 4   | 4/10  | [Hoare Logic II + VCG](#)                         |                            |    |
-| 5   | 4/15  | [SAT Basics: CNF, DPLL](#)                        | [hw1](./projects/proj1)     |       |
-| 6   | 4/17  | [SAT Solvers: CDCL](#)                            |                            |       |
-| 7   | 4/22  | [SMT Solvers & Theories I: EUF, Arrays](#)        |                            |       |
-| 8   | 4/24  | [SMT Solvers & Theories II: LIA, LRA](#)          |                            |    |
-| 9   | 4/29  | [Nelson-Oppen Combination](#)                     |      [hw2](./projects/proj2)                      |  hw1     |
-| 10  | 5/1   | [DPLL(T): SMT Solver Architecture](#)            |                         |       |
-| 11  | 5/6   | [Guarded Commands & Weakest Preconditions](#)    |                            |       |
-| 12  | 5/8   | [Interprocedural Reasoning & Invariants](#)      |      |       |
+| 1   | 4/1   | [Overview & Motivation](https://cs292c-1-computer-aided--coq3g7p.gamma.site/)                        |      |       |
+| 2   | 4/3   | [IMP: Syntax & Semantics](https://cs292c-2-computer-aided--djjky8d.gamma.site/)                      |                            |       |
+| 3   | 4/8   | [Hoare Logic I](https://cs292c-3-computer-aided--jw6kwbl.gamma.site/)                                 |                            |       |
+| 4   | 4/10  | [Ocaml in a Nutshell](https://ocaml-crash-course-f3bila9.gamma.site/)                         |                            |    |
+| 5   | 4/15  | [Hoare Logic II + VCG(https://cs292c-4-computer-aided--xb19i4z.gamma.site/)                        | [hw1](./projects/proj1)     |       |
+| 6   | 4/17  | [Hoare Logic II + VCG](https://cs292c-4-computer-aided--xb19i4z.gamma.site/)                            |                            |       |
+| 7   | 4/22  | [SAT Basics: CNF, DPLL](https://cs292c-5-computer-aided--o4c5z7q.gamma.site/)        |                            |       |
+| 8   | 4/24  | [SAT Solvers: CDCL](https://cs292c-6-computer-aided--1pq10d8.gamma.site/)          |                            |    |
+| 9   | 4/29  | [Application of SAT](https://cs292c-7-computer-aided--igcai21.gamma.site/)                     |      [hw2](./projects/proj2)                      |  hw1     |
+| 10  | 5/1   | [SMT Solvers and Theories](https://cs292c-8-computer-aided--328ag8m.gamma.site/)            |                         |       |
+| 11  | 5/6   | [Nelson-Oppen Combination](https://cs292c-9-computer-aided--874veey.gamma.site/)    |                            |       |
+| 12  | 5/8   | [DPLL(T): SMT Solver](https://cs292c-10-computer-aided-jpp64js.gamma.site/ )      |      |       |
 | 13  | 5/13  | **Midterm** (In Class)                                                  |   [hw3](#)                           |  hw2     |
-| 14  | 5/15  | [Program Synthesis: Overview](#)                 |                            |       |
-| 15  | 5/20  | No Class (Out of Town)                                                  |                            |       |
+| 14  | 5/15  |  No Class (Out of Town)                |                            |       |
+| 15  | 5/20  |  [Program Synthesis: Overview](#)                                                 |                            |       |
 | 16  | 5/22  | [CEGIS & Inductive Synthesis](#)                 |                          |       |
 | 17  | 5/27  | [Program Repair & Synthesis Applications](#)     |                            |    hw3   |
 | 18  | 5/29  | [Solver-Aided Programming (Rosette)](#)          |                            |       |
