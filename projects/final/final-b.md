@@ -65,7 +65,7 @@ $$
 
 ### Cost Model and Cost Estimation
 
-To compare and choose the optimal one from the above two versions, we first need a model that quantifies the cost of each individual operation. The folowing table shows a partial cost model for operations on $\mathbb{F}_{p^2}$.
+To compare and choose the optimal one from the above two versions, we first need a model that quantifies the cost of each individual operation. The folowing table shows a partial cost model for operations on $\mathbb{F}_{p^2}$ (please check the appendix for a full version of example cost model).
 
 | Operation on $\mathbb{F}_{p^2}$ | Cost |
 | --- | --- |
@@ -210,3 +210,17 @@ This doesn't mean $UV = X^3$ literally—it just means that both span the highes
 - $U$ and $V$ are symbolic square roots used to define these extensions.
 - $\mathbb{F}_{p^4}$ becomes a 4-dimensional space over $\mathbb{F}_p$, whether built directly (flat) or through a tower.
 - Towering enables modular implementation, reuse of code, and better optimization.
+
+## Appendix II: Example Cost Model
+
+The following shows an example cost model for your reference.
+
+| Operation | $\mathbb{F}_p$ | $\mathbb{F}_{p^2}$ | $\mathbb{F}_{p^4}$ | $\mathbb{F}_{p^6}$ | $\mathbb{F}_{p^{12}}$ |
+| --- | --- | --- | --- | --- | --- |
+| General Multiplication | 1.5 | 10 | 40 | 130 | 310 |
+| Square | 1.0 | 6 | 27 | 85 | 200 |
+| Multiplication by Constant | 0.8 | 4 | 15 | 50 | 120 |
+| Addition/Subtraction | 0.1 | 1 | 3 | 6 | 12 |
+| Inversion | 20 | 80 | 320 | 1200 | 5000 |
+
+Note that the approach you propose should be able to accept different cost models and produce optimized version of finite field expressions accordingly.
