@@ -34,7 +34,7 @@ Though simple, this kind of off-by-one bug has appeared in production systems. F
 
 Such bugs are difficult to detect through conventional testing. zkVM proofs confirm that a given circuit was executed correctly—but not that the circuit’s logic matches the developer’s intent. This semantic gap underscores the need for formal specifications and verification tools that can catch these high-impact discrepancies.
 
-## Project Goal and Scope
+## Goal, Scope and Benchmarks
 
 This project invites you to design and prototype a tool that uses formal methods to detect real-world bugs in zkVM implementations, in particular for OpenVM [1] and SP1 [2]. You’ll focus on issues reported in their audit logs, particularly those marked as *medium severity or higher*:
 
@@ -56,19 +56,21 @@ While other approaches—such as static analysis or fuzzing—are also acceptabl
 
 This project is an opportunity to apply your knowledge of formal methods to an impactful and technically rich domain. Strong submissions will demonstrate thoughtful problem selection, sound formal reasoning, and a working prototype that illustrates the potential of your approach.
 
-## Tips and FAQs
-
-(coming soon)
-
 ## Resources
 
 [1] OpenVM: [https://github.com/openvm-org/openvm](https://github.com/openvm-org/openvm)
 
 [2] SP1: [https://github.com/succinctlabs/sp1](https://github.com/succinctlabs/sp1)
 
-[3] OpenVM Audit Reports: [https://github.com/openvm-org/openvm/tree/main/audits](https://github.com/openvm-org/openvm/tree/main/audits)
+[3] OpenVM Audit Reports: [https://github.com/openvm-org/openvm/tree/main/audits](https://github.com/openvm-org/openvm/tree/main/audits); in particular, the following reports are good starting points:
 
-[4] SP1 Audit Reports: [https://github.com/succinctlabs/sp1/tree/dev/audits](https://github.com/succinctlabs/sp1/tree/dev/audits)
+- [https://github.com/openvm-org/openvm/blob/main/audits/v1-cantina-report.pdf](https://github.com/openvm-org/openvm/blob/main/audits/v1-cantina-report.pdf)
+- [https://github.com/openvm-org/openvm/tree/main/audits/v1-internal](https://github.com/openvm-org/openvm/tree/main/audits/v1-internal)
+
+[4] SP1 Audit Reports: [https://github.com/succinctlabs/sp1/tree/dev/audits](https://github.com/succinctlabs/sp1/tree/dev/audits); in particular, the following reports are good starting points:
+
+- [https://github.com/succinctlabs/sp1/blob/dev/audits/cantina.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/cantina.pdf)
+- [https://github.com/succinctlabs/sp1/blob/dev/audits/veridise.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/veridise.pdf)
 
 [5] Scroll Incident Report for Mainnet Emergency Upgrade on 2025-04-25: [https://forum.scroll.io/t/report-scroll-mainnet-emergency-upgrade-on-2025-04-25/666](https://forum.scroll.io/t/report-scroll-mainnet-emergency-upgrade-on-2025-04-25/666)
 
