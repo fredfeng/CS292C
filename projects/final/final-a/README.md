@@ -56,6 +56,14 @@ While other approaches—such as static analysis or fuzzing—are also acceptabl
 
 This project is an opportunity to apply your knowledge of formal methods to an impactful and technically rich domain. Strong submissions will demonstrate thoughtful problem selection, sound formal reasoning, and a working prototype that illustrates the potential of your approach.
 
+## Frameworks (Feel free to use other options)
+
+MIRAI (Facebook): Abstract-interpretation static analyzer for Rust MIR: https://github.com/facebookexperimental/MIRAI
+
+Crux-MIR (Galois): Symbolic execution of Rust MIR with path exploration: https://tools.galois.com/saw/crux/what-is-crux
+
+haybale (LLVM symbolic executor in Rust): Lightweight, supports concrete+symbolic (“concolic”) execution of Rust binaries; https://github.com/PLSysSec/haybale
+
 ## Resources
 
 [1] OpenVM: [https://github.com/openvm-org/openvm](https://github.com/openvm-org/openvm)
