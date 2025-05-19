@@ -126,6 +126,12 @@ Good designs will prioritize:
 - **Cost-awareness** (under a quantitative model)
 - **Modularity** (clear separation between rewriting, costing, and checking)
 
+## Frameworks (Feel free to use other options)
+
+- Sketch: https://github.com/sketch-team/sketch
+- egg (Rust Equality-Saturation Engine): https://github.com/egraphs-good/egg
+- Rosette: https://github.com/emina/rosette
+
 ## Resources
 
 [BGMO+10] Jean-Luc Beuchat, Jorge Enrique González Díaz, Shigeo Mitsunari, Eiji Okamoto, Francisco Rodríguez-Henríquez, and Tadanori Teruya. *High-Speed Software Implementation of the Optimal Ate Pairing over Barreto-Naehrig Curves*. Cryptology ePrint Archive, Report 2010/354, 2010. [https://eprint.iacr.org/2010/354](https://eprint.iacr.org/2010/354).
