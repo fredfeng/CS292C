@@ -128,7 +128,7 @@ Good designs will prioritize:
 
 ## Frameworks (Feel free to use other options)
 
-- Sketch: https://github.com/sketch-team/sketch
+- Sketch: https://github.com/asolarlez/sketch-backend
 - egg (Rust Equality-Saturation Engine): https://github.com/egraphs-good/egg
 - Rosette: https://github.com/emina/rosette
 
