@@ -58,11 +58,10 @@ This project is an opportunity to apply your knowledge of formal methods to an i
 
 ## Frameworks (Feel free to use other options)
 
-MIRAI (Facebook): Abstract-interpretation static analyzer for Rust MIR: https://github.com/facebookexperimental/MIRAI
-
-Crux-MIR (Galois): Symbolic execution of Rust MIR with path exploration: https://tools.galois.com/saw/crux/what-is-crux
-
-haybale (LLVM symbolic executor in Rust): Lightweight, supports concrete+symbolic (“concolic”) execution of Rust binaries; https://github.com/PLSysSec/haybale
+- Flux: https://flux-rs.github.io/flux/
+- MIRAI (Facebook): Abstract-interpretation static analyzer for Rust MIR: https://github.com/facebookexperimental/MIRAI
+- Crux-MIR (Galois): Symbolic execution of Rust MIR with path exploration: https://tools.galois.com/saw/crux/what-is-crux
+- haybale (LLVM symbolic executor in Rust): Lightweight, supports concrete+symbolic (“concolic”) execution of Rust binaries; https://github.com/PLSysSec/haybale
 
 ## Resources
 
