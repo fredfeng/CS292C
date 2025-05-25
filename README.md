@@ -51,12 +51,12 @@ Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9
 | C      | 60–64%     |
 | F      | <60%       |
 
-- 3 programming projects: 30%
+- 2 programming projects: 24%
 - Midterm (closed book, closed note): 40%
 - Final project: 30%
    - Well-documented README: 10%
-   - Complete, executable codebase: 10%
-   - Lightning talk: 10%
+   - Complete, executable codebase: 13%
+   - Lightning talk: 12%
 
 ## 🗂️ Course Outline
 
