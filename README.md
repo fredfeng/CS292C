@@ -28,11 +28,11 @@ Slack: https://join.slack.com/t/cs292c-spr2025/shared_invite/zt-32f16k4ic-UFmQK9
 | 12  | 5/8   | [DPLL(T): SMT Solver](https://cs292c-10-computer-aided-jpp64js.gamma.site/ )      |      |       |
 | 13  | 5/13  | **Midterm** (In Class)                                                  |   [final project](https://github.com/fredfeng/CS292C/tree/master/projects/final)                           |  hw2     |
 | 14  | 5/15  |  No Class (Out of Town)                |                            |       |
-| 15  | 5/20  |  [Program Synthesis: Overview](#)                                                 |                            |       |
-| 16  | 5/22  | [CEGIS & Inductive Synthesis](#)                 |                          |       |
-| 17  | 5/27  | [Program Repair & Synthesis Applications](#)     |                            |       |
-| 18  | 5/29  | [Solver-Aided Programming (Rosette)](#)          |                            |       |
-| 19  | 6/3   | [Formal Verification in Practice: Dafny, Why3, Frama-C](./lectures/lecture17.pdf) |                    |       |
+| 15  | 5/20  |  [Program Synthesis: Overview](https://cs292c-11-computer-aided-cylhkgo.gamma.site/)                                                 |                            |       |
+| 16  | 5/22  | [Conflict-Driven Synthesis](https://cs292c-12-computer-aided-kjdrsmy.gamma.site/)                 |                          |       |
+| 17  | 5/27  | [Symbolic Execution](https://cs292c-13-computer-aided-wov8soc.gamma.site/)     |                            |       |
+| 18  | 5/29  | [Program Repair](https://cs292c-14-computer-aided-ax75p3i.gamma.site/)          |                            |       |
+| 19  | 6/3   | [LLM/AI for Formal Methods](https://cs292c-15-computer-aided-fv7i6d6.gamma.site/) |                    |       |
 | 20  | 6/5   | **Student Presentations + Wrap-up**                                      |                            |   final project |
 | -   | 6/14  | **Quarter Ends**                                                         |                            |       |
 
