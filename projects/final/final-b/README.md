@@ -82,9 +82,9 @@ With the cost model at hand, we can then run a cost estimation for the two versi
 
 - 2 squarings: 2 × 6 = 12
 - 1 general multiplication: 10
-- 1 multiplication by constant: 4
+- 2 multiplications by constant: 2 × 4  = 8
 - 1 addition: 1
-- **Total: 27**
+- **Total: 31**
 
 **Cost Beakdown of the Optimized Version:**
 
