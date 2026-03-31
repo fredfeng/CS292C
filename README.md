@@ -12,7 +12,7 @@ Instructor: Yu Feng
 
 Lecture Time: 3pm–4:50pm, T/Th, Phelps 3526
 
-Slack: TBD
+Slack: [Link](https://tinyurl.com/2zz9cfhb)
 
 # Course Schedule
 
