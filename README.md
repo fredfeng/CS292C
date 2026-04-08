@@ -18,26 +18,22 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 
 | #   | Date   | Lecture                                              | Out  | Due  |
 | --- | ------ | ---------------------------------------------------- | ---- | ---- |
-| **Part I: Foundations of Agentic Programming** |||||
-| 1   | 3/31   | The Agentic Programming Revolution                   |      |      |
-| 2   | 4/2    | Building Agents: API, Tool Use & MCP                 |      |      |
-| 3   | 4/7    | Agent Skills as Executable Infrastructure            | HW1  |      |
+| 1   | 3/31   | [The Agentic Programming Revolution](lectures/lecture01.pptx)                   |      |      |
+| 2   | 4/2    | [Building Agents: API, Tool Use & MCP](lectures/lecture02.pptx)                 |      |      |
+| 3   | 4/7    | [Agent Skills as Executable Infrastructure](lectures/lecture03.pptx)            | HW1  |      |
 | 4   | 4/9    | Multi-Agent Orchestration & Workflow Patterns        |      |      |
 | 5   | 4/14   | From Agent Behavior to Formal Specification          |      |      |
-| **Part II: Formal Methods — The Foundation** |||||
 | 6   | 4/16   | Hoare Logic I — Triples for Programs and Agents      |      | HW1  |
 | 7   | 4/21   | Hoare Logic II — VCG and Weakest Preconditions       |      |      |
 | 8   | 4/23   | SAT/SMT Solvers for Agent Policy Verification        | HW2  |      |
 | 9   | 4/28   | Static Analysis: From Dataflow to Skill Auditing     |      |      |
 | 10  | 4/30   | Model Checking Agentic Traces                        |      |      |
 | 11  | 5/5    | **Midterm** (In Class)                               |      | HW2  |
-| **Part III: Security of Agentic Systems** |||||
 | 12  | 5/7    | Threat Landscape of Agentic Systems                  |      |      |
 | 13  | 5/12   | Skill Supply-Chain Attacks                           | HW3  |      |
 | 14  | 5/14   | Permission Escalation & Formal Access Control        |      |      |
 | 15  | 5/19   | Fuzzing and Behavioral Testing of Agent Skills       |      |      |
 | 16  | 5/21   | Full-Lifecycle Formal Defenses                       |      | HW3  |
-| **Part IV: Hardening, Efficiency & the Frontier** |||||
 | 17  | 5/26   | Runtime Guardrails & Agent Hardening                 | HW4  |      |
 | 18  | 5/28   | Efficiency: Token Optimization & Caching             |      |      |
 | 19  | 6/2    | The Frontier: Verified Agentic Systems               |      |      |
