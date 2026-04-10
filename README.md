@@ -21,7 +21,7 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 | 1   | 3/31   | [The Agentic Programming Revolution](lectures/lecture01.pptx)                   |      |      |
 | 2   | 4/2    | [Building Agents: API, Tool Use & MCP](lectures/lecture02.pptx)                 |      |      |
 | 3   | 4/7    | [Agent Skills as Executable Infrastructure](lectures/lecture03.pptx)            | [HW1](https://classroom.github.com/a/pHoi5y7z)  |      |
-| 4   | 4/9    | Multi-Agent Orchestration & Workflow Patterns        |      |      |
+| 4   | 4/9    | [Multi-Agent Orchestration & Workflow Patterns](lectures/lecture04.pptx)        |      |      |
 | 5   | 4/14   | From Agent Behavior to Formal Specification          |      |      |
 | 6   | 4/16   | Hoare Logic I — Triples for Programs and Agents      |      | HW1  |
 | 7   | 4/21   | Hoare Logic II — VCG and Weakest Preconditions       |      |      |
