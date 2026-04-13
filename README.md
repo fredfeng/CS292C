@@ -22,12 +22,12 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 | 2   | 4/2    | [Building Agents: API, Tool Use & MCP](lectures/lecture02.pptx)                 |      |      |
 | 3   | 4/7    | [Agent Skills as Executable Infrastructure](lectures/lecture03.pptx)            | [HW1](https://classroom.github.com/a/pHoi5y7z)  |      |
 | 4   | 4/9    | [Multi-Agent Orchestration & Workflow Patterns](lectures/lecture04.pptx)        |      |      |
-| 5   | 4/14   | From Agent Behavior to Formal Specification          |      |      |
-| 6   | 4/16   | Hoare Logic I — Triples for Programs and Agents      |      | HW1  |
-| 7   | 4/21   | Hoare Logic II — VCG and Weakest Preconditions       |      |      |
-| 8   | 4/23   | SAT/SMT Solvers for Agent Policy Verification        | HW2  |      |
-| 9   | 4/28   | Static Analysis: From Dataflow to Skill Auditing     |      |      |
-| 10  | 4/30   | Model Checking Agentic Traces                        |      |      |
+| 5   | 4/14   | [Hoare Logic I — Triples for Programs and Agents](lectures/lecture05.pptx)      |      |      |
+| 6   | 4/16   | [Hoare Logic II — VCG & Weakest Preconditions](lectures/lecture06.pptx)         |      | HW1  |
+| 7   | 4/21   | [SAT/SMT Solvers for Program Verification](lectures/lecture07.pptx)             |      |      |
+| 8   | 4/23   | [Static Analysis: Dataflow to Skill Auditing](lectures/lecture08.pptx)          | HW2  |      |
+| 9   | 4/28   | [Static Analysis II: Context Sensitivity & Tools](lectures/lecture09.pptx)      |      |      |
+| 10  | 4/30   | [Lightweight Trace Verification for Agents](lectures/lecture10.pptx)            |      |      |
 | 11  | 5/5    | **Midterm** (In Class)                               |      | HW2  |
 | 12  | 5/7    | Threat Landscape of Agentic Systems                  |      |      |
 | 13  | 5/12   | Skill Supply-Chain Attacks                           | HW3  |      |
