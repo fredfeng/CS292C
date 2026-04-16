@@ -23,14 +23,14 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 | 3   | 4/7    | [Agent Skills as Executable Infrastructure](lectures/lecture03.pptx)            | [HW1](https://classroom.github.com/a/pHoi5y7z)  |      |
 | 4   | 4/9    | [Multi-Agent Orchestration & Workflow Patterns](lectures/lecture04.pptx)        |      |      |
 | 5   | 4/14   | [Hoare Logic I — Triples for Programs and Agents](lectures/lecture05.pptx)      |      |      |
-| 6   | 4/16   | [Hoare Logic II — VCG & Weakest Preconditions](lectures/lecture06.pptx)         |      | HW1  |
+| 6   | 4/16   | [Hoare Logic II — VCG & Weakest Preconditions](lectures/lecture06.pptx)         | HW2  | HW1  |
 | 7   | 4/21   | [SAT/SMT Solvers for Program Verification](lectures/lecture07.pptx)             |      |      |
-| 8   | 4/23   | [Static Analysis: Dataflow to Skill Auditing](lectures/lecture08.pptx)          | HW2  |      |
+| 8   | 4/23   | [Static Analysis: Dataflow to Skill Auditing](lectures/lecture08.pptx)          |      |      |
 | 9   | 4/28   | [Static Analysis II: Context Sensitivity & Tools](lectures/lecture09.pptx)      |      |      |
 | 10  | 4/30   | [Lightweight Trace Verification for Agents](lectures/lecture10.pptx)            |      |      |
-| 11  | 5/5    | **Midterm** (In Class)                               |      | HW2  |
+| 11  | 5/5    | **Midterm** (In Class)                               | HW3  | HW2  |
 | 12  | 5/7    | Threat Landscape of Agentic Systems                  |      |      |
-| 13  | 5/12   | Skill Supply-Chain Attacks                           | HW3  |      |
+| 13  | 5/12   | Skill Supply-Chain Attacks                           |      |      |
 | 14  | 5/14   | Permission Escalation & Formal Access Control        |      |      |
 | 15  | 5/19   | Fuzzing and Behavioral Testing of Agent Skills       |      |      |
 | 16  | 5/21   | Full-Lifecycle Formal Defenses                       |      | HW3  |
@@ -165,9 +165,9 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 ## 📅 Key Dates
 
 - **HW1 out**: Lecture 3 (4/7) | **due**: Lecture 6 (4/16)
-- **HW2 out**: Lecture 8 (4/23) | **due**: Lecture 11 (5/5)
+- **HW2 out**: Lecture 6 (4/16) | **due**: Lecture 11 (5/5)
 - **Midterm**: Lecture 11 (5/5)
-- **HW3 out**: Lecture 13 (5/12) | **due**: Lecture 16 (5/21)
+- **HW3 out**: Lecture 11 (5/5) | **due**: Lecture 16 (5/21)
 - **HW4 out**: Lecture 17 (5/26) | **due**: Lecture 20 (6/4)
 - **Final Presentations**: Lecture 20 (6/4)
 
