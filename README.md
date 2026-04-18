@@ -23,7 +23,7 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 | 3   | 4/7    | [Agent Skills as Executable Infrastructure](lectures/lecture03.pptx)            | [HW1](https://classroom.github.com/a/pHoi5y7z)  |      |
 | 4   | 4/9    | [Multi-Agent Orchestration & Workflow Patterns](lectures/lecture04.pptx)        |      |      |
 | 5   | 4/14   | [Hoare Logic I — Triples for Programs and Agents](lectures/lecture05.pptx)      |      |      |
-| 6   | 4/16   | [Hoare Logic II — VCG & Weakest Preconditions](lectures/lecture06.pptx)         | HW2  | HW1  |
+| 6   | 4/16   | [Hoare Logic II — VCG & Weakest Preconditions](lectures/lecture06.pptx)         | [HW2](https://classroom.github.com/a/qiWAlCUU)  | HW1  |
 | 7   | 4/21   | [SAT/SMT Solvers for Program Verification](lectures/lecture07.pptx)             |      |      |
 | 8   | 4/23   | [Static Analysis: Dataflow to Skill Auditing](lectures/lecture08.pptx)          |      |      |
 | 9   | 4/28   | [Static Analysis II: Context Sensitivity & Tools](lectures/lecture09.pptx)      |      |      |
