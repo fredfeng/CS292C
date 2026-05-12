@@ -28,7 +28,7 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 | 8   | 4/23   | [Static Analysis: Dataflow to Skill Auditing](lectures/lecture08.pptx)          |      |      |
 | 9   | 4/28   | [Static Analysis II: Context Sensitivity & Tools](lectures/lecture09.pptx)      |      |      |
 | 10  | 4/30   | [Lightweight Trace Verification for Agents](lectures/lecture10.pptx)            |      |      |
-| 11  | 5/5    | **Midterm** (In Class)                               | HW3  | HW2  |
+| 11  | 5/5    | **Midterm** (In Class)                               | [HW3](https://classroom.github.com/a/owhryfbf)  | HW2  |
 | 12  | 5/7    | Threat Landscape of Agentic Systems                  |      |      |
 | 13  | 5/12   | Skill Supply-Chain Attacks                           |      |      |
 | 14  | 5/14   | Permission Escalation & Formal Access Control        |      |      |
