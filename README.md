@@ -30,7 +30,7 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 | 10  | 4/30   | [Lightweight Trace Verification for Agents](lectures/lecture10.pptx)            |      |      |
 | 11  | 5/5    | **Midterm** (In Class)                               | [HW3](https://classroom.github.com/a/owhryfbf)  | HW2  |
 | 12  | 5/7    | Threat Landscape of Agentic Systems                  |      |      |
-| 13  | 5/12   | Skill Supply-Chain Attacks                           |      |      |
+| 13  | 5/12   | [Skill Supply-Chain Attacks](lectures/semia.pdf)                           |      |      |
 | 14  | 5/14   | Permission Escalation & Formal Access Control        |      |      |
 | 15  | 5/19   | Fuzzing and Behavioral Testing of Agent Skills       |      |      |
 | 16  | 5/21   | Full-Lifecycle Formal Defenses                       |      | HW3  |
