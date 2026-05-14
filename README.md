@@ -31,8 +31,8 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 | 11  | 5/5    | **Midterm** (In Class)                               | [HW3](https://classroom.github.com/a/owhryfbf)  | HW2  |
 | 12  | 5/7    | [Threat Landscape of Agentic Systems](lectures/lecture-agent-security-overview.pptx) |      |      |
 | 13  | 5/12   | [Skill Supply-Chain Attacks](lectures/semia.pdf)                           |      |      |
-| 14  | 5/14   | Permission Escalation & Formal Access Control        | [HW4](https://classroom.github.com/a/R65CLG4I)  |      |
-| 15  | 5/19   | Fuzzing and Behavioral Testing of Agent Skills       |      |      |
+| 14  | 5/14   | [Fuzzing and Behavioral Testing of Agent Skills](lectures/sefz.pdf) | [HW4](https://classroom.github.com/a/R65CLG4I)  |      |
+| 15  | 5/19   | Permission Escalation & Formal Access Control        |      |      |
 | 16  | 5/21   | Full-Lifecycle Formal Defenses                       |      | HW3  |
 | 17  | 5/26   | Runtime Guardrails & Agent Hardening                 |      |      |
 | 18  | 5/28   | Efficiency: Token Optimization & Caching             |      |      |
