@@ -34,7 +34,7 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 | 14  | 5/14   | Permission Escalation & Formal Access Control        |      |      |
 | 15  | 5/19   | Fuzzing and Behavioral Testing of Agent Skills       |      |      |
 | 16  | 5/21   | Full-Lifecycle Formal Defenses                       |      | HW3  |
-| 17  | 5/26   | Runtime Guardrails & Agent Hardening                 | HW4  |      |
+| 17  | 5/26   | Runtime Guardrails & Agent Hardening                 | [HW4](https://classroom.github.com/a/R65CLG4I)  |      |
 | 18  | 5/28   | Efficiency: Token Optimization & Caching             |      |      |
 | 19  | 6/2    | The Frontier: Verified Agentic Systems               |      |      |
 | 20  | 6/4    | **Student Project Presentations & Wrap-up**          |      | HW4  |
