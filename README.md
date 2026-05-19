@@ -35,9 +35,9 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 | 15  | 5/19   | [Synthesizing Multi-Agent Harnesses for Vulnerability Discovery](lectures/agentflow.pdf) |      |      |
 | 16  | 5/21   | Full-Lifecycle Formal Defenses                       |      | HW3  |
 | 17  | 5/26   | Runtime Guardrails & Agent Hardening                 |      |      |
-| 18  | 5/28   | Efficiency: Token Optimization & Caching             |      |      |
-| 19  | 6/2    | The Frontier: Verified Agentic Systems               |      |      |
-| 20  | 6/4    | **Student Project Presentations & Wrap-up**          |      | HW4  |
+| 18  | 5/28   | **Student Final Presentations (Session 1)**          |      |      |
+| 19  | 6/2    | **Student Final Presentations (Session 2)**          |      |      |
+| 20  | 6/4    | **Student Final Presentations (Session 3) & Wrap-up** |      | HW4  |
 
 ## Grading (No curving)
 
