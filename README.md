@@ -34,7 +34,7 @@ Slack: [Link](https://tinyurl.com/2zz9cfhb)
 | 14  | 5/14   | [Fuzzing and Behavioral Testing of Agent Skills](lectures/sefz.pdf) | [HW4](https://classroom.github.com/a/R65CLG4I)  |      |
 | 15  | 5/19   | [Synthesizing Multi-Agent Harnesses for Vulnerability Discovery](lectures/agentflow.pdf) |      |      |
 | 16  | 5/21   | [Defend the Reviewer](lectures/defend_the_reviewer.pptx) |      | HW3  |
-| 17  | 5/26   | Runtime Guardrails & Agent Hardening                 |      |      |
+| 17  | 5/26   | [The Full Picture: Course Synthesis & Open Problems](lectures/lecture17_full_picture.pptx) |      |      |
 | 18  | 5/28   | **Student Final Presentations (Session 1)**          |      |      |
 | 19  | 6/2    | **Student Final Presentations (Session 2)**          |      |      |
 | 20  | 6/4    | **Student Final Presentations (Session 3) & Wrap-up** |      | HW4  |
